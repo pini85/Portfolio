@@ -11,9 +11,9 @@
     letter-spacing: 0.4rem;
     border: none;
     border-radius: 8px;
-    animation-name: opacity, scale;
-    animation-duration: 2s, 2s;
-    animation-delay: 7s, 6.5s;
+    animation-name: hidden-down-opacity;
+    animation-duration: 2s;
+    animation-delay:6.5s;
     animation-fill-mode: both;
     transition: .5s;
 

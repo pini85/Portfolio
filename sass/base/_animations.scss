@@ -28,7 +28,12 @@
      }
 }
 
-
+@keyframes hidden-down-opacity {
+  from { transform: translateY(200%);
+         opacity: 0; }
+  to { transform: translateY(0);
+       opacity: 1;}
+}
 
 @keyframes bounce-top {
   0% {
