@@ -1,0 +1,89 @@
+.pop-up {
+  position: relative;
+  background: $color-layout;
+  width: auto;
+  max-width: 50vw;
+  margin: 20px auto;
+}
+
+.popup-img {
+  width: 100%;
+}
+.space {
+    height: 1px;
+    width: 90%;
+    background-color: $color-primary-dark;
+    opacity: .1;
+    margin: 1rem auto;
+}
+
+.popup-text {
+  padding: 0rem 2rem 0rem 2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #06122d;
+  font-weight: 300;
+  text-align: center;
+}
+
+.popup-btn {
+  padding: 2rem;
+  text-align: center;
+}
+
+.divide {
+  height: 2px;
+  width: 100%;
+  background-color: $color-primary;
+  margin-top: -.5rem;
+  opacity: .1;
+
+}
+
+// .popup.mfp-wrap.mfp-ready .mfp-content {
+//   animation-name: popup;
+//   animation-duration: .5s;
+// }
+
+// .popup.mfp-bg{
+//   animation-name: opacity;
+//   animation-duration: .5s;
+// }
+
+
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform:scale(0);
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: scale(1);
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  transform: scale(0);
+}

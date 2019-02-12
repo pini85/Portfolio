@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+   //scroll-behavior: smooth; for smooth scrolling. But this is not supported on edge and safari.
+   }
+
+body {
+  box-sizing: border-box;
+
+   }
+
+.container {
+  background-color: $color-layout;
+  display: grid;
+  // grid-template-rows:  10vh 35vh 20vh 35vh 10vh 20vh repeat(5, 13vh) 5vh;
+  grid-template-rows:  100vh 100vh 100vh 80vh 20vh;
+  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+
+
+}
+
+

@@ -1,0 +1,88 @@
+.form {
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+
+  &__group {
+    margin-bottom: -2.3rem;
+    width: 30%;
+     }
+
+  &__input,
+  &__input-lg {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: $color-display;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(215,228,255,.3);
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid transparent;
+
+
+
+    &:focus {
+    outline: none;
+    border-bottom: 3px solid $color-primary;
+    }
+
+    &::-webkit-input-placeholder { color: #b4c7f5; }
+    }
+
+  &__label,
+  &__label-lg  {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: $color-primary-dark;
+    font-weight: bold;
+    display: inline-block;
+    transform: translate(-9rem,-4rem);
+    transition: all .3s;
+
+    &-lg {
+      transform: translate(-10rem,-18rem);
+
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(2rem, -4rem);
+  }
+
+  &__input-lg:placeholder-shown + &__label-lg {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(2rem, -18rem);
+
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 6rem;
+    font-size: 1.6rem;
+    color: $color-display-light;
+}
+
+  }
+
+.animations--scale-in-out {
+  animation-name: scale-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+}
+
+.animations--footer-paragraph {
+  animation-name: from-right-soft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+

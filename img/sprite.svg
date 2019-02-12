@@ -1,0 +1,20 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-burst_mode" viewBox="0 0 24 24">
+<title>burst_mode</title>
+<path d="M11.016 17.016h9.984l-3.188-4.219-2.531 3.188-1.781-2.156zM21.984 5.016c0.563 0 1.031 0.422 1.031 0.984v12c0 0.563-0.469 0.984-1.031 0.984h-12c-0.563 0-0.984-0.422-0.984-0.984v-12c0-0.563 0.422-0.984 0.984-0.984h12zM5.016 5.016h1.969v13.969h-1.969v-13.969zM0.984 5.016h2.016v13.969h-2.016v-13.969z"></path>
+</symbol>
+<symbol id="icon-dashboard" viewBox="0 0 24 24">
+<title>dashboard</title>
+<path d="M12.984 3h8.016v6h-8.016v-6zM12.984 21v-9.984h8.016v9.984h-8.016zM3 21v-6h8.016v6h-8.016zM3 12.984v-9.984h8.016v9.984h-8.016z"></path>
+</symbol>
+<symbol id="icon-search" viewBox="0 0 32 32">
+<title>search</title>
+<path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+</symbol>
+<symbol id="icon-rocket" viewBox="0 0 32 32">
+<title>rocket</title>
+<path d="M22 2l-10 10h-6l-6 8c0 0 6.357-1.77 10.065-0.94l-10.065 12.94 13.184-10.255c1.839 4.208-1.184 10.255-1.184 10.255l8-6v-6l10-10 2-10-10 2z"></path>
+</symbol>
+</defs>
+</svg>

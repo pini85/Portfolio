@@ -1,0 +1,323 @@
+//is it possibl to nest all the features into one features element so i can style all of them without having problems to indiviually
+//place them in the grid.
+
+
+.skills {
+
+
+
+
+  &__heading {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+
+
+  }
+
+
+    &__features-fast {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      background-color: $color-primary-light;
+      width: 12rem;
+      height: 12rem;
+      opacity: 0;
+      position: relative;
+
+
+      &:before { @include octogon-before; }
+      &:after { @include octogon-after; }
+
+
+      &-text {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        text-align: center;
+        align-self: start;
+        opacity: 0;
+      }
+    }
+
+    &__features-responsive  {
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+      background-color: $color-primary-light;
+      width: 12rem;
+      height: 12rem;
+      opacity: 0;
+      position: relative;
+
+      &:before { @include octogon-before; }
+      &:after { @include octogon-after; }
+
+
+      &-text {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        text-align: center;
+        align-self: start;
+        opacity: 0;
+
+      }
+
+    }
+
+   &__features-dynamic  {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      background-color: $color-primary-light;
+      width: 12rem;
+      height: 12rem;
+      opacity: 0;
+      position: relative;
+
+      &:before { @include octogon-before; }
+      &:after { @include octogon-after; }
+
+      &-text {
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        text-align: center;
+        align-self: start;
+        opacity: 0;
+      }
+
+    }
+
+    &__features-detail {
+      grid-row: 2 / 3;
+      grid-column: 5 / 6;
+      background-color: $color-primary-light;
+      width: 12rem;
+      height: 12rem;
+      position: relative;
+      opacity: 0;
+
+      &:before { @include octogon-before; }
+      &:after { @include octogon-after; }
+
+      &-text {
+      grid-row: 3 / 4;
+      grid-column: 5 / 6;
+      text-align: center;
+      align-self: start;
+      opacity: 0;
+      }
+    }
+
+    &__langauges {
+     display: grid;
+     grid-row: 4/ 9;
+     grid-column: 2 / 6;
+     grid-template-rows: repeat(5, 1fr);
+     grid-template-columns: 1fr;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+
+    }
+
+
+  &__html {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+    &-text { @include skill; }
+
+    &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+
+
+
+  }
+
+  &__css {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+     &-text { @include skill; }
+
+     &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+  }
+
+  &__javascript {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+     background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+     &-text { @include skill; }
+
+     &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+  }
+
+  &__ruby {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+
+     &-text { @include skill; }
+
+     &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+  }
+
+  &__ruby-on-rails {
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+     &-text { @include skill; }
+
+      &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+  }
+}
+
+.next-page-skills {
+    grid-row: 9 / 10;
+    grid-column: 2 / 6;
+    position: relative;
+    transform: rotate(90deg);
+    font-size: 3rem;
+    color: $color-primary-dark;
+    opacity: 0;
+    cursor: pointer;
+
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 1.02rem;
+    }
+
+    &:hover > span {
+    animation-name: next-page-hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    }
+  }
+
+
+
+/*SVG'S*/
+
+.features__icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  fill: $color-display-light;
+  position: absolute;
+  top: 32%;
+  left: 32%;
+
+}
+
+/*Animations*/
+
+.animation--features {
+  animation-name: rotate-y;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation--features-text {
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation--langauges {
+  animation-name: from-right;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+
+.animation--fill-70 {
+  animation-name: fill-70;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+}
+
+
+.animation--fill-40 {
+  animation-name: fill-40;
+  animation-duration: .5s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+}
+
+.animation--fill-50 {
+  animation-name: fill-50;
+  animation-duration: .5s;
+  animation-delay: 1.7s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+}
+
+.animation--fill-55 {
+  animation-name: fill-55;
+  animation-duration: .5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+}
+
+.animation--next-page {
+  animation-name: next-page;
+  animation-fill-mode: both;
+  animation-duration: 1.4s;
+}

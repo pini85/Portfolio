@@ -1,0 +1,42 @@
+@mixin layout { background: linear-gradient(180deg, rgba(240,244,253,1) 75%, rgba(215,228,255,1) 100%, rgba(240,244,253,1) 100%); }
+@mixin octogon-before {
+
+  content: "";
+        width: 12rem;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 2.9rem solid $color-primary-light;
+        border-left: 2.9rem solid $color-layout;
+        border-right: 2.9rem solid $color-layout;
+}
+
+@mixin octogon-after {
+
+  content: "";
+      width: 12rem;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: 2.9rem solid $color-primary-light;
+      border-left: 2.9rem solid $color-layout;
+      border-right: 2.9rem solid $color-layout;
+}
+
+
+
+@mixin skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 15%;
+  color: $color-display-light;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: $color-primary-light;
+  overflow: hidden;
+}
+

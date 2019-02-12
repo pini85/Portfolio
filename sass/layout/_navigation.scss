@@ -1,0 +1,231 @@
+.nav {
+  background-color: $color-layout;
+  font-size: 8rem;
+  font-weight: 300;
+  grid-row: 1 / 2;
+  grid-column: 2 / 5;
+  animation-name: opacity;
+  animation-duration: 2.8s;
+  animation-delay: 6.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+
+  &__ul {
+    display: flex;
+    list-style: none;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin-left: 3%;
+    margin-top: 3rem;
+    text-transform: uppercase;
+
+    animation-name:hidden-down;
+    animation-duration: 1s;
+    animation-delay: 6.3s;
+    animation-fill-mode: both;
+
+  }
+
+  &__li-1 {
+   animation-name:hidden-down;
+   animation-duration: 1s;
+   animation-delay: 6.3s;
+   animation-fill-mode: both;
+  }
+
+  &__li-2 {
+    animation-name:hidden-down;
+   animation-duration: 1s;
+   animation-delay: 6.3s;
+   animation-fill-mode: both;
+
+  }
+
+   &__li-3 {
+   animation-name:hidden-down;
+   animation-duration: 1s;
+   animation-delay: 6.3s;
+   animation-fill-mode: both;
+
+  }
+
+
+  &__a {
+    padding:0.5rem;
+    text-decoration: none;
+    transition: background-color .2s;
+
+    &:link,
+    &:visited {
+      color: $color-primary-dark;
+    }
+
+    span {
+      opacity: .5;
+      color: $color-primary;
+    }
+
+    span:hover,
+    span:active {
+      background-color: $color-layout;
+
+    }
+
+    &:hover,
+    &:active:not(span) {
+      background-color: #d7e4ff;
+    }
+
+  }
+}
+.breaker {
+  opacity: .5;
+  color: $color-primary;
+  margin: 0 1.5rem;
+}
+
+//Sticky//
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(78,109,180,0.1);
+  font-size: 1rem;
+  z-index: 2;
+  animation-name: hidden-down;
+  animation-duration: .3s;
+
+
+  & .nav {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: 0;
+    animation-fill-mode: none;
+
+  }
+
+   &__ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    margin-left: 3%;
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none;
+     }
+
+  &__li-1 {
+   animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+  }
+
+  &__li-2 {
+    animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+
+  }
+
+   &__li-3 {
+     animation-name: none;
+     animation-duration: none;
+     animation-delay:none;
+     animation-fill-mode: none;
+
+  }
+}
+
+//Add this class for waypoint when direction is up//
+
+.return-nav {
+  background-color: $color-layout;
+  font-size: 8rem;
+  font-weight: 300;
+  grid-row: 1 / 2;
+  grid-column: 2 / 5;
+  animation-name: hidden-up;
+  animation-duration: .3s;
+  animation-delay: none;
+  animation-fill-mode: none;
+  z-index: 2;
+
+  &__ul {
+    display: flex;
+    list-style: none;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin-left: 3%;
+    margin-top: 3rem;
+    text-transform: uppercase;
+
+    animation-name:none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode:none;
+
+  }
+
+  &__li-1 {
+   animation-name:none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+  }
+
+  &__li-2 {
+    animation-name:none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+
+  }
+
+   &__li-3 {
+  animation-name:none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+
+  }
+
+
+  &__a {
+    padding:0.5rem;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+      color: $color-primary-dark;
+    }
+
+    span {
+      opacity: .5;
+      color: $color-primary;
+    }
+
+    span:hover,
+    span:active {
+      background-color: $color-layout;
+
+    }
+
+    &:hover,
+    &:active:not(span) {
+      background-color: #d7e4ff;
+    }
+
+  }
+}
+
+.nav-highlight {
+  background-color: #d7e4ff;
+}

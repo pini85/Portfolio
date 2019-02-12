@@ -1,0 +1,152 @@
+.projects {
+  overflow: hidden;
+
+  &__heading {
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+  }
+
+  &__items {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  grid-row: 2 /3;
+  overflow: hidden;
+
+  }
+
+
+    &__item {
+      text-align: center;
+      height: 40rem;
+      width: 40rem;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+    }
+
+
+   //  &__omni-food {
+   //    grid-row: 2 / 3;
+   //    grid-column: 3 / 4;
+   //      text-align: center;
+   //    height: 100%;
+   //    width: 100%;
+   //    display: flex;
+   //    flex-direction: column;
+   //  }
+
+   //  &__nexter {
+   //    grid-row: 3 / 4;
+   //    grid-column: 2 / 3;
+   //      text-align: center;
+   //    height: 100%;
+   //    width: 100%;
+   //    display: flex;
+   //    flex-direction: column;
+
+   //  }
+
+   //  &__trillo {
+   //    grid-row: 3 / 4;
+   //    grid-column: 3 / 4;
+   //      text-align: center;
+   //    height: 100%;
+   //    width: 100%;
+   //    display: flex;
+   //    flex-direction: column;
+   // }
+
+   &__text {
+    transform: translateY(0%);
+    transition: all .5s;
+    letter-spacing: .2rem;
+    opacity:0;
+   }
+
+
+   &__btn {
+    transform: translateY(100%);
+    visibility: hidden;// this is for the popup once closed I had all the buttons appear. This fixes it. It was a bug that all buttons
+    //appeared after you closed a popup.
+    transition: all  .3s;
+    opacity: 0;
+   }
+
+   &__img {
+    height: 50%;
+    width: 50%;
+
+   }
+}
+
+.projects__item:hover > .projects__image-container {
+  filter:blur(20px);
+}
+
+.projects__item:hover  .projects__text {
+  transform: translateY(150%);
+  opacity: 1;
+   }
+
+.projects__item:hover .projects__btn {
+  transform: translateY(-9vh);
+   visibility: visible;
+   opacity: 1;
+
+   }
+
+ .next-page-projects  {
+    grid-row: 3 / 4;
+    text-align: center;
+    position: relative;
+    transform: rotate(90deg);
+    font-size: 3rem;
+    color: $color-primary-dark;
+    opacity: 0;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 1.02rem;
+    }
+
+    &:hover > span {
+    animation-name: next-page-hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    }
+  }
+
+/*Animations*/
+
+.animate-1 {
+  animation-name: hidden-down-strong;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.animate-2 {
+  animation-name: hidden-down-strong;
+  animation-duration: .5s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-3 {
+  animation-name: hidden-down-strong;
+  animation-duration: .5s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+
+.animate-4 {
+  animation-name: hidden-down-strong;
+  animation-duration: .5s;
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+}
