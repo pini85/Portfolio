@@ -40,12 +40,12 @@
   overflow: hidden;
 }
 
-/*Media Query Manager
+/*Media Query Manager*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 1500 {
+    @media only screen and (min-width: 94em ) { @content };
+  }
+}
 
 
-
-*/
-
-// @mixin resoind($breakpoint) {
-//   @if $breakpoint ==
-// }

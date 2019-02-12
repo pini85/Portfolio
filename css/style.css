@@ -1,8 +1,4 @@
-/*Media Query Manager
-
-
-
-*/
+/*Media Query Manager*/
 /*INTRODUCTION*/
 .hidden-up {
   animation-name: hidden-up;
@@ -312,6 +308,9 @@ to {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 94em) {
+    html {
+      font-size: 65%; } }
 
 body {
   box-sizing: border-box; }
@@ -321,6 +320,11 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
+
+@media screen and (min-width: 94em) {
+  @-moz-document url-prefix() {
+    html {
+      font-size: 100% !important; } } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -1358,8 +1362,8 @@ body {
     transition: all  .3s;
     opacity: 0; }
   .projects__img {
-    height: 50%;
-    width: 50%; }
+    height: 18rem;
+    width: 18rem; }
 
 .projects__item:hover > .projects__image-container {
   filter: blur(20px); }
