@@ -89,6 +89,11 @@
 .projects__item:hover  .projects__text {
   transform: translateY(150%);
   opacity: 1;
+
+  @include respond(1300-1400) {
+    transform: translateY(134%);
+
+   }
    }
 
 .projects__item:hover .projects__btn {

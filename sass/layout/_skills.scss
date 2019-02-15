@@ -16,6 +16,11 @@
 
   }
 
+  &__features {
+    grid-row: 2 / 4;
+    grid-column: 2 / 6;
+  }
+
 
     &__features-fast {
       grid-row: 2 / 3;

@@ -30,8 +30,33 @@
 
 
   &__img {
-    height: 120%;
-    width: 95%;
+    height: 47rem;
+    width: 64rem;
     opacity: .5;
+
+    @include respond(1400) {
+    height: 49rem;
+    width: 66rem;
+   }
+    @include respond(1300) {
+      height: 54rem;
+      width: 70rem;
+    }
+
+    @include respond(1200) {
+      height: 61rem;
+      width: 78rem;
+    }
+
+    @include respond(1100) {
+    height: 68rem;
+    width: 85rem;
+    }
+
+    @include respond(1000) {
+    height: 81rem;
+    width: 100rem;
+    }
+
   }
 }

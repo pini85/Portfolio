@@ -26,7 +26,6 @@
 }
 
 
-
 @mixin skill {
   display: flex;
   align-items: center;
@@ -40,12 +39,43 @@
   overflow: hidden;
 }
 
-/*Media Query Manager*/
 
+//smallest to biggest
 @mixin respond($breakpoint) {
-  @if $breakpoint == 1500 {
-    @media only screen and (min-width: 94em ) { @content };
+
+  @if $breakpoint == 1000 {
+    @media only screen and (max-width: 62.5em ) { @content };
   }
+
+  @if $breakpoint == 1100 {
+    @media only screen and (max-width: 68.75em ) { @content };
+  }
+
+  @if $breakpoint == 1200 {
+    @media only screen and (max-width: 75em ) { @content };
+  }
+
+  @if $breakpoint == 1300 {
+    @media only screen and (max-width: 81.25em ) { @content };
+  }
+
+  @if $breakpoint == 1400 {
+    @media only screen and (max-width: 87.5em ) { @content };
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
 
 

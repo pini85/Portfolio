@@ -1,5 +1,5 @@
 .form {
-     display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,13 @@
   &__group {
     margin-bottom: -2.3rem;
     width: 30%;
+
+    @include respond(1300) {
+    width: 35%;
+   }
+
      }
+
 
   &__input,
   &__input-lg {
@@ -22,7 +28,6 @@
     width: 100%;
     display: block;
     border-bottom: 3px solid transparent;
-
 
 
     &:focus {
@@ -68,6 +73,10 @@
     padding: 2rem 6rem;
     font-size: 1.6rem;
     color: $color-display-light;
+
+    @include respond(1300) {
+    margin-top: 5rem;
+   }
 }
 
   }
