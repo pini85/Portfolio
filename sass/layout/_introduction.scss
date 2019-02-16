@@ -2,6 +2,7 @@
   grid-column: 1 / 7;
   display: grid;
   grid-template-rows: 10vh 35vh 20vh 35vh;
+  overflow: hidden;//had problems with image when expanding the width the container overflowing.
 
 }
 
@@ -19,12 +20,35 @@
   backface-visibility: hidden;
   z-index: 1;
 
+   @include respond(1100) {
+     animation-name: travel, travel-1, travel-2, travel-3-mobile;
+   }
+
+   @include respond(800) {
+     animation-name: travel, travel-1, travel-2, travel-3-mobile-800;
+   }
+
+   @include respond(700) {
+     animation-name: travel, travel-1, travel-2, travel-3-mobile-700;
+   }
+
+   @include respond(600) {
+     animation-name: fall-down;
+     animation-duration: 1s;
+     animation-delay: 3.7s;
+   }
+
+
+
+
+
   &__top {
     letter-spacing: 0.2rem;
     font-size: 9rem;
     background-color: transparent;
     text-align: center;
     overflow: hidden;
+
 
  &-1 {
     display: inline-block;
@@ -68,6 +92,7 @@
     background-color: transparent;
     text-align: center;
     overflow: hidden;
+
 
      p {
       grid-row: 4 / 5;

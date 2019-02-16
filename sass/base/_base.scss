@@ -19,17 +19,29 @@ html {
     font-size: 57%;
    }
 
-   @include respond(1200) {
+   @include respond(900) {
     font-size: 50%;
    }
 
-   @include respond(1100) {
-    font-size: 45%;
+   @include respond(800) {
+    font-size: 40%;
    }
 
-   @include respond(1100) {
-    font-size: 37.5%;
+   @include respond(600) {
+    font-size: 33%;
    }
+
+   @include respond(500) {
+    font-size: 25%;
+   }
+
+   @include respond(400) {
+    font-size: 19%;
+   }
+
+
+
+
 
 
 
@@ -75,10 +87,10 @@ body {
 
 }
 
-// @media screen and (min-width: 94em) {
-//     @-moz-document url-prefix() {
-//        html {
-//            font-size: 100% !important;
-//        }
-//     }
-//  }
+@media screen and (min-width: 94em) {
+    @-moz-document url-prefix() {
+       html {
+           font-size: 93%;
+       }
+    }
+ }

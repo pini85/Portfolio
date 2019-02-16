@@ -10,12 +10,16 @@
   animation-fill-mode: both;
   z-index: 2;
 
+   @include respond(1100) {
+     display: none;
+   }
+
   &__ul {
     display: flex;
     list-style: none;
     font-size: 4rem;
     letter-spacing: .2rem;
-    margin-left: 3%;
+    margin-left: -5%;
     margin-top: 3rem;
     text-transform: uppercase;
 
@@ -86,6 +90,70 @@
 
 //Sticky//
 
+.sticky-mobile {
+  width: 100%;
+  background-color: rgba(78,109,180,0.1);
+  font-size: 1rem;
+  z-index: 2;
+  animation-name: hidden-down;
+  animation-duration: .3s;
+  display: none;
+
+  @include respond(1100) {
+    display: block;
+    width: 113%;
+    background-color: transparent;
+   }
+
+
+
+
+
+  & .nav {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: 0;
+    animation-fill-mode: none;
+
+  }
+
+   &__ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    margin-left: 3%;
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none;
+     }
+
+  &__li-1 {
+   animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+  }
+
+  &__li-2 {
+    animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
+
+  }
+
+   &__li-3 {
+     animation-name: none;
+     animation-duration: none;
+     animation-delay:none;
+     animation-fill-mode: none;
+
+  }
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -112,7 +180,8 @@
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    margin-left: 3%;
+    width: 100vw;
+    justify-content: space-evenly;
     animation-name: none;
     animation-duration: none;
     animation-delay: none;

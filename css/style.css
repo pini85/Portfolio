@@ -129,6 +129,61 @@
   to {
     transform: translate(-13vw, -38vh) rotate(360deg) scale(0.5); } }
 
+@keyframes travel-3-mobile {
+  from {
+    transform: translate(5%, 0%) scale(1) rotate(40deg); }
+  10% {
+    filter: blur(0); }
+  11% {
+    filter: blur(15px); }
+  90% {
+    filter: blur(15px); }
+  95% {
+    filter: blur(0); }
+  to {
+    transform: translate(-22vw, -40vh) rotate(360deg) scale(0.5); } }
+
+@keyframes travel-3-mobile-800 {
+  from {
+    transform: translate(5%, 0%) scale(1) rotate(40deg); }
+  10% {
+    filter: blur(0); }
+  11% {
+    filter: blur(15px); }
+  90% {
+    filter: blur(15px); }
+  95% {
+    filter: blur(0); }
+  to {
+    transform: translate(-26vw, -40vh) rotate(360deg) scale(0.5); } }
+
+@keyframes travel-3-mobile-700 {
+  from {
+    transform: translate(5%, 0%) scale(1) rotate(40deg); }
+  10% {
+    filter: blur(0); }
+  11% {
+    filter: blur(15px); }
+  90% {
+    filter: blur(15px); }
+  95% {
+    filter: blur(0); }
+  to {
+    transform: translate(-24vw, -40vh) rotate(360deg) scale(0.5); } }
+
+@keyframes fall-down {
+  from {
+    transform: translate(0, 0) scale(1);
+    filter: blur(0); }
+  11% {
+    filter: blur(15px); }
+  90% {
+    filter: blur(15px); }
+  95% {
+    filter: blur(0); }
+  to {
+    transform: translate(1.3vw, 14vh) scale(0.5); } }
+
 @keyframes opacity {
   from {
     opacity: 0; }
@@ -307,21 +362,27 @@ to {
 
 html {
   font-size: 65%; }
-  @media only screen and (max-width: 87.5em) {
+  @media only screen and (min-width: 87.5em) {
     html {
       font-size: 62.5%; } }
   @media only screen and (max-width: 81.25em) {
     html {
       font-size: 57%; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 50em) {
     html {
-      font-size: 45%; } }
-  @media only screen and (max-width: 68.75em) {
+      font-size: 40%; } }
+  @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 37.5%; } }
+      font-size: 33%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 25%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 19%; } }
 
 body {
   box-sizing: border-box; }
@@ -331,6 +392,11 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
+
+@media screen and (min-width: 94em) {
+  @-moz-document url-prefix() {
+    html {
+      font-size: 93%; } } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -642,12 +708,15 @@ body {
   animation-delay: 6.5s;
   animation-fill-mode: both;
   z-index: 2; }
+  @media only screen and (max-width: 68.75em) {
+    .nav {
+      display: none; } }
   .nav__ul {
     display: flex;
     list-style: none;
     font-size: 4rem;
     letter-spacing: .2rem;
-    margin-left: 3%;
+    margin-left: -5%;
     margin-top: 3rem;
     text-transform: uppercase;
     animation-name: hidden-down;
@@ -689,6 +758,51 @@ body {
   color: #143B96;
   margin: 0 1.5rem; }
 
+.sticky-mobile {
+  width: 100%;
+  background-color: rgba(78, 109, 180, 0.1);
+  font-size: 1rem;
+  z-index: 2;
+  animation-name: hidden-down;
+  animation-duration: .3s;
+  display: none; }
+  @media only screen and (max-width: 68.75em) {
+    .sticky-mobile {
+      display: block;
+      width: 113%;
+      background-color: transparent; } }
+  .sticky-mobile .nav {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: 0;
+    animation-fill-mode: none; }
+  .sticky-mobile__ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    margin-left: 3%;
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none; }
+  .sticky-mobile__li-1 {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none; }
+  .sticky-mobile__li-2 {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none; }
+  .sticky-mobile__li-3 {
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none; }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -710,7 +824,8 @@ body {
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    margin-left: 3%;
+    width: 100vw;
+    justify-content: space-evenly;
     animation-name: none;
     animation-duration: none;
     animation-delay: none;
@@ -794,14 +909,15 @@ body {
   animation-name: opacity;
   animation-duration: 2s;
   animation-delay: 6.1s;
-  animation-fill-mode: both;
-  overflow: hidden; }
+  animation-fill-mode: both; }
 
 .profile-picture {
-  grid-row: 1 / 3;
-  grid-column: 4 / 6;
   overflow: hidden;
-  z-index: 3; }
+  z-index: 3;
+  grid-row: 2 / 3;
+  grid-column: 1 / 7;
+  grid-template-rows: 1fr;
+  grid-tenplate-columns: 1fr; }
   .profile-picture__container {
     display: flex;
     justify-content: flex-end;
@@ -811,34 +927,24 @@ body {
     animation-delay: 6.1s;
     animation-fill-mode: both; }
   .profile-picture__img {
-    height: 47rem;
-    width: 64rem;
-    opacity: .5; }
-    @media only screen and (max-width: 87.5em) {
-      .profile-picture__img {
-        height: 49rem;
-        width: 66rem; } }
+    height: 134%;
+    opacity: .5;
+    object-fit: cover;
+    margin-right: 5%;
+    width: 40%; }
     @media only screen and (max-width: 81.25em) {
       .profile-picture__img {
-        height: 54rem;
-        width: 70rem; } }
-    @media only screen and (max-width: 75em) {
+        width: 50%; } }
+    @media only screen and (max-width: 37.5em) {
       .profile-picture__img {
-        height: 61rem;
-        width: 78rem; } }
-    @media only screen and (max-width: 68.75em) {
-      .profile-picture__img {
-        height: 68rem;
-        width: 85rem; } }
-    @media only screen and (max-width: 62.5em) {
-      .profile-picture__img {
-        height: 81rem;
-        width: 100rem; } }
+        width: 100%;
+        margin-right: 3%; } }
 
 .introduction {
   grid-column: 1 / 7;
   display: grid;
-  grid-template-rows: 10vh 35vh 20vh 35vh; }
+  grid-template-rows: 10vh 35vh 20vh 35vh;
+  overflow: hidden; }
 
 .intro {
   grid-row: 3 / 5;
@@ -853,6 +959,20 @@ body {
   font-weight: 300;
   backface-visibility: hidden;
   z-index: 1; }
+  @media only screen and (max-width: 68.75em) {
+    .intro {
+      animation-name: travel, travel-1, travel-2, travel-3-mobile; } }
+  @media only screen and (max-width: 50em) {
+    .intro {
+      animation-name: travel, travel-1, travel-2, travel-3-mobile-800; } }
+  @media only screen and (max-width: 43.75em) {
+    .intro {
+      animation-name: travel, travel-1, travel-2, travel-3-mobile-700; } }
+  @media only screen and (max-width: 37.5em) {
+    .intro {
+      animation-name: fall-down;
+      animation-duration: 1s;
+      animation-delay: 3.7s; } }
   .intro__top {
     letter-spacing: 0.2rem;
     font-size: 9rem;
