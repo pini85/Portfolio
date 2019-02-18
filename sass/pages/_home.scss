@@ -10,9 +10,9 @@
   grid-column-gap: 2rem;
 
   @include respond(800) {
-  grid-template-rows: 15vh 20vh 20vh repeat(5, 1fr) 10vh;
+  grid-template-rows: 15vh 20vh 20vh repeat(5, 1fr) 5vh;
+  grid-template-columns: 2% repeat(4, 1fr) 2%;
   grid-row-gap: 2rem;
-
 }
 
 }

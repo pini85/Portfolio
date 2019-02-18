@@ -12,7 +12,7 @@
         border-left: 2.9rem solid $color-layout;
         border-right: 2.9rem solid $color-layout;
 
-        @include respond(800) { width: 14rem; }
+        @include respond(800) { width: 15rem; }
 }
 
 @mixin octogon-after {
@@ -27,7 +27,7 @@
       border-left: 2.9rem solid $color-layout;
       border-right: 2.9rem solid $color-layout;
 
-      @include respond(800) { width: 14rem; }
+      @include respond(800) { width: 15rem; }
 }
 
 
@@ -46,6 +46,7 @@
   @include respond(700) {
     font-size: 1.1rem;
   }
+
 }
 
 
