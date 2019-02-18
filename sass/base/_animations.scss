@@ -191,7 +191,23 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(1.3vw, 14vh) scale(.5); }
+  to { transform: translate(1.3vw, 17vh) scale(.5); }
+}
+
+@include respond(600) {
+
+  @keyframes fall-down {
+  from {
+    transform: translate(0,0) scale(1);
+    filter: blur(0);
+  }
+
+  11% { filter: blur(15px); }
+  90% { filter: blur(15px); }
+  95% { filter: blur(0); }
+  to { transform: translate(1.3vw, 20vh) scale(.65); }
+}
+
 }
 
 @include respond(500) {
@@ -205,7 +221,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(1.3vw, 14vh) scale(.65); }
+  to { transform: translate(3.1vw, 19vh) scale(0.65); }
 }
 
 }
@@ -221,7 +237,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(1.3vw, 14vh) scale(.71); }
+  to { transform: translate(3.2vw, 24vh) scale(0.71); }
 }
 
 }

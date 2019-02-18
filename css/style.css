@@ -182,7 +182,21 @@
   95% {
     filter: blur(0); }
   to {
-    transform: translate(1.3vw, 14vh) scale(0.5); } }
+    transform: translate(1.3vw, 17vh) scale(0.5); } }
+
+@media only screen and (max-width: 37.5em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(1.3vw, 20vh) scale(0.65); } } }
 
 @media only screen and (max-width: 31.25em) {
   @keyframes fall-down {
@@ -196,7 +210,7 @@
     95% {
       filter: blur(0); }
     to {
-      transform: translate(1.3vw, 14vh) scale(0.65); } } }
+      transform: translate(3.1vw, 19vh) scale(0.65); } } }
 
 @media only screen and (max-width: 25em) {
   @keyframes fall-down {
@@ -210,7 +224,7 @@
     95% {
       filter: blur(0); }
     to {
-      transform: translate(1.3vw, 14vh) scale(0.71); } } }
+      transform: translate(3.2vw, 24vh) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
