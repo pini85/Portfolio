@@ -184,6 +184,48 @@
   to {
     transform: translate(1.3vw, 14vh) scale(0.5); } }
 
+@media only screen and (max-width: 31.25em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(1.3vw, 14vh) scale(0.65); } } }
+
+@media only screen and (max-width: 25em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(1.3vw, 14vh) scale(0.71); } } }
+
+@media only screen and (max-width: 21.875em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(1.3vw, 14vh) scale(0.62); } } }
+
 @keyframes opacity {
   from {
     opacity: 0; }
@@ -588,6 +630,15 @@ body {
   animation-delay: 6.5s;
   animation-fill-mode: both;
   transition: .5s; }
+  @media only screen and (max-width: 31.25em) {
+    .btn {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 25em) {
+    .btn {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 21.875em) {
+    .btn {
+      font-size: 3rem; } }
   .btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -824,12 +875,18 @@ body {
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    width: 100vw;
+    width: 97vw;
     justify-content: space-evenly;
     animation-name: none;
     animation-duration: none;
     animation-delay: none;
     animation-fill-mode: none; }
+    @media only screen and (max-width: 31.25em) {
+      .sticky__ul {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 25em) {
+      .sticky__ul {
+        font-size: 3.5rem; } }
   .sticky__li-1 {
     animation-name: none;
     animation-duration: none;
@@ -1037,6 +1094,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none; }
+    @media only screen and (max-width: 25em) {
+      .name-and-button__name {
+        font-size: 7.5rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .name-and-button__name {
+        font-size: 6rem; } }
 
 .name-and-button li:nth-child(1) {
   animation-delay: 6.5s;

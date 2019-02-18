@@ -133,6 +133,9 @@
     justify-content: space-evenly;
     list-style: none;
 
+    @include respond(400) { font-size: 7.5rem; }
+    @include respond(350) { font-size: 6rem; }
+
   }
 }
 

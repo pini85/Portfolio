@@ -128,6 +128,7 @@
     animation-duration: none;
     animation-delay: none;
     animation-fill-mode: none;
+
      }
 
   &__li-1 {
@@ -180,13 +181,23 @@
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    width: 100vw;
+    width: 97vw;
     justify-content: space-evenly;
     animation-name: none;
     animation-duration: none;
     animation-delay: none;
     animation-fill-mode: none;
-     }
+
+     @include respond(500) {
+      font-size: 3rem;
+    }
+
+    @include respond(400) {
+      font-size: 3.5rem;
+    }
+
+    }
+
 
   &__li-1 {
    animation-name: none;
