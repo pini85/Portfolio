@@ -555,9 +555,12 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-secondary-skills {
       font-size: 6.5rem; } }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-skills {
       font-size: 7.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary-skills {
+      font-size: 7rem; } }
 
 .heading-bar-skills {
   height: .4rem;
@@ -606,9 +609,12 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-tertiary {
       font-size: 4rem; } }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 25em) {
     .heading-tertiary {
       font-size: 5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-tertiary {
+      font-size: 4.5rem; } }
 
 .paragraph {
   font-size: 1.6rem;
@@ -620,9 +626,12 @@ body {
   @media only screen and (max-width: 31.25em) {
     .paragraph {
       font-size: 3rem; } }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 25em) {
     .paragraph {
       font-size: 4rem; } }
+  @media only screen and (max-width: 25em) {
+    .paragraph {
+      font-size: 3rem; } }
 
 .paragraph-2 {
   font-size: 1.6rem;
@@ -1342,6 +1351,9 @@ body {
         grid-row: 2 / 3;
         grid-column: 2 / 4;
         align-self: end; } }
+    @media only screen and (max-width: 21.875em) {
+      .skills__features-fast-text {
+        width: 120%; } }
 
 .skills__features-responsive {
   grid-row: 2 / 3;
@@ -1889,6 +1901,9 @@ body {
       grid-template-rows: 15vh 20vh 20vh repeat(5, 1fr) 5vh;
       grid-template-columns: 2% repeat(4, 1fr) 2%;
       grid-row-gap: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .skills {
+      grid-template-rows: 15vh 25vh 25vh repeat(5, 1fr) 5vh; } }
 
 .projects {
   grid-row: 3 / 4;

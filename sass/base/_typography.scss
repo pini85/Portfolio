@@ -13,7 +13,8 @@ body {
 
   @include respond(800) { font-size: 5.5rem; }
   @include respond(500) { font-size: 6.5rem; }
-  @include respond(500) { font-size: 7.5rem; }
+  @include respond(400) { font-size: 7.5rem; }
+  @include respond(400) { font-size: 7rem; }
 }
 
 .heading-bar-skills {
@@ -69,7 +70,9 @@ body {
 
   @include respond(800) { font-size: 3rem; }
    @include respond(500) { font-size: 4rem; }
-   @include respond(500) { font-size: 5rem; }
+   @include respond(400) { font-size: 5rem; }
+   @include respond(400) { font-size: 4.5rem; }
+
 }
 
 .paragraph {
@@ -79,7 +82,8 @@ body {
 
   @include respond(800) { font-size: 2.5rem;}
   @include respond(500) { font-size: 3rem;}
-  @include respond(500) { font-size: 4rem; }
+  @include respond(400) { font-size: 4rem; }
+  @include respond(400) { font-size: 3rem; }
 }
 
 .paragraph-2 {

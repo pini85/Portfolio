@@ -58,6 +58,11 @@
         align-self: end;
 
        }
+
+       @include respond(350) {
+        width: 120%;
+       }
+
       }
     }
 
