@@ -1009,7 +1009,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .profile-picture__img {
         width: 100%;
-        margin-right: 2%; } }
+        margin-right: 1.5%; } }
 
 .introduction {
   grid-column: 1 / 7;
