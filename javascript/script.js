@@ -14,12 +14,11 @@ $(document).ready(function () {
       $('.skills-highlight').addClass('nav-highlight');
 
     } else {
-      $('ul').removeClass('nav__ul').addClass('return-nav__ul');
-      $('li').removeClass('nav__li-1').addClass('return-nav__li-1');
-      $('li').removeClass('nav__li-2').addClass('return-nav__li-2');
-      $('li').removeClass('nav__li-3').addClass('return-nav__li-3');
-      $('nav').removeClass('nav sticky').addClass('hidden-up return-nav');
-      $('nav').addClass('hidden-up');
+      $('ul').removeClass('sticky__ul').addClass('return-nav__ul');
+      $('li').removeClass('sticky__li-1').addClass('return-nav__li-1');
+      $('li').removeClass('sticky__li-2').addClass('return-nav__li-2');
+      $('li').removeClass('sticky__li-3').addClass('return-nav__li-3');
+      $('nav').removeClass('nav sticky').addClass('return-nav');
       $('.skills-highlight').removeClass('nav-highlight');
     }
   }, {

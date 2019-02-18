@@ -35,13 +35,30 @@
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
 
+      @include respond(800) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        width: 14rem;
+        height:  14rem;
+        align-self: start;
+
+      }
+
 
       &-text {
-        grid-row: 3 / 4;
+        grid-row: 2 / 4;
         grid-column: 2 / 3;
         text-align: center;
         align-self: start;
         opacity: 0;
+
+        @include respond(800) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        margin-bottom: 3rem;
+        align-self: end;
+
+       }
       }
     }
 
@@ -57,6 +74,14 @@
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
 
+      @include respond(800) {
+        grid-row: 2 / 3;
+        grid-column: 4 / 6;
+        width: 14rem;
+        height:  14rem;
+        align-self: start;
+      }
+
 
       &-text {
         grid-row: 3 / 4;
@@ -65,8 +90,15 @@
         align-self: start;
         opacity: 0;
 
-      }
+         @include respond(800) {
+        grid-row: 2 / 3;
+        grid-column: 4 / 6;
+        margin-bottom: 3rem;
+        align-self: end;
 
+
+       }
+      }
     }
 
    &__features-dynamic  {
@@ -81,12 +113,27 @@
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
 
+       @include respond(800) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 4;
+        width: 14rem;
+        height:  14rem;
+        align-self: start;
+      }
+
       &-text {
         grid-row: 3 / 4;
         grid-column: 4 / 5;
         text-align: center;
         align-self: start;
         opacity: 0;
+
+        @include respond(800) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 4;
+        margin-bottom: 3rem;
+        align-self: end;
+      }
       }
 
     }
@@ -103,12 +150,27 @@
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
 
+      @include respond(800) {
+        grid-row: 3 / 4;
+        grid-column: 4 / 6;
+        width: 14rem;
+        height:  14rem;
+        align-self: start;
+      }
+
       &-text {
       grid-row: 3 / 4;
       grid-column: 5 / 6;
       text-align: center;
       align-self: start;
       opacity: 0;
+
+      @include respond(800) {
+        grid-row: 3 / 4;
+        grid-column: 4 / 6;
+        margin-bottom: 3rem;
+        align-self: end;
+      }
       }
     }
 

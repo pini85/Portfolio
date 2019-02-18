@@ -1,60 +1,62 @@
+
 .nav {
-  background-color: $color-layout;
-  font-size: 8rem;
-  font-weight: 300;
+  display: flex;
   grid-row: 1 / 2;
   grid-column: 2 / 5;
-  animation-name: opacity;
-  animation-duration: 2.8s;
-  animation-delay: 6.5s;
-  animation-fill-mode: both;
+  width: 100%;
+  font-size: 1rem;
   z-index: 2;
+   width: 100vw;
+    justify-content: space-evenly;
+  animation-name: hidden-down;
+  animation-duration: .3s;
 
-   @include respond(1100) {
-     display: none;
-   }
-
-  &__ul {
+   &__ul {
     display: flex;
     list-style: none;
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
-    margin-left: -5%;
-    margin-top: 3rem;
-    text-transform: uppercase;
+    padding: 1rem;
+    margin-left: 3%;
+    animation-name: none;
+    animation-duration: none;
+    animation-delay: none;
+    animation-fill-mode: none;
 
-    animation-name:hidden-down;
-    animation-duration: 1.8s;
-    animation-delay: 6.5s;
-    animation-fill-mode: both;
+    @include respond(700) {
+      font-size: 3rem;
+    }
 
-  }
+    @include respond(400) {
+      font-size: 4rem;
+    }
+
+     }
 
   &__li-1 {
-   animation-name:hidden-down;
-   animation-duration: 1.8s;
-   animation-delay: 6.5s;
-   animation-fill-mode: both;
+   animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
   }
 
   &__li-2 {
-    animation-name:hidden-down;
-   animation-duration: 1.8s;
-   animation-delay: 6.5s;
-   animation-fill-mode: both;
+    animation-name: none;
+   animation-duration: none;
+   animation-delay: none;
+   animation-fill-mode: none;
 
   }
 
    &__li-3 {
-   animation-name:hidden-down;
-   animation-duration: 1.8s;
-   animation-delay: 6.5s;
-   animation-fill-mode: both;
+     animation-name: none;
+     animation-duration: none;
+     animation-delay:none;
+     animation-fill-mode: none;
 
   }
 
-
-  &__a {
+    &__a {
     padding:0.5rem;
     text-decoration: none;
     transition: background-color .2s;
@@ -81,78 +83,13 @@
     }
 
   }
-}
+
 .breaker {
   opacity: .5;
   color: $color-primary;
   margin: 0 1.5rem;
 }
 
-//Sticky//
-
-.sticky-mobile {
-  width: 100%;
-  background-color: rgba(78,109,180,0.1);
-  font-size: 1rem;
-  z-index: 2;
-  animation-name: hidden-down;
-  animation-duration: .3s;
-  display: none;
-
-  @include respond(1100) {
-    display: block;
-    width: 113%;
-    background-color: transparent;
-   }
-
-
-
-
-
-  & .nav {
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: 0;
-    animation-fill-mode: none;
-
-  }
-
-   &__ul {
-    display: flex;
-    list-style: none;
-    font-size: 2rem;
-    letter-spacing: .2rem;
-    padding: 1rem;
-    margin-left: 3%;
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: none;
-    animation-fill-mode: none;
-
-     }
-
-  &__li-1 {
-   animation-name: none;
-   animation-duration: none;
-   animation-delay: none;
-   animation-fill-mode: none;
-  }
-
-  &__li-2 {
-    animation-name: none;
-   animation-duration: none;
-   animation-delay: none;
-   animation-fill-mode: none;
-
-  }
-
-   &__li-3 {
-     animation-name: none;
-     animation-duration: none;
-     animation-delay:none;
-     animation-fill-mode: none;
-
-  }
 }
 
 .sticky {
@@ -181,7 +118,7 @@
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    width: 97vw;
+    width: 100vw;
     justify-content: space-evenly;
     animation-name: none;
     animation-duration: none;
@@ -226,42 +163,56 @@
 //Add this class for waypoint when direction is up//
 
 .return-nav {
-  background-color: $color-layout;
-  font-size: 8rem;
-  font-weight: 300;
+  display: flex;
   grid-row: 1 / 2;
   grid-column: 2 / 5;
-  animation-name: hidden-up;
-  animation-duration: .3s;
-  animation-delay: none;
-  animation-fill-mode: none;
+  width: 100%;
+  font-size: 1rem;
   z-index: 2;
+   width: 100vw;
+    justify-content: space-evenly;
+  animation-name: hidden-down;
+  animation-duration: .3s;
 
-  &__ul {
+
+  // @include respond(1100) {
+  //   display: block;
+  //   width: 113%;
+  //   background-color: transparent;
+  //  }
+
+
+   &__ul {
     display: flex;
     list-style: none;
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
+    padding: 1rem;
     margin-left: 3%;
-    margin-top: 3rem;
-    text-transform: uppercase;
-
-    animation-name:none;
+    animation-name: none;
     animation-duration: none;
     animation-delay: none;
-    animation-fill-mode:none;
+    animation-fill-mode: none;
 
-  }
+    @include respond(700) {
+      font-size: 3rem;
+    }
+
+    @include respond(400) {
+      font-size: 4rem;
+    }
+
+     }
 
   &__li-1 {
-   animation-name:none;
+   animation-name: none;
    animation-duration: none;
    animation-delay: none;
    animation-fill-mode: none;
   }
 
   &__li-2 {
-    animation-name:none;
+    animation-name: none;
    animation-duration: none;
    animation-delay: none;
    animation-fill-mode: none;
@@ -269,18 +220,17 @@
   }
 
    &__li-3 {
-  animation-name:none;
-   animation-duration: none;
-   animation-delay: none;
-   animation-fill-mode: none;
+     animation-name: none;
+     animation-duration: none;
+     animation-delay:none;
+     animation-fill-mode: none;
 
   }
 
-
-  &__a {
+    &__a {
     padding:0.5rem;
     text-decoration: none;
-    transition: all .2s;
+    transition: background-color .2s;
 
     &:link,
     &:visited {
@@ -304,7 +254,165 @@
     }
 
   }
+
+.breaker {
+  opacity: .5;
+  color: $color-primary;
+  margin: 0 1.5rem;
 }
+
+}
+
+// .return-nav {
+//   background-color: $color-layout;
+//   font-size: 8rem;
+//   font-weight: 300;
+//   grid-row: 1 / 2;
+//   grid-column: 2 / 5;
+//   z-index: 2;
+
+//    @include respond(1100) {
+//      display: none;
+//    }
+
+//   &__ul {
+//     display: flex;
+//     list-style: none;
+//     font-size: 4rem;
+//     letter-spacing: .2rem;
+//     margin-left: -5%;
+//     margin-top: 3rem;
+//     text-transform: uppercase;
+//     justify-content: flex-start;
+
+//   }
+
+//   &__li-1 {
+//   }
+
+//   &__li-2 {
+
+//   }
+
+//    &__li-3 {
+//   }
+
+
+//   &__a {
+//     padding:0.5rem;
+//     text-decoration: none;
+//     transition: background-color .2s;
+
+//     &:link,
+//     &:visited {
+//       color: $color-primary-dark;
+//     }
+
+//     span {
+//       opacity: .5;
+//       color: $color-primary;
+//     }
+
+//     span:hover,
+//     span:active {
+//       background-color: $color-layout;
+
+//     }
+
+//     &:hover,
+//     &:active:not(span) {
+//       background-color: #d7e4ff;
+//     }
+
+//   }
+// }
+// .breaker {
+//   opacity: .5;
+//   color: $color-primary;
+//   margin: 0 1.5rem;
+// }
+
+
+// .return-nav {
+//   background-color: $color-layout;
+//   font-size: 8rem;
+//   font-weight: 300;
+//   grid-row: 1 / 2;
+//   grid-column: 2 / 5;
+//   animation-name: hidden-up;
+//   animation-duration: .3s;
+//   animation-delay: none;
+//   animation-fill-mode: none;
+//   z-index: 2;
+
+//   &__ul {
+//     display: flex;
+//     list-style: none;
+//     font-size: 4rem;
+//     letter-spacing: .2rem;
+//     margin-left: 3%;
+//     margin-top: 3rem;
+//     text-transform: uppercase;
+
+//     animation-name:none;
+//     animation-duration: none;
+//     animation-delay: none;
+//     animation-fill-mode:none;
+
+//   }
+
+//   &__li-1 {
+//    animation-name:none;
+//    animation-duration: none;
+//    animation-delay: none;
+//    animation-fill-mode: none;
+//   }
+
+//   &__li-2 {
+//     animation-name:none;
+//    animation-duration: none;
+//    animation-delay: none;
+//    animation-fill-mode: none;
+
+//   }
+
+//    &__li-3 {
+//   animation-name:none;
+//    animation-duration: none;
+//    animation-delay: none;
+//    animation-fill-mode: none;
+
+//   }
+
+
+//   &__a {
+//     padding:0.5rem;
+//     text-decoration: none;
+//     transition: all .2s;
+
+//     &:link,
+//     &:visited {
+//       color: $color-primary-dark;
+//     }
+
+//     span {
+//       opacity: .5;
+//       color: $color-primary;
+//     }
+
+//     span:hover,
+//     span:active {
+//       background-color: $color-layout;
+
+//     }
+
+//     &:hover,
+//     &:active:not(span) {
+//       background-color: #d7e4ff;
+//     }
+
+//   }
+// }
 
 .nav-highlight {
   background-color: #d7e4ff;

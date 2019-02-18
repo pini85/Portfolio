@@ -96,9 +96,56 @@
   100% { transform: translate(2.5%, 5%) rotate(40deg); }
 }
 
+@include respond(1300) {
+  @keyframes travel {
+  0% { transform: translate(0,0) rotate(0); }
+
+  60% { transform: rotate(40deg); }
+
+  100% { transform: translate(2.5%, 4%) rotate(40deg); }
+}
+
+}
+
+@include respond(1100) {
+  @keyframes travel {
+  0% { transform: translate(0,0) rotate(0); }
+
+  60% { transform: rotate(40deg); }
+
+  100% { transform: translate(3%, 4%) rotate(40deg); }
+}
+
+}
+
+
 @keyframes travel-1 {
   from { transform:  translate(2.5%, 5%) rotate(40deg); }
   to { transform: rotate(40deg) translate(5%, 0%); }
+}
+
+@include respond(1300) {
+
+  @keyframes travel-1 {
+  from { transform:  translate(2.5%, 4%) rotate(40deg); }
+  to { transform: rotate(40deg) translate(5%, 0%); }
+  }
+}
+
+@include respond(1100) {
+
+  @keyframes travel-1 {
+  from { transform:  translate(3%, 4%) rotate(40deg); }
+  to { transform: rotate(40deg) translate(6%, 0%); }
+  }
+}
+
+@include respond(900) {
+
+  @keyframes travel-1 {
+  from { transform:  translate(3%, 4%) rotate(40deg); }
+  to { transform: rotate(40deg) translate(7%, 1%); }
+  }
 }
 
 @keyframes travel-2 {
@@ -113,6 +160,41 @@
    100% { transform: rotate(40deg) translate(5%, 0%); }
 
 }
+
+@include respond(1100) {
+
+  @keyframes travel-2 {
+   0% { transform: rotate(40deg) translate(6%, 0%); }
+   12.5% { transform: rotate(40deg) translate(6.2%, .2%); }
+   25% { transform: rotate(40deg) translate(6%, 0%); }
+   37.5% { transform: rotate(40deg) translate(6.2%, .2%); }
+   50% { transform: rotate(40deg) translate(6%, 0%); }
+   62.5% { transform: rotate(40deg) translate(6.2%, .2%); }
+   75% { transform: rotate(40deg) translate(6%, 0%); }
+   87.5% { transform: rotate(40deg) translate(6.2%, .2%); }
+   100% { transform: rotate(40deg) translate(6%, 0%); }
+
+}
+
+}
+
+@include respond(900) {
+
+  @keyframes travel-2 {
+   0% { transform: rotate(40deg) translate(7%, 1.2%); }
+   12.5% { transform: rotate(40deg) translate(7.2%, 1.2%); }
+   25% { transform: rotate(40deg) translate(7%, 1%); }
+   37.5% { transform: rotate(40deg) translate(7.2%, 1.2%); }
+   50% { transform: rotate(40deg) translate(7%, 1%); }
+   62.5% { transform: rotate(40deg) translate(7.2%, 1.2%); }
+   75% { transform: rotate(40deg) translate(7%, 1%); }
+   87.5% { transform: rotate(40deg) translate(7.2%, 1.2%); }
+   100% { transform: rotate(40deg) translate(7%, 1%); }
+
+}
+
+}
+
 
 @keyframes travel-3 {
   from { transform: translate(5%, 0%) scale(1) rotate(40deg); }
@@ -131,7 +213,9 @@
 
 }
 
-@keyframes travel-3-mobile {
+@include respond(1300) {
+
+  @keyframes travel-3 {
   from { transform: translate(5%, 0%) scale(1) rotate(40deg); }
 
   10% { filter: blur(0); }
@@ -144,11 +228,15 @@
   95% { filter: blur(0); }
 
 
-  to { transform: translate(-22vw, -40vh) rotate(360deg) scale(0.5); }
+  to { transform: translate(-18vw, -38vh) rotate(360deg) scale(.5); }
 
+  }
 }
 
-@keyframes travel-3-mobile-800 {
+
+@include respond(800) {
+
+   @keyframes travel-3 {
   from { transform: translate(5%, 0%) scale(1) rotate(40deg); }
 
   10% { filter: blur(0); }
@@ -161,11 +249,14 @@
   95% { filter: blur(0); }
 
 
-  to { transform: translate(-26vw, -40vh) rotate(360deg) scale(0.5); }
+  to { transform: translate(-21vw, -37vh) rotate(360deg) scale(0.6); }
 
+  }
 }
 
-@keyframes travel-3-mobile-700 {
+@include respond(700) {
+
+   @keyframes travel-3 {
   from { transform: translate(5%, 0%) scale(1) rotate(40deg); }
 
   10% { filter: blur(0); }
@@ -178,9 +269,12 @@
   95% { filter: blur(0); }
 
 
-  to { transform: translate(-24vw, -40vh) rotate(360deg) scale(0.5); }
+  to { transform: translate(-21vw, -34vh) rotate(360deg) scale(0.8); }
 
+  }
 }
+
+
 
 @keyframes fall-down {
   from {
@@ -205,7 +299,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(1.3vw, 20vh) scale(.65); }
+  to { transform: translate(2vw, 20vh) scale(.65); }
 }
 
 }
@@ -221,7 +315,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(3.1vw, 19vh) scale(0.65); }
+  to { transform: translate(2vw, 19vh) scale(0.7); }
 }
 
 }
