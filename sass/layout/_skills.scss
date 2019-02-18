@@ -56,8 +56,9 @@
         grid-row: 2 / 3;
         grid-column: 2 / 4;
         align-self: end;
-
        }
+
+       @include respond(600) { margin-bottom: 3rem; }
 
        @include respond(350) {
         width: 120%;
@@ -93,6 +94,8 @@
         text-align: center;
         align-self: start;
         opacity: 0;
+
+         @include respond(600) { margin-bottom: 3rem; }
 
          @include respond(800) {
         grid-row: 2 / 3;
@@ -131,6 +134,8 @@
         align-self: start;
         opacity: 0;
 
+         @include respond(600) { margin-bottom: 3rem; }
+
         @include respond(800) {
         grid-row: 3 / 4;
         grid-column: 2 / 4;
@@ -166,6 +171,8 @@
       text-align: center;
       align-self: start;
       opacity: 0;
+
+       @include respond(600) { margin-bottom: 3rem; }
 
       @include respond(800) {
         grid-row: 3 / 4;
