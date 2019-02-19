@@ -333,9 +333,23 @@
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
   to { transform: translate(2%, 44%) scale(0.71);
+  }
+ }
 }
 
-}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 25em ) {
+  @keyframes fall-down {
+  from {
+    transform: translate(0,0) scale(1);
+    filter: blur(0);
+  }
+
+  11% { filter: blur(15px); }
+  90% { filter: blur(15px); }
+  95% { filter: blur(0); }
+  to { transform: translate(2%, 36%) scale(0.71);
+  }
+ }
 
 }
 
