@@ -296,6 +296,20 @@
     to {
       transform: translate(2%, 45%) scale(0.7); } } }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 31.25em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(2%, 37%) scale(0.71); } } }
+
 @media only screen and (max-width: 25em) {
   @keyframes fall-down {
     from {
@@ -309,6 +323,20 @@
       filter: blur(0); }
     to {
       transform: translate(2%, 44%) scale(0.71); } } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 25em) {
+  @keyframes fall-down {
+    from {
+      transform: translate(0, 0) scale(1);
+      filter: blur(0); }
+    11% {
+      filter: blur(15px); }
+    90% {
+      filter: blur(15px); }
+    95% {
+      filter: blur(0); }
+    to {
+      transform: translate(2%, 36%) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
@@ -539,7 +567,7 @@ body {
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
   @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .container {
-      grid-template-rows: calc(100vh - 56px) 100vh 100vh 80vh 20vh; } }
+      grid-template-rows: repeat(3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; } }
 
 body {
   font-family: "Lato", sans-serif;

@@ -317,9 +317,26 @@
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
   to { transform: translate(2%,45%) scale(0.7); }
+  }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 31.25em ) {
+  @keyframes fall-down {
+  from {
+    transform: translate(0,0) scale(1);
+    filter: blur(0);
+  }
+
+  11% { filter: blur(15px); }
+  90% { filter: blur(15px); }
+  95% { filter: blur(0); }
+  to { transform: translate(2%, 37%) scale(0.71);
+  }
+ }
+
 }
+
+
 
 @include respond(400) {
 
@@ -337,21 +354,21 @@
  }
 }
 
-// @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 25em ) {
-//   @keyframes fall-down {
-//   from {
-//     transform: translate(0,0) scale(1);
-//     filter: blur(0);
-//   }
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 25em ) {
+  @keyframes fall-down {
+  from {
+    transform: translate(0,0) scale(1);
+    filter: blur(0);
+  }
 
-//   11% { filter: blur(15px); }
-//   90% { filter: blur(15px); }
-//   95% { filter: blur(0); }
-//   to { transform: translate(2%, 36%) scale(0.71);
-//   }
-//  }
+  11% { filter: blur(15px); }
+  90% { filter: blur(15px); }
+  95% { filter: blur(0); }
+  to { transform: translate(2%, 36%) scale(0.71);
+  }
+ }
 
-// }
+}
 
 @include respond(350) {
 
