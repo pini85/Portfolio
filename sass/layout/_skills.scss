@@ -172,6 +172,8 @@
       align-self: start;
       opacity: 0;
 
+      @include respond(600) { margin-bottom: 3rem; }
+
 
 
       @include respond(800) {
