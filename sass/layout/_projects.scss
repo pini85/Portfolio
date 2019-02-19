@@ -33,7 +33,7 @@
       flex-direction: column;
       opacity: 0;
 
-      @include respond(500)  height: 28rem; }
+      @include respond(500)  height: 29rem; }
 
 
    //  &__omni-food {
@@ -98,7 +98,7 @@
   transform: translateY(150%);
   opacity: 1;
 
-  @include respond(1300-1400) { transform: translateY(134%); }
+  @include respond(1300-1400) { transform: translateY(134%);  }
 
    @include respond(600) { transform: translateY(6vh); }
    }

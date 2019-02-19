@@ -80,8 +80,8 @@ body {
   color: $color-display;
   font-weight: 300;
 
-  @include respond(800) { font-size: 2.5rem;}
-  @include respond(500) { font-size: 3rem;}
+  @include respond(800) { font-size: 2.5rem; }
+  @include respond(500) { font-size: 3rem; }
   @include respond(400) { font-size: 4rem; }
   @include respond(400) { font-size: 3rem; }
 }
