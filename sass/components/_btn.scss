@@ -69,6 +69,10 @@
     border: none;
     border-radius: 8px;
 
+    @include respond(700) {
+      font-size: 3rem;
+    }
+
 
     &:hover {
     transform: translateY(-0.3rem);
