@@ -547,14 +547,8 @@ html {
       font-size: 33%; } }
   @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 25%; } }
-  @media only screen and (max-width: 31.25em) and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-    html {
       font-size: 29%; } }
   @media only screen and (max-width: 25em) {
-    html {
-      font-size: 19%; } }
-  @media only screen and (max-width: 25em) and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     html {
       font-size: 24%; } }
 
@@ -1824,9 +1818,6 @@ body {
       .projects__items {
         flex-direction: column;
         width: auto; } }
-    @media only screen and (max-width: 37.5em) {
-      .projects__items {
-        margin-bottom: 12rem; } }
   .projects__item {
     text-align: center;
     height: 40rem;
@@ -1834,7 +1825,7 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    height: 26rem; }
+    height: 36rem; }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;

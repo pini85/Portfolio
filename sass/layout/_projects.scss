@@ -19,7 +19,7 @@
     flex-direction: column;
     width: auto;
   }
-  @include respond(600) { margin-bottom: 12rem; }
+
 
 
   }
@@ -33,7 +33,7 @@
       flex-direction: column;
       opacity: 0;
 
-      @include respond(500)  height: 26rem; }
+      @include respond(500)  height: 36rem; }
 
 
    //  &__omni-food {
