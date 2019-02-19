@@ -70,7 +70,7 @@
 
      @include respond(500) { transform: translate(-10rem, -5rem); }
 
-    @include respond(400) { transform: translate(-8.5rem, -4rem); }
+    @include respond(400) { transform: translate(-10rem, -5rem); }
 
     &-lg {
       transform: translate(-10rem,-18rem);
@@ -81,7 +81,7 @@
 
       @include respond(500) { transform: translate(-13rem, -42rem); }
 
-      @include respond(400) { transform: translate(-10.5rem, -45rem); }
+      @include respond(400) { transform: translate(-12rem, -45rem); }
 
 
 
@@ -97,7 +97,7 @@
     @include respond(800) { transform: translate(2rem, -6rem); }
     @include respond(600) { transform: translate(2rem, -5rem); }
     @include respond(500) { transform: translate(2rem, -5rem); }
-    @include respond(400) { transform: translate(2rem, -4rem); }
+    @include respond(400) { transform: translate(2rem, -5rem); }
 
   }
 

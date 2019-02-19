@@ -955,7 +955,7 @@ body {
         transform: translate(-10rem, -5rem); } }
     @media only screen and (max-width: 25em) {
       .form__label, .form__label-lg {
-        transform: translate(-8.5rem, -4rem); } }
+        transform: translate(-10rem, -5rem); } }
     .form__label-lg, .form__label-lg-lg {
       transform: translate(-10rem, -18rem); }
       @media only screen and (max-width: 50em) {
@@ -969,7 +969,7 @@ body {
           transform: translate(-13rem, -42rem); } }
       @media only screen and (max-width: 25em) {
         .form__label-lg, .form__label-lg-lg {
-          transform: translate(-10.5rem, -45rem); } }
+          transform: translate(-12rem, -45rem); } }
   .form__input:placeholder-shown + .form__label {
     transform: translate(2rem, -4rem); }
     @media only screen and (max-width: 50em) {
@@ -983,7 +983,7 @@ body {
         transform: translate(2rem, -5rem); } }
     @media only screen and (max-width: 25em) {
       .form__input:placeholder-shown + .form__label {
-        transform: translate(2rem, -4rem); } }
+        transform: translate(2rem, -5rem); } }
   .form__input-lg:placeholder-shown + .form__label-lg {
     transform: translate(2rem, -18rem); }
     @media only screen and (max-width: 50em) {
