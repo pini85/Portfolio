@@ -299,7 +299,8 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(2vw, 20vh) scale(.65); }
+  to {transform: translate(2%, 46%) scale(0.65);
+ }
 }
 
 }
@@ -315,7 +316,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(2vw, 19vh) scale(0.7); }
+  to { transform: translate(2%,53%) scale(0.7); }
 }
 
 }
@@ -331,7 +332,9 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(2vw, 30vh) scale(0.71); }
+  to { transform: translate(2%, 41%) scale(0.71);
+}
+
 }
 
 }
@@ -347,7 +350,7 @@
   11% { filter: blur(15px); }
   90% { filter: blur(15px); }
   95% { filter: blur(0); }
-  to { transform: translate(1.3vw, 14vh) scale(.62); }
+  to { transform: translate(2%, 33%) scale(0.62); }
 }
 
 }
