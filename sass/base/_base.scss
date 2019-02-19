@@ -10,7 +10,6 @@ html {
   font-size: 65%;
    //scroll-behavior: smooth; for smooth scrolling. But this is not supported on edge and safari.
 
-text-size-adjust: auto;
 
    @include respond(1400) {
     font-size: 62.5%;
@@ -74,6 +73,7 @@ text-size-adjust: auto;
 
 body {
   box-sizing: border-box;
+  -webkit-text-size-adjust: none;
 
    }
 

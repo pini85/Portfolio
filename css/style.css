@@ -501,8 +501,7 @@ to {
   box-sizing: inherit; }
 
 html {
-  font-size: 65%;
-  text-size-adjust: auto; }
+  font-size: 65%; }
   @media only screen and (min-width: 87.5em) {
     html {
       font-size: 62.5%; } }
@@ -526,7 +525,8 @@ html {
       font-size: 19%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none; }
 
 .container {
   background-color: #f0f4fd;
