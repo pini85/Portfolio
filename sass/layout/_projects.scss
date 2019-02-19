@@ -100,7 +100,7 @@
 
   @include respond(1300-1400) { transform: translateY(134%);  }
 
-   @include respond(600) { transform: translateY(6vh); }
+   @include respond(600) { transform: translateY(3vh); }
    }
 
 .projects__item:hover .projects__btn {
@@ -108,7 +108,7 @@
    visibility: visible;
    opacity: 1;
 
-   @include respond(600) { transform: translateY(-2vh); }
+   @include respond(600) { transform: translateY(-5vh); }
 
    }
 

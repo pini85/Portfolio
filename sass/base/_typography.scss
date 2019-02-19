@@ -33,6 +33,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.2rem;
   opacity: 0;
+
+  @include respond(800) { font-size: 5.5rem; }
+  @include respond(500) { font-size: 6.5rem; }
+  @include respond(400) { font-size: 7.5rem; }
+  @include respond(400) { font-size: 7rem; }
 }
 
 .heading-bar-projects {
@@ -50,6 +55,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.2rem;
   opacity: 0;
+
+  @include respond(800) { font-size: 5.5rem; }
+  @include respond(500) { font-size: 6.5rem; }
+  @include respond(400) { font-size: 7.5rem; }
+  @include respond(400) { font-size: 7rem; }
 }
 
 .heading-bar-contact {

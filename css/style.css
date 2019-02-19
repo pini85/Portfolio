@@ -602,6 +602,18 @@ body {
   font-weight: 700;
   letter-spacing: 0.2rem;
   opacity: 0; }
+  @media only screen and (max-width: 50em) {
+    .heading-secondary-projects {
+      font-size: 5.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-secondary-projects {
+      font-size: 6.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary-projects {
+      font-size: 7.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary-projects {
+      font-size: 7rem; } }
 
 .heading-bar-projects {
   height: .4rem;
@@ -616,6 +628,18 @@ body {
   font-weight: 700;
   letter-spacing: 0.2rem;
   opacity: 0; }
+  @media only screen and (max-width: 50em) {
+    .heading-secondary-contact {
+      font-size: 5.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-secondary-contact {
+      font-size: 6.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary-contact {
+      font-size: 7.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary-contact {
+      font-size: 7rem; } }
 
 .heading-bar-contact {
   height: .4rem;
@@ -1861,7 +1885,7 @@ body {
   opacity: 1; }
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__text {
-      transform: translateY(6vh); } }
+      transform: translateY(3vh); } }
 
 .projects__item:hover .projects__btn {
   transform: translateY(-5vh);
@@ -1869,7 +1893,7 @@ body {
   opacity: 1; }
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__btn {
-      transform: translateY(-2vh); } }
+      transform: translateY(-5vh); } }
 
 .next-page-projects {
   grid-row: 3 / 4;
