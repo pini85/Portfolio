@@ -664,6 +664,9 @@ body {
   font-size: 1.6rem;
   color: #143B96;
   font-weight: 600; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph-2 {
+      font-size: 2.6rem; } }
 
 .paragraph-3 {
   font-size: 2rem;
