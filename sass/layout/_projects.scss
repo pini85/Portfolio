@@ -98,16 +98,17 @@
   transform: translateY(150%);
   opacity: 1;
 
-  @include respond(1300-1400) {
-    transform: translateY(134%);
+  @include respond(1300-1400) { transform: translateY(134%); }
 
-   }
+   @include respond(600) { transform: translateY(6vh); }
    }
 
 .projects__item:hover .projects__btn {
   transform: translateY(-5vh);
    visibility: visible;
    opacity: 1;
+
+   @include respond(600) { transform: translateY(-2vh); }
 
    }
 

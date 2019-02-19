@@ -733,6 +733,10 @@ body {
   color: #06122d;
   font-weight: 300;
   text-align: center; }
+  @media only screen and (max-width: 43.75em) {
+    .popup-text {
+      font-size: 3rem;
+      line-height: 3rem; } }
 
 .popup-btn {
   padding: 2rem;
@@ -1849,11 +1853,17 @@ body {
 .projects__item:hover .projects__text {
   transform: translateY(150%);
   opacity: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .projects__item:hover .projects__text {
+      transform: translateY(6vh); } }
 
 .projects__item:hover .projects__btn {
   transform: translateY(-5vh);
   visibility: visible;
   opacity: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .projects__item:hover .projects__btn {
+      transform: translateY(-2vh); } }
 
 .next-page-projects {
   grid-row: 3 / 4;
