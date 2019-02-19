@@ -15,8 +15,11 @@
   grid-row: 2 /3;
   overflow: hidden;
 
-  @include respond(600) { flex-wrap: wrap; }
-  @include respond(500) { margin-bottom: 12rem; }
+  @include respond(600) {
+    flex-direction: column;
+    width: auto;
+  }
+  @include respond(600) { margin-bottom: 12rem; }
 
 
   }
