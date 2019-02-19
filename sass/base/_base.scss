@@ -87,10 +87,3 @@ body {
 
 }
 
-@media screen and (min-width: 94em) {
-    @-moz-document url-prefix() {
-       html {
-           font-size: 93%;
-       }
-    }
- }

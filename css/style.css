@@ -294,7 +294,7 @@
     95% {
       filter: blur(0); }
     to {
-      transform: translate(2%, 53%) scale(0.7); } } }
+      transform: translate(2%, 45%) scale(0.7); } } }
 
 @media only screen and (max-width: 25em) {
   @keyframes fall-down {
@@ -308,7 +308,7 @@
     95% {
       filter: blur(0); }
     to {
-      transform: translate(2%, 41%) scale(0.71); } } }
+      transform: translate(2%, 44%) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
@@ -322,7 +322,7 @@
     95% {
       filter: blur(0); }
     to {
-      transform: translate(2%, 33%) scale(0.62); } } }
+      transform: translate(2%, 39%) scale(0.62); } } }
 
 @keyframes opacity {
   from {
@@ -533,11 +533,6 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
-
-@media screen and (min-width: 94em) {
-  @-moz-document url-prefix() {
-    html {
-      font-size: 93%; } } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -1518,9 +1513,6 @@ body {
     text-align: center;
     align-self: start;
     opacity: 0; }
-    @media only screen and (max-width: 37.5em) {
-      .skills__features-detail-text {
-        margin-bottom: 3rem; } }
     @media only screen and (max-width: 50em) {
       .skills__features-detail-text {
         grid-row: 3 / 4;
@@ -1911,7 +1903,7 @@ body {
   grid-column-gap: 2rem; }
   @media only screen and (max-width: 50em) {
     .skills {
-      grid-template-rows: 15vh 20vh 20vh repeat(5, 1fr) 5vh;
+      grid-template-rows: 15vh 15vh 8vh 15vh 8vh repeat(5, 1fr) 5vh;
       grid-template-columns: 2% repeat(4, 1fr) 2%;
       grid-row-gap: 2rem; } }
   @media only screen and (max-width: 37.5em) {
