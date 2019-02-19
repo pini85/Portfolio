@@ -38,9 +38,9 @@ html {
    @include respond(400) {
     font-size: 19%;
 
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-    font-size: 24%;
-}
+//     @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+//     font-size: 24%;
+// }
    }
 
 
@@ -85,7 +85,7 @@ body {
   background-color: $color-layout;
   display: grid;
   // grid-template-rows:  10vh 35vh 20vh 35vh 10vh 20vh repeat(5, 13vh) 5vh;
-  grid-template-rows:  100vh 100vh 100vh 80vh 20vh;
+  grid-template-rows:  repeat(3, 100vh) 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
 
   @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width:  37.5em ) { grid-template-rows:  repeat( 3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; }

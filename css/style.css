@@ -551,9 +551,6 @@ html {
   @media only screen and (max-width: 25em) {
     html {
       font-size: 19%; } }
-  @media only screen and (max-width: 25em) and (-webkit-min-device-pixel-ratio: 0) {
-    html {
-      font-size: 24%; } }
 
 body {
   box-sizing: border-box;
@@ -563,7 +560,7 @@ body {
 .container {
   background-color: #f0f4fd;
   display: grid;
-  grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
+  grid-template-rows: repeat(3, 100vh) 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
   @media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 37.5em) {
     .container {
