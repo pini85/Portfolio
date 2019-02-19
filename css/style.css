@@ -1818,6 +1818,9 @@ body {
       .projects__items {
         flex-direction: column;
         width: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .projects__items {
+        margin-bottom: 12rem; } }
   .projects__item {
     text-align: center;
     height: 40rem;
@@ -1825,7 +1828,7 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    height: 36rem; }
+    height: 28rem; }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
@@ -1966,7 +1969,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 50em) {
     .projects {
-      grid-template-rows: 15vh 1fr 5vh; } }
+      grid-template-rows: 15vh 1fr 10vh; } }
 
 .contact {
   grid-row: 4 / 5;
