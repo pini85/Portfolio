@@ -695,12 +695,12 @@ body {
 .paragraph-3 {
   font-size: 2rem;
   color: #06122d;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0 3rem 3rem 3rem; }
   @media only screen and (max-width: 50em) {
     .paragraph-3 {
       font-size: 2.5rem;
-      text-align: center;
-      margin: 0 3rem 3rem 3rem; } }
+      text-align: center; } }
   @media only screen and (max-width: 37.5em) {
     .paragraph-3 {
       font-size: 3rem; } }
@@ -903,9 +903,19 @@ body {
     @media only screen and (max-width: 81.25em) {
       .form__group {
         width: 35%; } }
-  @media only screen and (max-width: 81.25em) and (max-width: 31.25em) {
-    .form__group {
-      width: 90%; } }
+    @media only screen and (max-width: 50em) {
+      .form__group {
+        margin-bottom: -3.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__group {
+        margin-bottom: -3.3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .form__group {
+        width: 60%;
+        margin-bottom: -2.8rem; } }
+    @media only screen and (max-width: 25em) {
+      .form__group {
+        margin-bottom: -2.4rem; } }
   .form__input, .form__input-lg {
     font-size: 1.5rem;
     font-family: inherit;
@@ -933,16 +943,61 @@ body {
     display: inline-block;
     transform: translate(-9rem, -4rem);
     transition: all .3s; }
+    @media only screen and (max-width: 50em) {
+      .form__label, .form__label-lg {
+        font-size: 2.5rem;
+        transform: translate(-15rem, -6rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .form__label, .form__label-lg {
+        transform: translate(-15rem, -5rem); } }
+    @media only screen and (max-width: 31.25em) {
+      .form__label, .form__label-lg {
+        transform: translate(-10rem, -5rem); } }
+    @media only screen and (max-width: 25em) {
+      .form__label, .form__label-lg {
+        transform: translate(-8.5rem, -4rem); } }
     .form__label-lg, .form__label-lg-lg {
       transform: translate(-10rem, -18rem); }
+      @media only screen and (max-width: 50em) {
+        .form__label-lg, .form__label-lg-lg {
+          transform: translate(-18rem, -34rem); } }
+      @media only screen and (max-width: 37.5em) {
+        .form__label-lg, .form__label-lg-lg {
+          transform: translate(-18rem, -38rem); } }
+      @media only screen and (max-width: 31.25em) {
+        .form__label-lg, .form__label-lg-lg {
+          transform: translate(-13rem, -42rem); } }
+      @media only screen and (max-width: 25em) {
+        .form__label-lg, .form__label-lg-lg {
+          transform: translate(-10.5rem, -45rem); } }
   .form__input:placeholder-shown + .form__label {
-    opacity: 0;
-    visibility: hidden;
     transform: translate(2rem, -4rem); }
+    @media only screen and (max-width: 50em) {
+      .form__input:placeholder-shown + .form__label {
+        transform: translate(2rem, -6rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .form__input:placeholder-shown + .form__label {
+        transform: translate(2rem, -5rem); } }
+    @media only screen and (max-width: 31.25em) {
+      .form__input:placeholder-shown + .form__label {
+        transform: translate(2rem, -5rem); } }
+    @media only screen and (max-width: 25em) {
+      .form__input:placeholder-shown + .form__label {
+        transform: translate(2rem, -4rem); } }
   .form__input-lg:placeholder-shown + .form__label-lg {
-    opacity: 0;
-    visibility: hidden;
     transform: translate(2rem, -18rem); }
+    @media only screen and (max-width: 50em) {
+      .form__input-lg:placeholder-shown + .form__label-lg {
+        transform: translate(2rem, -34rem); } }
+    @media only screen and (max-width: 37.5em) {
+      .form__input-lg:placeholder-shown + .form__label-lg {
+        transform: translate(2rem, -38rem); } }
+    @media only screen and (max-width: 31.25em) {
+      .form__input-lg:placeholder-shown + .form__label-lg {
+        transform: translate(2rem, -42rem); } }
+    @media only screen and (max-width: 25em) {
+      .form__input-lg:placeholder-shown + .form__label-lg {
+        transform: translate(2rem, -45rem); } }
   .form__btn {
     margin-top: 2rem;
     text-align: center;

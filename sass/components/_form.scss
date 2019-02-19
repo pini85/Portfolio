@@ -9,16 +9,21 @@
     margin-bottom: -2.3rem;
     width: 30%;
 
-    @include respond(1300) {
-    width: 35%;
+    @include respond(1300) { width: 35%; }
+
+    @include respond(800) { margin-bottom: -3.8rem; }
+
+    @include respond(600) { margin-bottom: -3.3rem; }
 
     @include respond(500) {
-     width: 90%;
+     width: 60%;
+     margin-bottom: -2.8rem;
     }
-   }
 
-     }
+    @include respond(400) { margin-bottom: -2.4rem; }
 
+
+  }
 
   &__input,
   &__input-lg {
@@ -56,23 +61,59 @@
     transform: translate(-9rem,-4rem);
     transition: all .3s;
 
+    @include respond(800) {
+      font-size: 2.5rem;
+      transform: translate(-15rem, -6rem);
+    }
+
+     @include respond(600) { transform: translate(-15rem, -5rem); }
+
+     @include respond(500) { transform: translate(-10rem, -5rem); }
+
+    @include respond(400) { transform: translate(-8.5rem, -4rem); }
 
     &-lg {
       transform: translate(-10rem,-18rem);
+
+      @include respond(800) { transform: translate(-18rem, -34rem); }
+
+      @include respond(600) { transform: translate(-18rem, -38rem); }
+
+      @include respond(500) { transform: translate(-13rem, -42rem); }
+
+      @include respond(400) { transform: translate(-10.5rem, -45rem); }
+
+
+
 
     }
   }
 
   &__input:placeholder-shown + &__label {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transform: translate(2rem, -4rem);
+
+    @include respond(800) { transform: translate(2rem, -6rem); }
+    @include respond(600) { transform: translate(2rem, -5rem); }
+    @include respond(500) { transform: translate(2rem, -5rem); }
+    @include respond(400) { transform: translate(2rem, -4rem); }
+
   }
 
   &__input-lg:placeholder-shown + &__label-lg {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transform: translate(2rem, -18rem);
+
+    @include respond(800) { transform: translate(2rem, -34rem); }
+
+    @include respond(600) { transform: translate(2rem, -38rem); }
+
+    @include respond(500) { transform: translate(2rem, -42rem); }
+
+    @include respond(400) { transform: translate(2rem, -45rem); }
+
 
   }
 
