@@ -2,6 +2,10 @@
   grid-row: 5 / 6;
   grid-column: 1 / -1;
   background-color: #e0e6fb;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
 
   &__icon-container {
     display: flex;
@@ -13,6 +17,12 @@
   &__icon {
    font-size: 5rem;
    transition: all .2s;
+
+   @include respond(800) { font-size: 7rem; }
+   @include respond(600) { font-size: 9rem; }
+  @include respond(400) { font-size: 11rem; }
+
+
  }
 
   &__icon:not(:last-child) { margin-right: 5rem; }
@@ -31,6 +41,9 @@
 .next-page-container {
   text-align: center;
   transform: translateY(-2rem);
+  position: absolute;
+  top: 380%;
+  left: 49%;
 
 
 }
@@ -41,6 +54,7 @@
     color: $color-primary-dark;
     display: inline-block;
     cursor: pointer;
+    @include responsive-next-page;
 
 
     span {

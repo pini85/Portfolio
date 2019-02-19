@@ -49,7 +49,6 @@
 
 }
 
-
 //smallest to biggest
 @mixin respond($breakpoint) {
 
@@ -133,17 +132,12 @@
   @if $breakpoint == 1400 {
     @media only screen and (min-width: 87.5em ) { @content };
   }
+}
 
-
-
-
-
-
-
-
-
-
-
+@mixin responsive-next-page {
+  @include respond(800) { font-size: 3.5rem; }
+  @include respond(500) { font-size: 4.5rem; }
+  @include respond(400) { font-size: 5.5rem; }
 
 
 }
