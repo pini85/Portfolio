@@ -501,7 +501,7 @@ to {
   box-sizing: inherit; }
 
 html {
-  font-size: 9px; }
+  font-size: 20px; }
   @media only screen and (min-width: 87.5em) {
     html {
       font-size: 16px; } }
@@ -522,7 +522,7 @@ html {
       font-size: 25%; } }
   @media only screen and (max-width: 25em) {
     html {
-      font-size: 19%; } }
+      font-size: 25%; } }
 
 body {
   box-sizing: border-box;

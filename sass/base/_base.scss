@@ -7,7 +7,7 @@
 }
 //biggest to smallest
 html {
-  font-size: 9px;
+  font-size: 20px;
    //scroll-behavior: smooth; for smooth scrolling. But this is not supported on edge and safari.
 
 
@@ -36,7 +36,7 @@ html {
    }
 
    @include respond(400) {
-    font-size: 19%;
+    font-size: 25%;
    }
 
 
