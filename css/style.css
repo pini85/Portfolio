@@ -501,10 +501,10 @@ to {
   box-sizing: inherit; }
 
 html {
-  font-size: 65%; }
+  font-size: 9px; }
   @media only screen and (min-width: 87.5em) {
     html {
-      font-size: 62.5%; } }
+      font-size: 16px; } }
   @media only screen and (max-width: 81.25em) {
     html {
       font-size: 57%; } }
@@ -526,7 +526,8 @@ html {
 
 body {
   box-sizing: border-box;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  font-size: 16px; }
 
 .container {
   background-color: #f0f4fd;
