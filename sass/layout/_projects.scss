@@ -15,6 +15,10 @@
   grid-row: 2 /3;
   overflow: hidden;
 
+  @include respond(600) { flex-wrap: wrap; }
+  @include respond(500) { margin-bottom: 12rem; }
+
+
   }
 
 
@@ -25,7 +29,8 @@
       display: flex;
       flex-direction: column;
       opacity: 0;
-    }
+
+      @include respond(500)  height: 26rem; }
 
 
    //  &__omni-food {
@@ -154,4 +159,11 @@
   animation-duration: .5s;
   animation-delay: .6s;
   animation-fill-mode: forwards;
+}
+
+//Mobile grid//
+
+.js-1 {
+  grid-row: 2 / 3;
+  grid-column: 2 /3 ;
 }

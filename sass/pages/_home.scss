@@ -30,6 +30,9 @@
   grid-template-rows: 25vh 1fr 10vh;
   justify-items: center;
   align-items: center;
+
+  @include respond(800) {grid-template-rows: 15vh 1fr 5vh; }
+
 }
 
 .contact {
