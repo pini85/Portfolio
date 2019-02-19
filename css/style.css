@@ -537,7 +537,7 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .container {
       grid-template-rows: calc(100vh - 56px) 100vh 100vh 80vh 20vh; } }
 

@@ -88,11 +88,14 @@ body {
   grid-template-rows:  100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
 
-  @media screen and (-webkit-min-device-pixel-ratio:0)
+  @media all and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) { grid-template-rows:  calc(100vh - 56px) 100vh 100vh 80vh 20vh; }
 
-
-
-
 }
+
+// @media screen and(-webkit-min-device-pixel-ratio:0) {
+//   .container {-chrome-:only(;
+//      grid-template-rows:  calc(100vh - 56px) 100vh 100vh 80vh 20vh;;
+//   ) ;}
+// }
 
