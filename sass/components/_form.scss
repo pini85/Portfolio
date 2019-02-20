@@ -149,5 +149,12 @@ textarea {
   @include respond(800) { height: 35rem; }
   @include respond(600) { height: 39rem; }
   @include respond(500) { height: 43rem; }
-  @include respond(400) { height: 46rem; }
+  @include respond(400) {
+    height: 31rem;
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+    .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 46rem; }
+    }
+  }
 }
+

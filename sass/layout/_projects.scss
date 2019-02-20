@@ -33,7 +33,14 @@
       flex-direction: column;
       opacity: 0;
 
-      @include respond(500)  height: 29rem; }
+      @include respond(500) {
+        height: 21rem;
+
+       @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+       .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 29rem; }
+       }
+      }
+     }
 
 
    //  &__omni-food {
@@ -100,8 +107,18 @@
 
   @include respond(1300-1400) { transform: translateY(134%);  }
 
-   @include respond(600) { transform: translateY(3vh); }
-   }
+  @include respond(600) { transform: translateY(3vh); }
+
+  @include respond(500) {
+    transform: translateY(5vh);
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+    .selector:not(*:root), .chrome .ff .safari6 .safari10 { transform: translateY(3vh); }
+    }
+  }
+}
+
+
 
 .projects__item:hover .projects__btn {
   transform: translateY(-5vh);
@@ -110,7 +127,16 @@
 
    @include respond(600) { transform: translateY(-5vh); }
 
-   }
+   @include respond(500) {
+    transform: translateY(-8vh);
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+      .selector:not(*:root), .chrome .ff .safari6 .safari10 { transform: translateY(-5vh); }
+    }
+  }
+}
+
+
 
  .next-page-projects  {
     grid-row: 3 / 4;

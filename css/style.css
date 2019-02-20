@@ -324,20 +324,6 @@
     to {
       transform: translate(2%, 50%) scale(0.71); } } }
 
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 25em) {
-  @keyframes fall-down {
-    from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
-    to {
-      transform: translate(2%, 36%) scale(0.71); } } }
-
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
     from {
@@ -1038,7 +1024,7 @@ textarea {
       height: 43rem; } }
   @media only screen and (max-width: 25em) {
     textarea {
-      height: 46rem; } }
+      height: 31rem; } }
 
 .nav {
   display: flex;
@@ -1967,8 +1953,10 @@ textarea {
     width: 40rem;
     display: flex;
     flex-direction: column;
-    opacity: 0;
-    height: 29rem; }
+    opacity: 0; }
+    @media only screen and (max-width: 31.25em) {
+      .projects__item {
+        height: 21rem; } }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
@@ -1992,6 +1980,9 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__text {
       transform: translateY(3vh); } }
+  @media only screen and (max-width: 31.25em) {
+    .projects__item:hover .projects__text {
+      transform: translateY(5vh); } }
 
 .projects__item:hover .projects__btn {
   transform: translateY(-5vh);
@@ -2000,6 +1991,9 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__btn {
       transform: translateY(-5vh); } }
+  @media only screen and (max-width: 31.25em) {
+    .projects__item:hover .projects__btn {
+      transform: translateY(-8vh); } }
 
 .next-page-projects {
   grid-row: 3 / 4;
