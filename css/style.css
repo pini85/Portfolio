@@ -861,6 +861,8 @@ body {
         .form__label-lg, .form__label-lg-lg {
           transform: translate(-16rem, -55rem); } }
   .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
     transform: translate(2rem, -4rem); }
     @media only screen and (max-width: 50em) {
       .form__input:placeholder-shown + .form__label {
@@ -875,6 +877,8 @@ body {
       .form__input:placeholder-shown + .form__label {
         transform: translate(2rem, -6rem); } }
   .form__input-lg:placeholder-shown + .form__label-lg {
+    opacity: 0;
+    visibility: hidden;
     transform: translate(2rem, -18rem); }
     @media only screen and (max-width: 50em) {
       .form__input-lg:placeholder-shown + .form__label-lg {

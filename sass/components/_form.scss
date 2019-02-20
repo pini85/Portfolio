@@ -87,8 +87,8 @@
   }
 
   &__input:placeholder-shown + &__label {
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     transform: translate(2rem, -4rem);
 
     @include respond(800) { transform: translate(2rem, -6rem); }
@@ -99,8 +99,8 @@
   }
 
   &__input-lg:placeholder-shown + &__label-lg {
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     transform: translate(2rem, -18rem);
 
     @include respond(800) { transform: translate(2rem, -34rem); }
