@@ -99,8 +99,8 @@ body {
   }
 }
 
-  // @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width:  37.5em )
-  //{ grid-template-rows: repeat( 3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; }
+  @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width:  37.5em )
+  { grid-template-rows: repeat( 3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; }
 
 }
 

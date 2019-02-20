@@ -480,6 +480,9 @@ body {
   @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .container .selector:not(*:root), .container .chrome {
       grid-template-rows: repeat(3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 37.5em) {
+    .container {
+      grid-template-rows: repeat(3, calc(100vh - 56px)) calc(80vh - 56px) 20vh; } }
 
 body {
   font-family: "Lato", sans-serif;
