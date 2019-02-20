@@ -239,7 +239,7 @@
     from {
       transform: translate(0, 0) scale(1); }
     to {
-      transform: translate(2%, 45%) scale(0.7); } } }
+      transform: translate(2%, 33%) scale(0.7); } } }
 
 @media only screen and (max-width: 25em) {
   @keyframes fall-down {
