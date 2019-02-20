@@ -37,7 +37,7 @@
 
       @include respond(500) { height: 16rem;
         @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
-       .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 21rem; }
+       .selector:not(*:root), .chrome .ff { height: 21rem; }
        }
       }
       }
@@ -46,10 +46,10 @@
         height: 21rem;
 
        @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
-       .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 29rem; }
+       .selector:not(*:root), .chrome .ff { height: 29rem; }
        }
       }
-     }
+
 
    //  &__omni-food {
    //    grid-row: 2 / 3;
@@ -112,7 +112,7 @@
       width: 18rem;
     }
    }
-}
+  }
 
 .projects__item:hover > .projects__image-container {
   filter:blur(20px);

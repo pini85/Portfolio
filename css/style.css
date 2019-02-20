@@ -2006,9 +2006,9 @@ textarea {
     @media only screen and (max-width: 31.25em) {
       .projects__item {
         height: 16rem; } }
-    @media only screen and (max-width: 25em) {
-      .projects__item {
-        height: 21rem; } }
+  @media only screen and (max-width: 25em) {
+    .projects {
+      height: 21rem; } }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
