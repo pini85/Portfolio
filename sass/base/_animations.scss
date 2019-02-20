@@ -285,7 +285,7 @@
   // 11% { filter: blur(15px); }
   // 90% { filter: blur(15px); }
   // 95% { filter: blur(0); }
-  to { transform: translate(100vw, 17vh) scale(.5); }
+  to { transform: translate(39%, 17vh) scale(.5); }
 }
 
 @include respond(600) {
@@ -347,7 +347,7 @@
   // 11% { filter: blur(15px); }
   // 90% { filter: blur(15px); }
   // 95% { filter: blur(0); }
-  to { transform: translate(2%, 34%) scale(0.71);
+  to { transform: translate(2%, 50%) scale(0.71);
   }
  }
 
