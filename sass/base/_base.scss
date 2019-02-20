@@ -37,7 +37,7 @@ html {
 
    @include respond(400) {
     font-size: 19%;
-    @media only screen and (-webkit-min-device-pixel-ratio:0) {
+    @media all and (-webkit-min-device-pixel-ratio:0) {
     html:not(*:root), .chrome .ff .safari6 .safari10 {
     font-size:100%;
     }
