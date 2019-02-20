@@ -44,7 +44,11 @@ html {
    }
   }
 
-
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width:  25em ) {
+    .chrome {
+        font-size: 100%
+    }
+}
 
 
 
