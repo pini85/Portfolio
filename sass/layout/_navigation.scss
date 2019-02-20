@@ -23,13 +23,10 @@
     animation-delay: none;
     animation-fill-mode: none;
 
-    @include respond(700) {
-      font-size: 3rem;
-    }
+    @include respond(700) { font-size: 3rem; }
+    @include respond(600) { margin-left: 0; }
 
-    @include respond(400) {
-      font-size: 4rem;
-    }
+    @include respond(400) { font-size: 4rem; }
 
      }
 

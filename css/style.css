@@ -547,10 +547,10 @@ html {
       font-size: 33%; } }
   @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 29%; } }
+      font-size: 25%; } }
   @media only screen and (max-width: 25em) {
     html {
-      font-size: 24%; } }
+      font-size: 19%; } }
 
 body {
   box-sizing: border-box;
@@ -1065,6 +1065,9 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .nav__ul {
         font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__ul {
+        margin-left: 0; } }
     @media only screen and (max-width: 25em) {
       .nav__ul {
         font-size: 4rem; } }
