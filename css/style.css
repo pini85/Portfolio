@@ -1105,7 +1105,8 @@ textarea {
   animation-name: opacity;
   animation-duration: 2s;
   animation-delay: 6.1s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  z-index: -1; }
   @media only screen and (max-width: 50em) {
     .profile {
       animation-delay: 4.1s; } }
