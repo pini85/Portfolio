@@ -3,10 +3,10 @@
    background: linear-gradient(180deg, rgba(240,244,253,1) 50%, rgba(215,228,255,1) 100%, rgba(240,244,253,1) 100%);
   grid-row: 2 / 3;
   grid-column: 1 / 7;
-  animation-name: opacity;
-  animation-duration: 2s;
-  animation-delay: 6.1s;
-  animation-fill-mode: both;
+  // animation-name: opacity;
+  // animation-duration: 2s;
+  // animation-delay: 6.1s;
+  // animation-fill-mode: both;
 
   @include respond(800) { animation-delay: 4.1s; }
 }

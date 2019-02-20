@@ -1100,11 +1100,7 @@ textarea {
 .profile {
   background: linear-gradient(180deg, #f0f4fd 50%, #d7e4ff 100%, #f0f4fd 100%);
   grid-row: 2 / 3;
-  grid-column: 1 / 7;
-  animation-name: opacity;
-  animation-duration: 2s;
-  animation-delay: 6.1s;
-  animation-fill-mode: both; }
+  grid-column: 1 / 7; }
   @media only screen and (max-width: 50em) {
     .profile {
       animation-delay: 4.1s; } }
