@@ -457,7 +457,7 @@ html {
       font-size: 33%; } }
   @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 17%; } }
+      font-size: 19%; } }
   @media only screen and (max-width: 25em) {
     html {
       font-size: 19%; } }
@@ -1434,6 +1434,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-fast:before {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-fast:before {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-fast:before {
+        width: 14rem; } }
   .skills__features-fast:after {
     content: "";
     width: 12rem;
@@ -1447,6 +1453,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-fast:after {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-fast:after {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-fast:after {
+        width: 14rem; } }
   @media only screen and (max-width: 50em) {
     .skills__features-fast {
       grid-row: 2 / 3;
@@ -1454,6 +1466,14 @@ textarea {
       width: 15rem;
       height: 15rem;
       align-self: start; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__features-fast {
+      width: 11rem;
+      height: 11rem; } }
+  @media only screen and (max-width: 25em) {
+    .skills__features-fast {
+      width: 14rem;
+      height: 14rem; } }
   .skills__features-fast-text {
     grid-column: 2 / 3;
     text-align: center;
@@ -1492,6 +1512,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-responsive:before {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-responsive:before {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-responsive:before {
+        width: 14rem; } }
   .skills__features-responsive:after {
     content: "";
     width: 12rem;
@@ -1505,6 +1531,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-responsive:after {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-responsive:after {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-responsive:after {
+        width: 14rem; } }
   @media only screen and (max-width: 50em) {
     .skills__features-responsive {
       grid-row: 2 / 3;
@@ -1512,6 +1544,14 @@ textarea {
       width: 15rem;
       height: 15rem;
       align-self: start; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__features-responsive {
+      width: 11rem;
+      height: 11rem; } }
+  @media only screen and (max-width: 25em) {
+    .skills__features-responsive {
+      width: 14rem;
+      height: 14rem; } }
   .skills__features-responsive-text {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
@@ -1548,6 +1588,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic:before {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-dynamic:before {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-dynamic:before {
+        width: 14rem; } }
   .skills__features-dynamic:after {
     content: "";
     width: 12rem;
@@ -1561,6 +1607,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic:after {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-dynamic:after {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-dynamic:after {
+        width: 14rem; } }
   @media only screen and (max-width: 50em) {
     .skills__features-dynamic {
       grid-row: 3 / 4;
@@ -1568,6 +1620,14 @@ textarea {
       width: 15rem;
       height: 15rem;
       align-self: start; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__features-dynamic {
+      width: 11rem;
+      height: 11rem; } }
+  @media only screen and (max-width: 25em) {
+    .skills__features-dynamic {
+      width: 14rem;
+      height: 14rem; } }
   .skills__features-dynamic-text {
     grid-row: 3 / 4;
     grid-column: 4 / 5;
@@ -1604,6 +1664,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-detail:before {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-detail:before {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-detail:before {
+        width: 14rem; } }
   .skills__features-detail:after {
     content: "";
     width: 12rem;
@@ -1617,6 +1683,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-detail:after {
         width: 15rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-detail:after {
+        width: 11rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-detail:after {
+        width: 14rem; } }
   @media only screen and (max-width: 50em) {
     .skills__features-detail {
       grid-row: 3 / 4;
@@ -1624,6 +1696,14 @@ textarea {
       width: 15rem;
       height: 15rem;
       align-self: start; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__features-detail {
+      width: 11rem;
+      height: 11rem; } }
+  @media only screen and (max-width: 25em) {
+    .skills__features-detail {
+      width: 14rem;
+      height: 14rem; } }
   .skills__features-detail-text {
     grid-row: 3 / 4;
     grid-column: 5 / 6;
@@ -1913,6 +1993,9 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .projects__items {
         margin-bottom: 12rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .projects__items {
+        margin-bottom: 6rem; } }
   .projects__item {
     text-align: center;
     height: 40rem;

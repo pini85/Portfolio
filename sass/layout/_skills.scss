@@ -44,6 +44,16 @@
 
       }
 
+      @include respond(500) {
+        width: 11rem;
+        height: 11rem;
+      }
+
+      @include respond(400) {
+        width: 14rem;
+        height: 14rem;
+      }
+
 
       &-text {
         // grid-row: 2 / 4; dont need to all of them.Refactor.
@@ -87,6 +97,16 @@
         align-self: start;
       }
 
+      @include respond(500) {
+        width: 11rem;
+        height: 11rem;
+      }
+
+      @include respond(400) {
+        width: 14rem;
+        height: 14rem;
+      }
+
 
       &-text {
         grid-row: 3 / 4;
@@ -127,6 +147,16 @@
         align-self: start;
       }
 
+      @include respond(500) {
+        width: 11rem;
+        height: 11rem;
+      }
+
+      @include respond(400) {
+        width: 14rem;
+        height: 14rem;
+      }
+
       &-text {
         grid-row: 3 / 4;
         grid-column: 4 / 5;
@@ -163,6 +193,16 @@
         width: 15rem;
         height:  15rem;
         align-self: start;
+      }
+
+      @include respond(500) {
+        width: 11rem;
+        height: 11rem;
+      }
+
+      @include respond(400) {
+        width: 14rem;
+        height: 14rem;
       }
 
       &-text {
