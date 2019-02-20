@@ -20,7 +20,7 @@
      margin-bottom: -0.8rem;
     }
 
-    @include respond(400) { margin-bottom: -2.4rem; }
+    @include respond(400) { margin-bottom: -3.4rem; }
 
 
   }
@@ -70,7 +70,7 @@
 
      @include respond(500) { transform: translate(-10rem, -5rem); }
 
-    @include respond(400) { transform: translate(-13rem, -5rem); }
+    @include respond(400) { transform: translate(-13rem, -6rem); }
 
     &-lg {
       transform: translate(-10rem,-18rem);
@@ -81,7 +81,7 @@
 
       @include respond(500) { transform: translate(-13rem, -42rem); }
 
-      @include respond(400) { transform: translate(-16rem, -45rem); }
+      @include respond(400) { transform: translate(-16rem, -55rem); }
 
     }
   }
@@ -94,7 +94,7 @@
     @include respond(800) { transform: translate(2rem, -6rem); }
     @include respond(600) { transform: translate(2rem, -5rem); }
     @include respond(500) { transform: translate(2rem, -5rem); }
-    @include respond(400) { transform: translate(2rem, -5rem); }
+    @include respond(400) { transform: translate(2rem, -6rem); }
 
   }
 
@@ -109,7 +109,7 @@
 
     @include respond(500) { transform: translate(2rem, -42rem); }
 
-    @include respond(400) { transform: translate(2rem, -45rem); }
+    @include respond(400) { transform: translate(2rem, -55rem); }
 
 
   }
@@ -150,11 +150,11 @@ textarea {
   @include respond(600) { height: 39rem; }
   @include respond(500) { height: 21rem; }
   @include respond(400) {
-    height: 31rem;
+    height: 56rem;
 
-    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
-    .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 46rem; }
-    }
+    // @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+    // .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 46rem; }
+    // }
   }
 
   @include respond(350) {

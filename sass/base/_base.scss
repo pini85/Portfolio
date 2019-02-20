@@ -36,47 +36,9 @@ html {
    }
 
    @include respond(400) {
-    font-size: 19%;
-    @media all and (-webkit-min-device-pixel-ratio:0) {
-    html:not(*:root), .chrome .ff .safari6 .safari10 {
-    font-size:100%;
-    }
+    // font-size: 19%; for samsung internet
+    font-size:23%;
    }
-  }
-
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) and (max-width:  25em ) {
-    .chrome {
-        font-size: 100%
-    }
-}
-
-
-
-
-
-
-
-
-
-
-    // @media only screen and (min-width: 93.75em) {
-    //   font-size: 70%;
-    // }
-
-    // @media only screen and (min-width: 87.5em) {
-    //   font-size: 60%;
-    // }
-
-    // @media only screen and (min-width: 81.25em) {
-    //   font-size: 50%;
-    // }
-
-
-
-
-
-
-
 }
 
 body {

@@ -69,6 +69,7 @@
        }
 
        @include respond(600) { margin-bottom: 3rem; }
+       @include respond(400) { margin-bottom: 9rem; }
 
        @include respond(350) {
         width: 120%;
@@ -115,15 +116,14 @@
         align-self: start;
         opacity: 0;
 
-         @include respond(600) { margin-bottom: 3rem; }
-
-         @include respond(800) {
+        @include respond(800) {
         grid-row: 2 / 3;
         grid-column: 4 / 6;
         align-self: end;
-
-
        }
+
+       @include respond(600) { margin-bottom: 3rem; }
+       @include respond(400) { margin-bottom: 9rem; }
       }
     }
 
@@ -165,6 +165,8 @@
         opacity: 0;
 
          @include respond(600) { margin-bottom: 3rem; }
+         @include respond(400) { margin-bottom: 14rem; }
+
 
         @include respond(800) {
         grid-row: 3 / 4;
@@ -213,6 +215,7 @@
       opacity: 0;
 
       @include respond(600) { margin-bottom: 3rem; }
+      @include respond(400) { margin-bottom: 14rem; }
 
 
 
