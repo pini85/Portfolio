@@ -1925,7 +1925,7 @@ textarea {
         height: 16rem; } }
     @media only screen and (max-width: 25em) {
       .projects__item {
-        height: 18rem; } }
+        height: 21rem; } }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
