@@ -38,12 +38,13 @@ html {
 
    @include respond(400) {
     font-size: 100%;
-    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  }
+
+   @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) and (max-width: 25em ) {
     .selector:not(*:root), .chrome {
     font-size:28%;
     }
    }
-  }
 
 
 
