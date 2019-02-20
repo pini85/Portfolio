@@ -36,7 +36,7 @@
       @include respond(500) { height: 16rem; }
 
       @include respond(400) {
-        height: 21rem;
+        height: 18rem;
 
        @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
        .selector:not(*:root), .chrome .ff .safari6 .safari10 { height: 29rem; }

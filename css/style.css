@@ -954,6 +954,9 @@ textarea {
   @media only screen and (max-width: 25em) {
     textarea {
       height: 31rem; } }
+  @media only screen and (max-width: 21.875em) {
+    textarea {
+      height: 23rem; } }
 
 .nav {
   display: flex;
@@ -1922,7 +1925,7 @@ textarea {
         height: 16rem; } }
     @media only screen and (max-width: 25em) {
       .projects__item {
-        height: 21rem; } }
+        height: 18rem; } }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
