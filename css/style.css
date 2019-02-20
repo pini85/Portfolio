@@ -460,7 +460,7 @@ html {
       font-size: 19%; } }
   @media only screen and (max-width: 25em) {
     html {
-      font-size: 19%; } }
+      font-size: 100%; } }
   @media only screen and (max-width: 25em) and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     html .selector:not(*:root), html .chrome .ff .safari6 .safari10 {
       font-size: 100% !important; } }
