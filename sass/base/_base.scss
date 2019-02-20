@@ -33,7 +33,7 @@ html {
 
    @include respond(500) {
     // font-size: 19%; this hits the samsung s5 chrome and firefox
-    font-size: 100%;
+    font-size: 1%;
    }
 
    @include respond(400) {
