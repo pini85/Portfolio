@@ -148,7 +148,7 @@ textarea {
 
   @include respond(800) { height: 35rem; }
   @include respond(600) { height: 39rem; }
-  @include respond(500) { height: 43rem; }
+  @include respond(500) { height: 21rem; }
   @include respond(400) {
     height: 31rem;
 
@@ -157,4 +157,3 @@ textarea {
     }
   }
 }
-

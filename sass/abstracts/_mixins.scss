@@ -54,19 +54,19 @@
 
 
   @if $breakpoint == 320 {
-    @media only screen and (max-width: 20em ) { @content };
+    @media only screen and (max-width: 20em ) and (orientation: landscape) { @content };
   }
 
   @if $breakpoint == 350 {
-    @media only screen and (max-width:  21.875em ) { @content };
+    @media only screen and (max-width:  21.875em ) and (orientation: landscape) { @content };
   }
 
   @if $breakpoint == 375 {
-    @media only screen and (max-width:  23.4375em ) { @content };
+    @media only screen and (max-width:  23.4375em ) and (orientation: landscape) { @content };
   }
 
   @if $breakpoint == 400 {
-    @media only screen and (max-width:  25em ) { @content };
+    @media only screen and (max-width:  25em ) and (orientation: landscape) { @content };
   }
 
   @if $breakpoint == 425 {

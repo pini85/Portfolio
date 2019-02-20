@@ -19,10 +19,12 @@
 
     @include respond(500) {
       font-size: 3rem;
+      margin-top: 3rem;
     }
 
     @include respond(400) {
       font-size: 3.5rem;
+      margin-top: 6rem;
     }
 
     @include respond(350) {

@@ -32,18 +32,13 @@ html {
    }
 
    @include respond(500) {
-    font-size: 25%;
-   //  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-   //  .selector:not(*:root), .chrome .ff {
-   //  font-size:29%;
-   //  }
-   // }
-}
+    font-size: 17%;
+   }
 
    @include respond(400) {
     font-size: 19%;
     @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-    .selector:not(*:root), .chrome .ff {
+    .selector:not(*:root), .chrome .ff .safari6 .safari10 {
     font-size:24%;
     }
    }
