@@ -21,7 +21,6 @@
     "postcss-cli": "^6.1.0"
   },
   "dependencies": {
-    "destyle.css": "^1.0.5",
     "waypoints": "^4.0.1"
   }
 }

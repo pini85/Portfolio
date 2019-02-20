@@ -223,12 +223,6 @@
     to {
       transform: translate(-21vw, -34vh) rotate(360deg) scale(0.8); } } }
 
-@keyframes fall-down {
-  from {
-    transform: translate(0, 0) scale(1); }
-  to {
-    transform: translate(39%, 17vh) scale(0.5); } }
-
 @media only screen and (max-width: 37.5em) {
   @keyframes fall-down {
     from {
@@ -248,7 +242,7 @@
     from {
       transform: translate(0, 0) scale(1); }
     to {
-      transform: translate(2%, 50%) scale(0.71); } } }
+      transform: translate(2%, 36%) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
@@ -276,18 +270,6 @@
     transform: scale(1.5); }
   to {
     transform: scale(1); } }
-
-@keyframes background-color {
-  from {
-    background-color: current-color; }
-  to {
-    background-color: #f0f4fd; } }
-
-@keyframes background-color-2 {
-  from {
-    background: current-color; }
-  to {
-    background: linear-gradient(180deg, #f0f4fd 5%, #d7e4ff 100%, #f0f4fd 100%); } }
 
 @keyframes smokey {
   from {
