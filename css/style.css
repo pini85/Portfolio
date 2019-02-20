@@ -250,14 +250,14 @@
     to {
       transform: translate(2%, 37%) scale(0.71); } } }
 
-@media only screen and (max-width: 25em) and (orientation: landscape) {
+@media only screen and (max-width: 25em) {
   @keyframes fall-down {
     from {
       transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 50%) scale(0.71); } } }
 
-@media only screen and (max-width: 21.875em) and (orientation: landscape) {
+@media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
     from {
       transform: translate(0, 0) scale(1); }
@@ -458,7 +458,7 @@ html {
   @media only screen and (max-width: 31.25em) {
     html {
       font-size: 17%; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     html {
       font-size: 19%; } }
 
@@ -492,10 +492,10 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-secondary-skills {
       font-size: 6.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-skills {
       font-size: 7.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-skills {
       font-size: 7rem; } }
 
@@ -518,10 +518,10 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-secondary-projects {
       font-size: 6.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-projects {
       font-size: 7.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-projects {
       font-size: 7rem; } }
 
@@ -544,10 +544,10 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-secondary-contact {
       font-size: 6.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-contact {
       font-size: 7.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-secondary-contact {
       font-size: 7rem; } }
 
@@ -570,10 +570,10 @@ body {
   @media only screen and (max-width: 31.25em) {
     .heading-tertiary {
       font-size: 4rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-tertiary {
       font-size: 5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .heading-tertiary {
       font-size: 4.5rem; } }
 
@@ -587,10 +587,10 @@ body {
   @media only screen and (max-width: 31.25em) {
     .paragraph {
       font-size: 3rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .paragraph {
       font-size: 4rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .paragraph {
       font-size: 3rem; } }
 
@@ -614,7 +614,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .paragraph-3 {
       font-size: 3rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .paragraph-3 {
       font-size: 3.5rem; } }
 
@@ -753,11 +753,11 @@ body {
     .btn {
       font-size: 3rem;
       margin-top: 3rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .btn {
       font-size: 3.5rem;
       margin-top: 6rem; } }
-  @media only screen and (max-width: 21.875em) and (orientation: landscape) {
+  @media only screen and (max-width: 21.875em) {
     .btn {
       font-size: 3rem; } }
   .btn:hover {
@@ -828,7 +828,7 @@ body {
       .form__group {
         width: 60%;
         margin-bottom: -2.8rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .form__group {
         margin-bottom: -2.4rem; } }
   .form__input, .form__input-lg {
@@ -868,7 +868,7 @@ body {
     @media only screen and (max-width: 31.25em) {
       .form__label, .form__label-lg {
         transform: translate(-10rem, -5rem); } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .form__label, .form__label-lg {
         transform: translate(-13rem, -5rem); } }
     .form__label-lg, .form__label-lg-lg {
@@ -882,7 +882,7 @@ body {
       @media only screen and (max-width: 31.25em) {
         .form__label-lg, .form__label-lg-lg {
           transform: translate(-13rem, -42rem); } }
-      @media only screen and (max-width: 25em) and (orientation: landscape) {
+      @media only screen and (max-width: 25em) {
         .form__label-lg, .form__label-lg-lg {
           transform: translate(-16rem, -45rem); } }
   .form__input:placeholder-shown + .form__label {
@@ -898,7 +898,7 @@ body {
     @media only screen and (max-width: 31.25em) {
       .form__input:placeholder-shown + .form__label {
         transform: translate(2rem, -5rem); } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .form__input:placeholder-shown + .form__label {
         transform: translate(2rem, -5rem); } }
   .form__input-lg:placeholder-shown + .form__label-lg {
@@ -914,7 +914,7 @@ body {
     @media only screen and (max-width: 31.25em) {
       .form__input-lg:placeholder-shown + .form__label-lg {
         transform: translate(2rem, -42rem); } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .form__input-lg:placeholder-shown + .form__label-lg {
         transform: translate(2rem, -45rem); } }
   .form__btn {
@@ -951,7 +951,7 @@ textarea {
   @media only screen and (max-width: 31.25em) {
     textarea {
       height: 21rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     textarea {
       height: 31rem; } }
 
@@ -984,7 +984,7 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .nav__ul {
         margin-left: 0; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .nav__ul {
         font-size: 4rem; } }
   .nav__a {
@@ -1036,7 +1036,7 @@ textarea {
     @media only screen and (max-width: 31.25em) {
       .sticky__ul {
         font-size: 3rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .sticky__ul {
         font-size: 3.5rem; } }
   .sticky__li-1 {
@@ -1080,7 +1080,7 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .return-nav__ul {
         font-size: 3rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .return-nav__ul {
         font-size: 4rem; } }
   .return-nav__li-1 {
@@ -1267,10 +1267,10 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     list-style: none; }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .name-and-button__name {
         font-size: 7.5rem; } }
-    @media only screen and (max-width: 21.875em) and (orientation: landscape) {
+    @media only screen and (max-width: 21.875em) {
       .name-and-button__name {
         font-size: 6rem; } }
 
@@ -1464,7 +1464,7 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .skills__features-fast-text {
         margin-bottom: 3rem; } }
-    @media only screen and (max-width: 21.875em) and (orientation: landscape) {
+    @media only screen and (max-width: 21.875em) {
       .skills__features-fast-text {
         width: 120%; } }
 
@@ -1821,7 +1821,7 @@ textarea {
   @media only screen and (max-width: 31.25em) {
     .next-page-skills {
       font-size: 4.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .next-page-skills {
       font-size: 5.5rem; } }
   .next-page-skills span {
@@ -1920,7 +1920,7 @@ textarea {
     @media only screen and (max-width: 31.25em) {
       .projects__item {
         height: 16rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .projects__item {
         height: 21rem; } }
   .projects__text {
@@ -1940,7 +1940,7 @@ textarea {
       .projects__img {
         height: 13rem;
         width: 13rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .projects__img {
         height: 18rem;
         width: 18rem; } }
@@ -1957,7 +1957,7 @@ textarea {
   @media only screen and (max-width: 31.25em) {
     .projects__item:hover .projects__text {
       transform: translateY(7vh); } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .projects__item:hover .projects__text {
       transform: translateY(5vh); } }
 
@@ -1971,7 +1971,7 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__btn {
       transform: translateY(-7vh); } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .projects__item:hover .projects__btn {
       transform: translateY(-8vh); } }
 
@@ -1990,7 +1990,7 @@ textarea {
   @media only screen and (max-width: 31.25em) {
     .next-page-projects {
       font-size: 4.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .next-page-projects {
       font-size: 5.5rem; } }
   .next-page-projects span {
@@ -2050,7 +2050,7 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .footer__icon {
         font-size: 9rem; } }
-    @media only screen and (max-width: 25em) and (orientation: landscape) {
+    @media only screen and (max-width: 25em) {
       .footer__icon {
         font-size: 11rem; } }
   .footer__icon:not(:last-child) {
@@ -2081,7 +2081,7 @@ textarea {
   @media only screen and (max-width: 31.25em) {
     .next-page-footer {
       font-size: 4.5rem; } }
-  @media only screen and (max-width: 25em) and (orientation: landscape) {
+  @media only screen and (max-width: 25em) {
     .next-page-footer {
       font-size: 5.5rem; } }
   .next-page-footer span {
