@@ -460,7 +460,7 @@ html {
       font-size: 100%; } }
   @media only screen and (max-width: 25em) {
     html {
-      font-size: 19%; } }
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box;
