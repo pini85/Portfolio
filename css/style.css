@@ -461,7 +461,7 @@ html {
   @media only screen and (max-width: 25em) {
     html {
       font-size: 19%; } }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 25em) {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 25em) {
     html .chrome {
       font-size: 100%; } }
 
