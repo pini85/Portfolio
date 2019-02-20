@@ -37,7 +37,7 @@ html {
 
    @include respond(400) {
     font-size: 19%;
-    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
     .selector:not(*:root), .chrome .ff .safari6 .safari10 {
     font-size:100% !important;
     }
@@ -89,7 +89,7 @@ body {
   background-color: $color-layout;
   display: grid;
   // grid-template-rows:  10vh 35vh 20vh 35vh 10vh 20vh repeat(5, 13vh) 5vh;
-  grid-template-rows:  repeat(3, 100vh) 80vh 20vh;
+  grid-template-rows: repeat(3, 100vh) 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
 
   @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
