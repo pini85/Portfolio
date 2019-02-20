@@ -432,7 +432,7 @@ html {
       font-size: 33%; } }
   @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 19%; } }
+      font-size: 26%; } }
   @media only screen and (max-width: 25em) {
     html {
       font-size: 23%; } }
@@ -802,7 +802,7 @@ body {
     @media only screen and (max-width: 31.25em) {
       .form__group {
         width: 60%;
-        margin-bottom: -0.8rem; } }
+        margin-bottom: -3.8rem; } }
     @media only screen and (max-width: 25em) {
       .form__group {
         margin-bottom: -3.4rem; } }
@@ -842,7 +842,7 @@ body {
         transform: translate(-15rem, -5rem); } }
     @media only screen and (max-width: 31.25em) {
       .form__label, .form__label-lg {
-        transform: translate(-10rem, -5rem); } }
+        transform: translate(-15rem, -6rem); } }
     @media only screen and (max-width: 25em) {
       .form__label, .form__label-lg {
         transform: translate(-13rem, -6rem); } }
@@ -856,13 +856,11 @@ body {
           transform: translate(-18rem, -38rem); } }
       @media only screen and (max-width: 31.25em) {
         .form__label-lg, .form__label-lg-lg {
-          transform: translate(-13rem, -42rem); } }
+          transform: translate(-17rem, -65rem); } }
       @media only screen and (max-width: 25em) {
         .form__label-lg, .form__label-lg-lg {
           transform: translate(-16rem, -55rem); } }
   .form__input:placeholder-shown + .form__label {
-    opacity: 0;
-    visibility: hidden;
     transform: translate(2rem, -4rem); }
     @media only screen and (max-width: 50em) {
       .form__input:placeholder-shown + .form__label {
@@ -872,13 +870,11 @@ body {
         transform: translate(2rem, -5rem); } }
     @media only screen and (max-width: 31.25em) {
       .form__input:placeholder-shown + .form__label {
-        transform: translate(2rem, -5rem); } }
+        transform: translate(2rem, -6rem); } }
     @media only screen and (max-width: 25em) {
       .form__input:placeholder-shown + .form__label {
         transform: translate(2rem, -6rem); } }
   .form__input-lg:placeholder-shown + .form__label-lg {
-    opacity: 0;
-    visibility: hidden;
     transform: translate(2rem, -18rem); }
     @media only screen and (max-width: 50em) {
       .form__input-lg:placeholder-shown + .form__label-lg {
@@ -888,7 +884,7 @@ body {
         transform: translate(2rem, -38rem); } }
     @media only screen and (max-width: 31.25em) {
       .form__input-lg:placeholder-shown + .form__label-lg {
-        transform: translate(2rem, -42rem); } }
+        transform: translate(2rem, -65rem); } }
     @media only screen and (max-width: 25em) {
       .form__input-lg:placeholder-shown + .form__label-lg {
         transform: translate(2rem, -55rem); } }
@@ -925,7 +921,7 @@ textarea {
       height: 39rem; } }
   @media only screen and (max-width: 31.25em) {
     textarea {
-      height: 21rem; } }
+      height: 66rem; } }
   @media only screen and (max-width: 25em) {
     textarea {
       height: 56rem; } }
@@ -1411,7 +1407,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-fast:before {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-fast:before {
         width: 14rem; } }
@@ -1430,7 +1426,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-fast:after {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-fast:after {
         width: 14rem; } }
@@ -1443,8 +1439,8 @@ textarea {
       align-self: start; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-fast {
-      width: 11rem;
-      height: 11rem; } }
+      width: 18rem;
+      height: 18rem; } }
   @media only screen and (max-width: 25em) {
     .skills__features-fast {
       width: 14rem;
@@ -1492,7 +1488,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-responsive:before {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-responsive:before {
         width: 14rem; } }
@@ -1511,7 +1507,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-responsive:after {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-responsive:after {
         width: 14rem; } }
@@ -1524,8 +1520,8 @@ textarea {
       align-self: start; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-responsive {
-      width: 11rem;
-      height: 11rem; } }
+      width: 18rem;
+      height: 18rem; } }
   @media only screen and (max-width: 25em) {
     .skills__features-responsive {
       width: 14rem;
@@ -1571,7 +1567,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-dynamic:before {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-dynamic:before {
         width: 14rem; } }
@@ -1590,7 +1586,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-dynamic:after {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-dynamic:after {
         width: 14rem; } }
@@ -1603,8 +1599,8 @@ textarea {
       align-self: start; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-dynamic {
-      width: 11rem;
-      height: 11rem; } }
+      width: 18rem;
+      height: 18rem; } }
   @media only screen and (max-width: 25em) {
     .skills__features-dynamic {
       width: 14rem;
@@ -1650,7 +1646,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-detail:before {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-detail:before {
         width: 14rem; } }
@@ -1669,7 +1665,7 @@ textarea {
         width: 15rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-detail:after {
-        width: 11rem; } }
+        width: 18rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-detail:after {
         width: 14rem; } }
@@ -1682,8 +1678,8 @@ textarea {
       align-self: start; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-detail {
-      width: 11rem;
-      height: 11rem; } }
+      width: 18rem;
+      height: 18rem; } }
   @media only screen and (max-width: 25em) {
     .skills__features-detail {
       width: 14rem;
@@ -1995,7 +1991,7 @@ textarea {
     opacity: 0; }
     @media only screen and (max-width: 31.25em) {
       .projects__item {
-        height: 16rem; } }
+        height: 35rem; } }
     @media only screen and (max-width: 25em) {
       .projects__item {
         height: 34rem; } }
@@ -2014,8 +2010,8 @@ textarea {
     width: 18rem; }
     @media only screen and (max-width: 31.25em) {
       .projects__img {
-        height: 13rem;
-        width: 13rem; } }
+        height: 20rem;
+        width: 20rem; } }
     @media only screen and (max-width: 25em) {
       .projects__img {
         height: 18rem;
@@ -2027,12 +2023,15 @@ textarea {
 .projects__item:hover .projects__text {
   transform: translateY(150%);
   opacity: 1; }
+  @media only screen and (min-width: 87.5em) {
+    .projects__item:hover .projects__text {
+      transform: translateY(134%); } }
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__text {
       transform: translateY(3vh); } }
   @media only screen and (max-width: 31.25em) {
     .projects__item:hover .projects__text {
-      transform: translateY(7vh); } }
+      transform: translateY(4vh); } }
   @media only screen and (max-width: 25em) {
     .projects__item:hover .projects__text {
       transform: translateY(4vh); } }
@@ -2044,9 +2043,9 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .projects__item:hover .projects__btn {
       transform: translateY(-5vh); } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .projects__item:hover .projects__btn {
-      transform: translateY(-7vh); } }
+      transform: translateY(-3vh); } }
   @media only screen and (max-width: 25em) {
     .projects__item:hover .projects__btn {
       transform: translateY(-3vh); } }

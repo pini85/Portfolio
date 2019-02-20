@@ -36,10 +36,10 @@
       flex-direction: column;
       opacity: 0;
 
-      @include respond(500) { height: 16rem;
-        @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
-       .selector:not(*:root), .chrome .ff { height: 21rem; }
-       }
+      @include respond(500) { height: 35rem;
+       //  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+       // .selector:not(*:root), .chrome .ff { height: 21rem; }
+       // }
      }
 
      @include respond(400) { height: 34rem; }
@@ -69,8 +69,8 @@
     width: 18rem;
 
     @include respond(500) {
-      height: 13rem;
-      width: 13rem;
+      height: 20rem;
+      width: 20rem;
     }
 
     @include respond(400) {
@@ -88,11 +88,11 @@
   transform: translateY(150%);
   opacity: 1;
 
-  @include respond(1300-1400) { transform: translateY(134%);  }
+  @include respond(1400) { transform: translateY(134%);  }
 
   @include respond(600) { transform: translateY(3vh); }
 
-  @include respond(500) { transform: translateY(7vh); }
+  @include respond(500) { transform: translateY(4vh); }
 
   @include respond(400) {
     transform: translateY(4vh);
@@ -112,7 +112,7 @@
 
    @include respond(600) { transform: translateY(-5vh); }
 
-   @include respond(600) { transform: translateY(-7vh); }
+   @include respond(500) { transform: translateY(-3vh); }
 
    @include respond(400) {
     transform: translateY(-3vh);

@@ -17,7 +17,7 @@
 
     @include respond(500) {
      width: 60%;
-     margin-bottom: -0.8rem;
+     margin-bottom: -3.8rem;
     }
 
     @include respond(400) { margin-bottom: -3.4rem; }
@@ -68,7 +68,7 @@
 
      @include respond(600) { transform: translate(-15rem, -5rem); }
 
-     @include respond(500) { transform: translate(-10rem, -5rem); }
+     @include respond(500) { transform: translate(-15rem, -6rem); }
 
     @include respond(400) { transform: translate(-13rem, -6rem); }
 
@@ -79,7 +79,7 @@
 
       @include respond(600) { transform: translate(-18rem, -38rem); }
 
-      @include respond(500) { transform: translate(-13rem, -42rem); }
+      @include respond(500) { transform: translate(-17rem, -65rem); }
 
       @include respond(400) { transform: translate(-16rem, -55rem); }
 
@@ -87,27 +87,27 @@
   }
 
   &__input:placeholder-shown + &__label {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transform: translate(2rem, -4rem);
 
     @include respond(800) { transform: translate(2rem, -6rem); }
     @include respond(600) { transform: translate(2rem, -5rem); }
-    @include respond(500) { transform: translate(2rem, -5rem); }
+    @include respond(500) { transform: translate(2rem, -6rem); }
     @include respond(400) { transform: translate(2rem, -6rem); }
 
   }
 
   &__input-lg:placeholder-shown + &__label-lg {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transform: translate(2rem, -18rem);
 
     @include respond(800) { transform: translate(2rem, -34rem); }
 
     @include respond(600) { transform: translate(2rem, -38rem); }
 
-    @include respond(500) { transform: translate(2rem, -42rem); }
+    @include respond(500) { transform: translate(2rem, -65rem); }
 
     @include respond(400) { transform: translate(2rem, -55rem); }
 
@@ -148,7 +148,7 @@ textarea {
 
   @include respond(800) { height: 35rem; }
   @include respond(600) { height: 39rem; }
-  @include respond(500) { height: 21rem; }
+  @include respond(500) { height: 66rem; }
   @include respond(400) {
     height: 56rem;
 
