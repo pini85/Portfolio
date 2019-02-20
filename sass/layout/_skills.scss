@@ -165,7 +165,7 @@
         opacity: 0;
 
          @include respond(600) { margin-bottom: 3rem; }
-         @include respond(400) { margin-bottom: 14rem; }
+         @include respond(400) { margin-bottom: 9rem; }
 
 
         @include respond(800) {
@@ -215,7 +215,7 @@
       opacity: 0;
 
       @include respond(600) { margin-bottom: 3rem; }
-      @include respond(400) { margin-bottom: 14rem; }
+      @include respond(400) { margin-bottom: 9rem; }
 
 
 

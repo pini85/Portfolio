@@ -1645,7 +1645,7 @@ textarea {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-dynamic-text {
-        margin-bottom: 14rem; } }
+        margin-bottom: 9rem; } }
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic-text {
         grid-row: 3 / 4;
@@ -1724,7 +1724,7 @@ textarea {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-detail-text {
-        margin-bottom: 14rem; } }
+        margin-bottom: 9rem; } }
     @media only screen and (max-width: 50em) {
       .skills__features-detail-text {
         grid-row: 3 / 4;
@@ -2010,7 +2010,7 @@ textarea {
         margin-bottom: 6rem; } }
     @media only screen and (max-width: 25em) {
       .projects__items {
-        margin-bottom: 18rem; } }
+        margin-bottom: 15rem; } }
   .projects__item {
     text-align: center;
     height: 40rem;
