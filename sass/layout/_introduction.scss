@@ -58,7 +58,7 @@
     animation-name: hidden-up;
     animation-duration: 2s;
     animation-delay: .2s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: both;
 
     grid-row: 3 / 4;
     grid-column: 2 / 3;
@@ -70,7 +70,7 @@
     animation-name: hidden-up;
     animation-duration: 2s;
     animation-delay: .8s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: both;
 
     grid-row: 3 / 4;
     grid-column: 3 / 4;

@@ -954,14 +954,10 @@ textarea {
     list-style: none;
     font-size: 2rem;
     letter-spacing: .2rem;
-    padding: 1rem;
-    margin-left: 3%; }
+    padding: 1rem; }
     @media only screen and (max-width: 43.75em) {
       .nav__ul {
         font-size: 3rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .nav__ul {
-        margin-left: 0; } }
     @media only screen and (max-width: 25em) {
       .nav__ul {
         font-size: 4rem; } }
@@ -1187,7 +1183,7 @@ textarea {
       animation-name: hidden-up;
       animation-duration: 2s;
       animation-delay: .2s;
-      animation-fill-mode: backwards;
+      animation-fill-mode: both;
       grid-row: 3 / 4;
       grid-column: 2 / 3; }
     .intro__top-2 {
@@ -1195,7 +1191,7 @@ textarea {
       animation-name: hidden-up;
       animation-duration: 2s;
       animation-delay: .8s;
-      animation-fill-mode: backwards;
+      animation-fill-mode: both;
       grid-row: 3 / 4;
       grid-column: 3 / 4; }
     .intro__top-3 {
