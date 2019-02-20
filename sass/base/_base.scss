@@ -32,19 +32,17 @@ html {
    }
 
    @include respond(500) {
-    // font-size: 19%; this hits the samsung s5 chrome and firefox
-    font-size: 1%;
+    font-size: 19%;
    }
 
    @include respond(400) {
-    font-size: 100%;
-  }
-
-   @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) and (max-width: 25em ) {
-    .selector:not(*:root), .chrome {
-    font-size:28%;
+    font-size: 19%;
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .selector:not(*:root), .chrome .ff .safari6 .safari10 {
+    font-size:28% !important;
     }
    }
+  }
 
 
 

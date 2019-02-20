@@ -457,13 +457,10 @@ html {
       font-size: 33%; } }
   @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 1%; } }
+      font-size: 19%; } }
   @media only screen and (max-width: 25em) {
     html {
-      font-size: 100%; } }
-  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 25em) {
-    html .selector:not(*:root), html .chrome {
-      font-size: 28%; } }
+      font-size: 19%; } }
 
 body {
   box-sizing: border-box;
