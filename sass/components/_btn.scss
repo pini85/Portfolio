@@ -17,6 +17,8 @@
     animation-fill-mode: both;
     transition: .5s;
 
+    @include respond(800) { animation-delay: 4.5s; }
+
     @include respond(500) {
       font-size: 3rem;
       margin-top: 3rem;

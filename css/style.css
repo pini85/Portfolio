@@ -199,14 +199,6 @@
 @keyframes travel-3 {
   from {
     transform: translate(5%, 0%) scale(1) rotate(40deg); }
-  10% {
-    filter: blur(0); }
-  11% {
-    filter: blur(15px); }
-  90% {
-    filter: blur(15px); }
-  95% {
-    filter: blur(0); }
   to {
     transform: translate(-13vw, -38vh) rotate(360deg) scale(0.5); } }
 
@@ -214,14 +206,6 @@
   @keyframes travel-3 {
     from {
       transform: translate(5%, 0%) scale(1) rotate(40deg); }
-    10% {
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
     to {
       transform: translate(-18vw, -38vh) rotate(360deg) scale(0.5); } } }
 
@@ -229,14 +213,6 @@
   @keyframes travel-3 {
     from {
       transform: translate(5%, 0%) scale(1) rotate(40deg); }
-    10% {
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
     to {
       transform: translate(-21vw, -37vh) rotate(360deg) scale(0.6); } } }
 
@@ -244,97 +220,47 @@
   @keyframes travel-3 {
     from {
       transform: translate(5%, 0%) scale(1) rotate(40deg); }
-    10% {
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
     to {
       transform: translate(-21vw, -34vh) rotate(360deg) scale(0.8); } } }
 
 @keyframes fall-down {
   from {
-    transform: translate(0, 0) scale(1);
-    filter: blur(0); }
-  11% {
-    filter: blur(15px); }
-  90% {
-    filter: blur(15px); }
-  95% {
-    filter: blur(0); }
+    transform: translate(0, 0) scale(1); }
   to {
     transform: translate(1.3vw, 17vh) scale(0.5); } }
 
 @media only screen and (max-width: 37.5em) {
   @keyframes fall-down {
     from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
+      transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 46%) scale(0.65); } } }
 
 @media only screen and (max-width: 31.25em) {
   @keyframes fall-down {
     from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
+      transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 45%) scale(0.7); } } }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 31.25em) {
   @keyframes fall-down {
     from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
+      transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 37%) scale(0.71); } } }
 
 @media only screen and (max-width: 25em) and (orientation: landscape) {
   @keyframes fall-down {
     from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
+      transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 50%) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) and (orientation: landscape) {
   @keyframes fall-down {
     from {
-      transform: translate(0, 0) scale(1);
-      filter: blur(0); }
-    11% {
-      filter: blur(15px); }
-    90% {
-      filter: blur(15px); }
-    95% {
-      filter: blur(0); }
+      transform: translate(0, 0) scale(1); }
     to {
       transform: translate(2%, 39%) scale(0.62); } } }
 
@@ -373,12 +299,10 @@
 @keyframes smokey {
   from {
     transform: rotate(45deg) translateY(-200px);
-    opacity: 0;
-    filter: blur(20px); }
+    opacity: 0; }
   to {
     transform: rotate(0deg) translateY(0);
-    opacity: 1;
-    filter: blur(0); } }
+    opacity: 1; } }
 
 @keyframes fill-70 {
   from {
@@ -822,6 +746,9 @@ body {
   animation-delay: 6.5s;
   animation-fill-mode: both;
   transition: .5s; }
+  @media only screen and (max-width: 50em) {
+    .btn {
+      animation-delay: 4.5s; } }
   @media only screen and (max-width: 31.25em) {
     .btn {
       font-size: 3rem;
@@ -1038,18 +965,19 @@ textarea {
   width: 100vw;
   justify-content: space-evenly;
   animation-name: hidden-down;
-  animation-duration: .3s; }
+  animation-duration: 2.2s;
+  animation-delay: 6.1s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .nav {
+      animation-delay: 4.1s; } }
   .nav__ul {
     display: flex;
     list-style: none;
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    margin-left: 3%;
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: none;
-    animation-fill-mode: none; }
+    margin-left: 3%; }
     @media only screen and (max-width: 43.75em) {
       .nav__ul {
         font-size: 3rem; } }
@@ -1059,21 +987,6 @@ textarea {
     @media only screen and (max-width: 25em) and (orientation: landscape) {
       .nav__ul {
         font-size: 4rem; } }
-  .nav__li-1 {
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: none;
-    animation-fill-mode: none; }
-  .nav__li-2 {
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: none;
-    animation-fill-mode: none; }
-  .nav__li-3 {
-    animation-name: none;
-    animation-duration: none;
-    animation-delay: none;
-    animation-fill-mode: none; }
   .nav__a {
     padding: 0.5rem;
     text-decoration: none;
@@ -1215,6 +1128,9 @@ textarea {
   animation-duration: 2s;
   animation-delay: 6.1s;
   animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .profile {
+      animation-delay: 4.1s; } }
 
 .profile-picture {
   overflow: hidden;
@@ -1231,6 +1147,9 @@ textarea {
     animation-duration: 2.2s;
     animation-delay: 6.1s;
     animation-fill-mode: both; }
+    @media only screen and (max-width: 50em) {
+      .profile-picture__container {
+        animation-delay: 4.1s; } }
   .profile-picture__img {
     height: 134%;
     opacity: .5;
@@ -1268,7 +1187,7 @@ textarea {
     .intro {
       animation-name: fall-down;
       animation-duration: 1s;
-      animation-delay: 3.7s; } }
+      animation-delay: 3.75s; } }
   .intro__top {
     letter-spacing: 0.2rem;
     font-size: 9rem;
@@ -1356,88 +1275,130 @@ textarea {
         font-size: 6rem; } }
 
 .name-and-button li:nth-child(1) {
-  animation-delay: 6.5s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(2) {
-  animation-delay: 6.6s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(3) {
-  animation-delay: 6.7s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(4) {
-  animation-delay: 6.8s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(5) {
-  animation-delay: 6.9s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(6) {
-  animation-delay: 7s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(7) {
-  animation-delay: 7.1s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(8) {
-  animation-delay: 7.2s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(9) {
-  animation-delay: 7.3s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(10) {
-  animation-delay: 7.4s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(11) {
-  animation-delay: 7.5s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(12) {
-  animation-delay: 7.6s;
-  animation-name: smokey;
-  animation-duration: .5s;
-  animation-fill-mode: both; }
-
-.name-and-button li:nth-child(13) {
   animation-delay: 7.7s;
   animation-name: smokey;
   animation-duration: .5s;
   animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(1) {
+      animation-delay: 5.7s; } }
 
-.name-and-button li:nth-child(14) {
+.name-and-button li:nth-child(2) {
   animation-delay: 7.8s;
   animation-name: smokey;
   animation-duration: .5s;
   animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(2) {
+      animation-delay: 5.8s; } }
+
+.name-and-button li:nth-child(3) {
+  animation-delay: 7.9s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(3) {
+      animation-delay: 5.9s; } }
+
+.name-and-button li:nth-child(4) {
+  animation-delay: 8s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(4) {
+      animation-delay: 6s; } }
+
+.name-and-button li:nth-child(5) {
+  animation-delay: 8.1s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(5) {
+      animation-delay: 6.1s; } }
+
+.name-and-button li:nth-child(6) {
+  animation-delay: 8.2s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(6) {
+      animation-delay: 6.2s; } }
+
+.name-and-button li:nth-child(7) {
+  animation-delay: 8.3s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(7) {
+      animation-delay: 6.3s; } }
+
+.name-and-button li:nth-child(8) {
+  animation-delay: 8.4s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(8) {
+      animation-delay: 6.4s; } }
+
+.name-and-button li:nth-child(9) {
+  animation-delay: 8.5s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(9) {
+      animation-delay: 6.5s; } }
+
+.name-and-button li:nth-child(10) {
+  animation-delay: 8.6s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(10) {
+      animation-delay: 6.6s; } }
+
+.name-and-button li:nth-child(11) {
+  animation-delay: 8.7s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(11) {
+      animation-delay: 6.7s; } }
+
+.name-and-button li:nth-child(12) {
+  animation-delay: 8.8s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(12) {
+      animation-delay: 6.8s; } }
+
+.name-and-button li:nth-child(13) {
+  animation-delay: 8.9s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(13) {
+      animation-delay: 6.9s; } }
+
+.name-and-button li:nth-child(14) {
+  animation-delay: 9s;
+  animation-name: smokey;
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+  @media only screen and (max-width: 50em) {
+    .name-and-button li:nth-child(14) {
+      animation-delay: 7s; } }
 
 .skills__heading {
   grid-row: 1 / 2;
