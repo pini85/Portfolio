@@ -33,11 +33,11 @@ html {
 
    @include respond(500) {
     font-size: 25%;
-    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-    .selector:not(*:root), .chrome .ff {
-    font-size:29%;
-    }
-   }
+   //  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+   //  .selector:not(*:root), .chrome .ff {
+   //  font-size:29%;
+   //  }
+   // }
 }
 
    @include respond(400) {
