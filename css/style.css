@@ -1120,10 +1120,11 @@ textarea {
     display: flex;
     justify-content: flex-end;
     height: 100%;
+    opacity: 0;
     animation-name: hidden-up-opacity;
     animation-duration: 2.2s;
     animation-delay: 6.1s;
-    animation-fill-mode: both; }
+    animation-fill-mode: forwards; }
     @media only screen and (max-width: 50em) {
       .profile-picture__container {
         animation-delay: 4.1s; } }
