@@ -827,7 +827,7 @@ body {
     @media only screen and (max-width: 31.25em) {
       .form__group {
         width: 60%;
-        margin-bottom: -2.8rem; } }
+        margin-bottom: -0.8rem; } }
     @media only screen and (max-width: 25em) {
       .form__group {
         margin-bottom: -2.4rem; } }
