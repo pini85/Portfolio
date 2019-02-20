@@ -1215,7 +1215,7 @@ textarea {
       animation-name: hidden-up;
       animation-duration: 2s;
       animation-delay: 1.6s;
-      animation-fill-mode: backwards; }
+      animation-fill-mode: both; }
       @media only screen and (max-width: 56.25em) {
         .intro__bottom p {
           font-size: 2.5rem; } }
