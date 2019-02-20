@@ -105,10 +105,11 @@
       display: flex;
       justify-content: flex-end;
       height: 100%;
-      animation-name:hidden-up;
+      opacity: 0;
+      animation-name:hidden-up-opacity;
       animation-duration: 2.2s;
       animation-delay: 6.1s;
-      animation-fill-mode: both;
+      animation-fill-mode: forwards;
 
       @include respond(800) { animation-delay: 4.1s; }
     }

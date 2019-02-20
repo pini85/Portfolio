@@ -1,11 +1,16 @@
 /*INTRODUCTION*/
-.hidden-up {
-  animation-name: hidden-up;
-  animation-duration: .2s;
+@keyframes hidden-up-opacity {
+  from { transform: translateY(150%);
+          opacity: 0;
+   }
+  to { transform: translateY(0);
+       opacity: 1; }
+
+
 }
 
 @keyframes hidden-up {
-  from {transform: translateY(150%); }
+  from { transform: translateY(150%); }
   to { transform: translateY(0); }
 }
 

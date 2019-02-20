@@ -1,7 +1,11 @@
 /*INTRODUCTION*/
-.hidden-up {
-  animation-name: hidden-up;
-  animation-duration: .2s; }
+@keyframes hidden-up-opacity {
+  from {
+    transform: translateY(150%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
 
 @keyframes hidden-up {
   from {
@@ -1046,7 +1050,6 @@ textarea {
     font-size: 2rem;
     letter-spacing: .2rem;
     padding: 1rem;
-    margin-left: 3%;
     animation-name: none;
     animation-duration: none;
     animation-delay: none;
@@ -1117,10 +1120,11 @@ textarea {
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    animation-name: hidden-up;
+    opacity: 0;
+    animation-name: hidden-up-opacity;
     animation-duration: 2.2s;
     animation-delay: 6.1s;
-    animation-fill-mode: both; }
+    animation-fill-mode: forwards; }
     @media only screen and (max-width: 50em) {
       .profile-picture__container {
         animation-delay: 4.1s; } }
