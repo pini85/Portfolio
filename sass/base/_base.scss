@@ -37,9 +37,9 @@ html {
 
    @include respond(400) {
     font-size: 19%;
-    @media only screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    @media only screen and (-webkit-min-device-pixel-ratio:0) {
     .selector:not(*:root), .chrome .ff .safari6 .safari10 {
-    font-size:100% !important;
+    font-size:100%;
     }
    }
   }
