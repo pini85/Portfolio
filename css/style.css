@@ -227,7 +227,7 @@
   from {
     transform: translate(0, 0) scale(1); }
   to {
-    transform: translate(1.3vw, 17vh) scale(0.5); } }
+    transform: translate(100vw, 17vh) scale(0.5); } }
 
 @media only screen and (max-width: 37.5em) {
   @keyframes fall-down {
@@ -243,19 +243,12 @@
     to {
       transform: translate(2%, 45%) scale(0.7); } } }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 31.25em) {
-  @keyframes fall-down {
-    from {
-      transform: translate(0, 0) scale(1); }
-    to {
-      transform: translate(2%, 37%) scale(0.71); } } }
-
 @media only screen and (max-width: 25em) {
   @keyframes fall-down {
     from {
       transform: translate(0, 0) scale(1); }
     to {
-      transform: translate(2%, 50%) scale(0.71); } } }
+      transform: translate(2%, 39%) scale(0.71); } } }
 
 @media only screen and (max-width: 21.875em) {
   @keyframes fall-down {
