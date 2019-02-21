@@ -241,26 +241,30 @@
          <div class="next-page-projects js--scroll-to-contacts"> > <span> > </span></div>
       </section>
       <section class="contact">
-        <div class="heading">
+        <div class="contact__heading">
           <h2 class="heading-secondary-contact">CONTACT</h2>
           <div class="heading-bar-contact ul-margin-bottom-xl"></div>
         </div>
-        <p class="paragraph-3 u-opacity-0">Have a question? Send me a message and I will respond to you as soon as I can.</p>
+        <div class="contact__paragraph">
+          <p class="paragraph-3 u-opacity-0">Have a question? Send me a message and I will respond to you as soon as I can.</p>
+        </div>
         <div class="contact__form">
           <form action="https://formspree.io/pinchas.hodadad@gmail.com" method="POST" class="form">
             <div class="form__group">
-              <input type="text" class="form__input" placeholder="Your Name" id="name" name="name" required>
+              <input type="text" class="form__input form__name" placeholder="Your Name" id="name" name="name" required>
               <label for="name" class="form__label">Your Name</label>
             </div>
             <div class="form__group">
-              <input type="email" class="form__input" placeholder="Your email" id="email" name="reply-to" required>
+              <input type="email" class="form__input form__email" placeholder="Your email" id="email" name="reply-to" required>
               <label for="name" class="form__label">Your Email</label>
             </div>
             <div class="form__group">
-              <textarea type="text" class="form__input-lg" placeholder="Your message" id="message" name="message"  required></textarea>
+              <textarea type="text" class="form__input-lg form__message" placeholder="Your message" id="message" name="message"  required></textarea>
               <label for="message" class="form__label-lg">Your Message</label>
             </div>
+            <div class="contact__btn">
             <input type="submit" class="btn-sm form__btn" value="Send">
+            </div>
           </form>
         </div>
       </section>

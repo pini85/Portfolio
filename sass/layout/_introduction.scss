@@ -85,6 +85,8 @@
     animation-fill-mode: backwards, both;
     animation-direction: normal, reverse;
 
+    @include respond(600) {  animation-delay: 1.5s, 4.5s; }
+
 
   }
 }

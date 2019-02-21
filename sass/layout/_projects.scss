@@ -11,19 +11,17 @@
   &__items {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
   grid-row: 2 /3;
   overflow: hidden;
+  justify-content: space-around;
 
   @include respond(600) {
     flex-direction: column;
     width: auto;
   }
-  @include respond(600) { margin-bottom: 12rem; }
-  @include respond(500) { margin-bottom: 6rem; }
-  @include respond(400) { margin-bottom: 15rem; }
-
-
+  // @include respond(600) { margin-bottom: 12rem; }
+  // @include respond(500) { margin-bottom: 6rem; }
+  // @include respond(400) { margin-bottom: 15rem; }
 
   }
 
@@ -80,6 +78,9 @@
    }
  }
 
+
+
+
 .projects__item:hover > .projects__image-container {
   filter:blur(20px);
 }
@@ -128,6 +129,7 @@
     grid-row: 3 / 4;
     text-align: center;
     position: relative;
+    justify-self: center;
     transform: rotate(90deg);
     font-size: 3rem;
     color: $color-primary-dark;
@@ -183,4 +185,8 @@
 .js-1 {
   grid-row: 2 / 3;
   grid-column: 2 /3 ;
+}
+
+.js-4 {
+  margin-bottom: 9rem;
 }
