@@ -1,7 +1,8 @@
 .form {
     opacity: 0;
-    display: grid;
-grid-template-rows: min-content min-content 1fr min-content;
+    width: 100%;
+    grid-column: 2 / 3;
+
 
 
   &__group {
@@ -115,36 +116,16 @@ grid-template-rows: min-content min-content 1fr min-content;
   }
 
   &__btn {
-    margin-top: 2rem;
-    text-align: center;
+    // margin-top: 2rem;
     padding: 2rem 6rem;
     font-size: 1.6rem;
     color: $color-display-light;
 
-    @include respond(1300) { margin-top: 5rem; }
+    // @include respond(1300) { margin-top: 5rem; }
 
     @include respond(700) { font-size: 2.6rem; }
 
 }
-  &__name {
-    grid-row: 1/ 2;
-
-  }
-
-  &__email {
-    grid-row: 2/ 3;
-
-  }
-
-  &__message {
-
-    grid-row: 3 / 4;
-
-  }
-
-  &__btn {
-    grid-row: 4 / 5;
-  }
 
 }
 

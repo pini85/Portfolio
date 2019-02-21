@@ -17,6 +17,7 @@
 
   @include respond(600) {
     flex-direction: column;
+    height: 75vh;
     width: auto;
   }
   // @include respond(600) { margin-bottom: 12rem; }
