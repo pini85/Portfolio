@@ -399,6 +399,12 @@
   top: 32%;
   left: 32%;
 
+  @include respond(900){
+    top: 34%;
+    left: 34%;
+
+  }
+
 }
 
 /*Animations*/

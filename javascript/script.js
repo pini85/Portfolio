@@ -124,6 +124,32 @@ $(document).ready(function () {
 
   /*Langauges*/
 
+//   function checkPosition() {
+//     if (window.matchMedia('(max-width: 37.5em)').matches) {
+//       $('.skills').waypoint(function(direction) {
+//     $('.skills__langauges').addClass('animation--langauges');
+//     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
+//     $('.skills__css-fill').addClass('animation--fill-70 animation-delay-1500ms');
+//     $('.skills__javascript-fill').addClass('animation--fill-40');
+//     $('.skills__ruby-fill').addClass('animation--fill-50');
+//     $('.skills__ruby-on-rails-fill').addClass('animation--fill-55');
+//     }, {
+//     offset: '5%;'
+//   });
+//     } else {
+//         $('.skills').waypoint(function(direction) {
+//     $('.skills__langauges').addClass('animation--langauges');
+//     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
+//     $('.skills__css-fill').addClass('animation--fill-70 animation-delay-1500ms');
+//     $('.skills__javascript-fill').addClass('animation--fill-40');
+//     $('.skills__ruby-fill').addClass('animation--fill-50');
+//     $('.skills__ruby-on-rails-fill').addClass('animation--fill-55');
+//     }, {
+//     offset: '5%;'
+//   });
+//     }
+// }
+
    $('.skills').waypoint(function(direction) {
     $('.skills__langauges').addClass('animation--langauges');
     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
@@ -134,6 +160,7 @@ $(document).ready(function () {
     }, {
     offset: '5%;'
   });
+
 
   /*Next-page*/
 
@@ -218,4 +245,3 @@ $(document).ready(function () {
   });
 
 });
-
