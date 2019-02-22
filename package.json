@@ -8,10 +8,10 @@
     "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css vendors/popup"
+    "concat:css": "concat -o css/style.concat.css vendors/popup/magnific-popup.css vendors/normalize.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build:project": "npm-run-all compile:sass concat:css concat:js prefix:css compress:css"
   },
   "author": "Pinchas",
   "license": "ISC",
