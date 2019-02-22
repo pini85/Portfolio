@@ -29,7 +29,9 @@
       width: 12rem;
       height: 12rem;
       opacity: 0;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
 
       &:before { @include octogon-before; }
@@ -85,7 +87,9 @@
       width: 12rem;
       height: 12rem;
       opacity: 0;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
@@ -135,7 +139,10 @@
       width: 12rem;
       height: 12rem;
       opacity: 0;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
 
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
@@ -184,8 +191,10 @@
       background-color: $color-primary-light;
       width: 12rem;
       height: 12rem;
-      position: relative;
       opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:before { @include octogon-before; }
       &:after { @include octogon-after; }
@@ -395,15 +404,10 @@
   height: 4.5rem;
   width: 4.5rem;
   fill: $color-display-light;
-  position: absolute;
-  top: 32%;
-  left: 32%;
 
   @include respond(900){
    height: 5.5rem;
-   top: 34%;
-   left: 37%;
-
+   width: 5.5rem;
   }
 
 }

@@ -1328,7 +1328,9 @@ textarea {
   width: 12rem;
   height: 12rem;
   opacity: 0;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .skills__features-fast:before {
     content: "";
     width: 12rem;
@@ -1408,7 +1410,9 @@ textarea {
   width: 12rem;
   height: 12rem;
   opacity: 0;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .skills__features-responsive:before {
     content: "";
     width: 12rem;
@@ -1486,7 +1490,9 @@ textarea {
   width: 12rem;
   height: 12rem;
   opacity: 0;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .skills__features-dynamic:before {
     content: "";
     width: 12rem;
@@ -1563,8 +1569,10 @@ textarea {
   background-color: #4E6DB4;
   width: 12rem;
   height: 12rem;
-  position: relative;
-  opacity: 0; }
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .skills__features-detail:before {
     content: "";
     width: 12rem;
@@ -1853,15 +1861,11 @@ textarea {
 .features__icon {
   height: 4.5rem;
   width: 4.5rem;
-  fill: #c3d2f7;
-  position: absolute;
-  top: 32%;
-  left: 32%; }
+  fill: #c3d2f7; }
   @media only screen and (max-width: 56.25em) {
     .features__icon {
       height: 5.5rem;
-      top: 34%;
-      left: 37%; } }
+      width: 5.5rem; } }
 
 /*Animations*/
 .animation--features {
