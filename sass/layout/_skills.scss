@@ -374,6 +374,7 @@
       position: absolute;
       top: 0;
       left: 1.02rem;
+      @include responsive-next-page-span;
     }
 
     &:hover > span {
