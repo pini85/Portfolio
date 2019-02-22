@@ -1859,8 +1859,9 @@ textarea {
   left: 32%; }
   @media only screen and (max-width: 56.25em) {
     .features__icon {
+      height: 5.5rem;
       top: 34%;
-      left: 34%; } }
+      left: 36%; } }
 
 /*Animations*/
 .animation--features {

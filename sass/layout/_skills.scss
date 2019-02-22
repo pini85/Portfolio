@@ -400,8 +400,9 @@
   left: 32%;
 
   @include respond(900){
-    top: 34%;
-    left: 34%;
+   height: 5.5rem;
+   top: 34%;
+   left: 36%;
 
   }
 
