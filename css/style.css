@@ -1811,6 +1811,8 @@ textarea {
 .next-page-skills {
   grid-row: 11 / 12;
   grid-column: 2 / 6;
+  align-self: center;
+  justify-self: center;
   position: relative;
   transform: rotate(90deg);
   font-size: 3rem;
@@ -1915,12 +1917,12 @@ textarea {
     display: flex;
     justify-content: space-around;
     grid-row: 2 /3;
-    overflow: hidden;
-    justify-content: space-around; }
+    align-items: center;
+    overflow: hidden; }
     @media only screen and (max-width: 37.5em) {
       .projects__items {
         flex-direction: column;
-        height: 75vh;
+        max-height: 90vh;
         width: auto; } }
   .projects__item {
     text-align: center;
@@ -1929,6 +1931,9 @@ textarea {
     display: flex;
     flex-direction: column;
     opacity: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .projects__item {
+        height: 30rem; } }
     @media only screen and (max-width: 31.25em) {
       .projects__item {
         height: 35rem; } }
@@ -2058,8 +2063,9 @@ textarea {
   grid-row: 2 / 3;
   grid-column: 2 /3; }
 
-.js-4 {
-  margin-bottom: 9rem; }
+@media only screen and (max-width: 37.5em) {
+  .js-4 {
+    margin-bottom: 9rem; } }
 
 .footer {
   grid-row: 5 / 6;
@@ -2129,14 +2135,14 @@ textarea {
   grid-column: 1 / -1;
   background: linear-gradient(180deg, #f0f4fd 75%, #d7e4ff 100%, #f0f4fd 100%);
   display: grid;
-  grid-template-rows: 25vh min-content 15vh repeat(5, 1fr) 10vh;
+  grid-template-rows: 25vh min-content 15vh repeat(7, 1fr) 10vh;
   grid-template-columns: 20% repeat(4, 1fr) 20%;
   justify-items: center;
   align-items: end;
   grid-column-gap: 2rem; }
   @media only screen and (max-width: 50em) {
     .skills {
-      grid-template-rows: 15vh min-content 8vh 15vh 8vh repeat(5, 1fr) 5vh;
+      grid-template-rows: 15vh min-content 8vh 15vh 8vh repeat(5, 1fr) 10vh;
       grid-template-columns: 2% repeat(4, 1fr) 2%;
       grid-row-gap: 2rem; } }
 

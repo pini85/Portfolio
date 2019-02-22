@@ -72,7 +72,6 @@
     letter-spacing: 0.2rem;
     border: none;
     border-radius: 8px;
-
     @include respond(700) {
       font-size: 3rem;
     }

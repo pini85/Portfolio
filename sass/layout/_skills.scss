@@ -361,6 +361,8 @@
 .next-page-skills {
     grid-row: 11 / 12;
     grid-column: 2 / 6;
+    align-self: center;
+    justify-self: center;
     position: relative;
     transform: rotate(90deg);
     font-size: 3rem;
