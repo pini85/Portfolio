@@ -431,6 +431,9 @@ html {
   @media only screen and (max-width: 50em) {
     html {
       font-size: 40%; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    html {
+      font-size: 20%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 33%; } }
@@ -1078,6 +1081,9 @@ textarea {
     @media only screen and (max-width: 81.25em) {
       .profile-picture__img {
         width: 50%; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .profile-picture__img {
+        width: 40%; } }
     @media only screen and (max-width: 37.5em) {
       .profile-picture__img {
         width: 100%;
@@ -1107,6 +1113,12 @@ textarea {
       animation-name: fall-down;
       animation-duration: 1s;
       animation-delay: 3.75s; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .intro {
+      animation-name: travel, travel-1, travel-2, travel-3;
+      animation-duration: .75s, .75s, .75s, .75s;
+      animation-delay: 3.7s, 4.5s, 5s, 6s;
+      animation-fill-mode: forwards, forwards, forwards, forwards; } }
   .intro__top {
     letter-spacing: 0.2rem;
     font-size: 9rem;

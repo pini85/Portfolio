@@ -77,37 +77,16 @@
     @media only screen and (max-width:  25em ) { @content };
   }
 
-  @if $breakpoint == 425 {
-    @media only screen and (max-width:  26.5625em ) { @content };
-  }
-
-  @if $breakpoint == 450 {
-    @media only screen and (max-width:  28.125em ) { @content };
-  }
-
-  @if $breakpoint == 475 {
-    @media only screen and (max-width:  29.6875em ) { @content };
-  }
 
   @if $breakpoint == 500 {
     @media only screen and (max-width:  31.25em ) { @content };
   }
 
-  @if $breakpoint == 525 {
-    @media only screen and (max-width:  32.8125em ) { @content };
-  }
-
-  @if $breakpoint == 550 {
-    @media only screen and (max-width:  34.375em ) { @content };
-  }
 
   @if $breakpoint == 600 {
     @media only screen and (max-width:  37.5em ) { @content };
   }
 
-  @if $breakpoint == 650 {
-    @media only screen and (max-width:  40.625em ) { @content };
-  }
 
   @if $breakpoint == 700 {
     @media only screen and (max-width: 43.75em ) { @content };
@@ -116,6 +95,11 @@
   @if $breakpoint == 800 {
     @media only screen and (max-width: 50em ) { @content };
   }
+
+  @if $breakpoint == landscape-800 {
+    @media screen and (orientation:landscape) and (max-width: 50em) { @content };
+  }
+
 
    @if $breakpoint == 900 {
     @media only screen and (max-width: 56.25em ) { @content };

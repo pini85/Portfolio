@@ -26,6 +26,14 @@
      animation-delay: 3.75s;
    }
 
+   @include respond(landscape-800) {
+    animation-name: travel, travel-1, travel-2, travel-3;
+  animation-duration: .75s, .75s, .75s, .75s;
+  animation-delay: 3.7s, 4.5s, 5s, 6s;
+  animation-fill-mode: forwards, forwards, forwards, forwards;
+
+   }
+
 
 
 
