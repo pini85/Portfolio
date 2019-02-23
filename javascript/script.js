@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   $('.skills').waypoint(function(direction) {
     if (direction == "down") {
-      $('nav').addClass('sticky').removeClass(' nav');
+      $('nav').addClass('sticky').removeClass('nav');
       $('nav').addClass('sticky').removeClass('return-nav');
       $('ul').removeClass('nav__ul').addClass('sticky__ul');
       $('ul').removeClass('return-nav__ul').addClass('sticky__ul');
@@ -63,11 +63,11 @@ $(document).ready(function () {
   $('.js--scroll-to-skills').click(function () {
     $('html, body').animate({scrollTop: $('.skills').offset().top}, 1000);
 
+
   });
 
   $('.js--scroll-to-projects').click(function () {
     $('html, body').animate({scrollTop: $('.projects').offset().top}, 1000);
-
   });
 
   $('.js--scroll-to-contacts').click(function () {

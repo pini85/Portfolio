@@ -131,6 +131,13 @@
   }
 }
 
+//animation//
+.sticky-animate {
+  animation-name: hidden-down;
+  animation-duration: .3s;
+  margin-left: 300px;
+}
+
 //Add this class for waypoint when direction is up//
 
 .return-nav {
