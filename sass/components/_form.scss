@@ -34,6 +34,7 @@
     font-family: inherit;
     color: $color-display;
     padding: 1.5rem 2rem;
+    text-transform: capitalize;
     border-radius: 2px;
     background-color: rgba(215,228,255,.3);
     border: none;
@@ -49,7 +50,7 @@
 
 
     &:focus {
-    outline: none
+    outline: none;
     border-bottom: 3px solid $color-primary;
     }
 

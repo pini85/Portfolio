@@ -823,6 +823,7 @@ body {
     font-family: inherit;
     color: #06122d;
     padding: 1.5rem 2rem;
+    text-transform: capitalize;
     border-radius: 2px;
     background-color: rgba(215, 228, 255, 0.3);
     border: none;
@@ -834,7 +835,7 @@ body {
       .form__input, .form__input-lg {
         font-size: 2.5rem; } }
     .form__input:focus, .form__input-lg:focus {
-      outline: none !important;
+      outline: none;
       border-bottom: 3px solid #143B96; }
     .form__input::-webkit-input-placeholder, .form__input-lg::-webkit-input-placeholder {
       color: #b4c7f5; }
