@@ -144,8 +144,15 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #4E6DB4;
-  font-weight: bolder; }
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bolder;
+  transition: all .3s; }
+
+.mfp-close-btn-in .mfp-close:hover {
+  font-size: 4rem;
+  transform: rotate(180deg);
+}
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {

@@ -454,6 +454,10 @@ body {
     .container {
       grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
 
+::selection {
+  background: #143B96;
+  color: white; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
