@@ -28,9 +28,14 @@ html {
    }
 
    @include respond(landscape-800) {
-    font-size: 20%;
-
+    font-size: 27%;
    }
+
+    @include respond(landscape-700) {
+    font-size: 22%;
+   }
+
+
 
    @include respond(600) {
     font-size: 33%;

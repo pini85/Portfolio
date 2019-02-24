@@ -433,7 +433,10 @@ html {
       font-size: 40%; } }
   @media screen and (orientation: landscape) and (max-width: 50em) {
     html {
-      font-size: 20%; } }
+      font-size: 27%; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    html {
+      font-size: 22%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 33%; } }
