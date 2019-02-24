@@ -1855,10 +1855,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-skills {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-skills {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-skills span {
     position: absolute;
     top: 0;
@@ -1871,13 +1871,19 @@ textarea {
         left: 1.35rem; } }
     @media only screen and (max-width: 31.25em) {
       .next-page-skills span {
-        left: 1.50rem; } }
+        left: 2.7rem; } }
     @media only screen and (max-width: 25em) {
       .next-page-skills span {
-        left: 1.80rem; } }
+        left: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .next-page-skills span {
+        animation-name: next-page-hover;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite; } }
   .next-page-skills:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
+    animation-delay: 1.5s;
     animation-iteration-count: infinite; }
 
 /*SVG'S*/
@@ -2041,10 +2047,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-projects {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-projects {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-projects span {
     position: absolute;
     top: 0;
@@ -2057,10 +2063,16 @@ textarea {
         left: 1.35rem; } }
     @media only screen and (max-width: 31.25em) {
       .next-page-projects span {
-        left: 1.50rem; } }
+        left: 2.7rem; } }
     @media only screen and (max-width: 25em) {
       .next-page-projects span {
-        left: 1.80rem; } }
+        left: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .next-page-projects span {
+        animation-name: next-page-hover;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite; } }
   .next-page-projects:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
@@ -2148,10 +2160,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-footer {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-footer {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-footer span {
     position: absolute;
     top: 0;

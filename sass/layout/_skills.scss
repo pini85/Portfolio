@@ -386,12 +386,23 @@
       top: 0;
       left: 1.02rem;
       @include responsive-next-page-span;
+
+      @include respond(600) {
+        animation-name: next-page-hover;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
     }
 
     &:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
+    animation-delay: 1.5s;
     animation-iteration-count: infinite;
+
+    @include respond(600) {
+
+    }
 
     }
   }

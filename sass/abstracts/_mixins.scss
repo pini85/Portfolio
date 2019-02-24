@@ -128,15 +128,15 @@
 
 @mixin responsive-next-page {
   @include respond(800) { font-size: 3.5rem; }
-  @include respond(500) { font-size: 4.5rem; }
-  @include respond(400) { font-size: 5.5rem; }
+  @include respond(500) { font-size: 8.5rem; }
+  @include respond(400) { font-size: 7.5rem; }
 }
 
 @mixin responsive-next-page-span {
   @include respond(800) { left: 1.30rem; }
   @include respond(600) { left: 1.35rem; }
-  @include respond(500) { left: 1.50rem; }
-  @include respond(400) { left: 1.80rem; }
+  @include respond(500) { left: 2.7rem; }
+  @include respond(400) { left: 2.5rem; }
 }
 
 
