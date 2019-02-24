@@ -1706,6 +1706,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__html-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__html-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__html-text {
+        font-size: 1.8rem; } }
   .skills__html-fill {
     height: 100%;
     width: 0;
@@ -1738,6 +1744,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__css-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__css-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__css-text {
+        font-size: 1.8rem; } }
   .skills__css-fill {
     height: 100%;
     width: 0;
@@ -1770,6 +1782,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__javascript-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__javascript-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__javascript-text {
+        font-size: 1.8rem; } }
   .skills__javascript-fill {
     height: 100%;
     width: 0;
@@ -1802,6 +1820,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__ruby-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__ruby-text {
+        font-size: 1.8rem; } }
   .skills__ruby-fill {
     height: 100%;
     width: 0;
@@ -1834,6 +1858,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-on-rails-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 1.8rem; } }
   .skills__ruby-on-rails-fill {
     height: 100%;
     width: 0;

@@ -55,6 +55,14 @@
     font-size: 1.1rem;
   }
 
+  @include respond(500) {
+    font-size: 2rem;
+  }
+
+  @include respond(400) {
+    font-size: 1.8rem;
+  }
+
 }
 
 //smallest to biggest
