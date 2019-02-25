@@ -431,6 +431,12 @@ html {
   @media only screen and (max-width: 50em) {
     html {
       font-size: 40%; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    html {
+      font-size: 27%; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    html {
+      font-size: 22%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 33%; } }
@@ -453,6 +459,10 @@ body {
   @media only screen and (max-width: 50em) {
     .container {
       grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
+
+::selection {
+  background: #143B96;
+  color: white; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -661,8 +671,7 @@ body {
   font-size: 1.4rem;
   line-height: 2rem;
   color: #06122d;
-  font-weight: 300;
-  text-align: center; }
+  font-weight: 300; }
   @media only screen and (max-width: 43.75em) {
     .popup-text {
       font-size: 3rem;
@@ -807,19 +816,13 @@ body {
         margin-bottom: -3.8rem; } }
     @media only screen and (max-width: 37.5em) {
       .form__group {
-        margin-bottom: -3.3rem; } }
-    @media only screen and (max-width: 31.25em) {
-      .form__group {
-        width: 100%;
-        margin-bottom: -3.8rem; } }
-    @media only screen and (max-width: 25em) {
-      .form__group {
-        margin-bottom: -3.4rem; } }
+        margin-bottom: -6%; } }
   .form__input, .form__input-lg {
     font-size: 1.5rem;
     font-family: inherit;
     color: #06122d;
     padding: 1.5rem 2rem;
+    text-transform: capitalize;
     border-radius: 2px;
     background-color: rgba(215, 228, 255, 0.3);
     border: none;
@@ -831,6 +834,7 @@ body {
       .form__input, .form__input-lg {
         font-size: 2.5rem; } }
     .form__input:focus, .form__input-lg:focus {
+      outline: none;
       border-bottom: 3px solid #143B96; }
     .form__input::-webkit-input-placeholder, .form__input-lg::-webkit-input-placeholder {
       color: #b4c7f5; }
@@ -863,7 +867,8 @@ body {
   animation-fill-mode: both; }
 
 textarea {
-  height: 100%; }
+  height: 100%;
+  resize: none; }
 
 .nav {
   display: flex;
@@ -960,6 +965,11 @@ textarea {
     animation-duration: none;
     animation-delay: none;
     animation-fill-mode: none; }
+
+.sticky-animate {
+  animation-name: hidden-down;
+  animation-duration: .3s;
+  margin-left: 300px; }
 
 .return-nav {
   display: flex;
@@ -1067,6 +1077,9 @@ textarea {
     @media only screen and (max-width: 81.25em) {
       .profile-picture__img {
         width: 50%; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .profile-picture__img {
+        width: 40%; } }
     @media only screen and (max-width: 37.5em) {
       .profile-picture__img {
         width: 100%;
@@ -1096,6 +1109,12 @@ textarea {
       animation-name: fall-down;
       animation-duration: 1s;
       animation-delay: 3.75s; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .intro {
+      animation-name: travel, travel-1, travel-2, travel-3;
+      animation-duration: .75s, .75s, .75s, .75s;
+      animation-delay: 3.7s, 4.5s, 5s, 6s;
+      animation-fill-mode: forwards, forwards, forwards, forwards; } }
   .intro__top {
     letter-spacing: 0.2rem;
     font-size: 9rem;
@@ -1680,6 +1699,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__html-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__html-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__html-text {
+        font-size: 1.8rem; } }
   .skills__html-fill {
     height: 100%;
     width: 0;
@@ -1712,6 +1737,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__css-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__css-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__css-text {
+        font-size: 1.8rem; } }
   .skills__css-fill {
     height: 100%;
     width: 0;
@@ -1744,6 +1775,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__javascript-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__javascript-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__javascript-text {
+        font-size: 1.8rem; } }
   .skills__javascript-fill {
     height: 100%;
     width: 0;
@@ -1776,6 +1813,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__ruby-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__ruby-text {
+        font-size: 1.8rem; } }
   .skills__ruby-fill {
     height: 100%;
     width: 0;
@@ -1808,6 +1851,12 @@ textarea {
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-on-rails-text {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 1.8rem; } }
   .skills__ruby-on-rails-fill {
     height: 100%;
     width: 0;
@@ -1832,10 +1881,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-skills {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-skills {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-skills span {
     position: absolute;
     top: 0;
@@ -1848,13 +1897,19 @@ textarea {
         left: 1.35rem; } }
     @media only screen and (max-width: 31.25em) {
       .next-page-skills span {
-        left: 1.50rem; } }
+        left: 2.7rem; } }
     @media only screen and (max-width: 25em) {
       .next-page-skills span {
-        left: 1.80rem; } }
+        left: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .next-page-skills span {
+        animation-name: next-page-hover;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite; } }
   .next-page-skills:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
+    animation-delay: 1.5s;
     animation-iteration-count: infinite; }
 
 /*SVG'S*/
@@ -1935,20 +1990,19 @@ textarea {
         width: auto; } }
   .projects__item {
     text-align: center;
-    height: 40rem;
     width: 40rem;
     display: flex;
     flex-direction: column;
     opacity: 0; }
     @media only screen and (max-width: 37.5em) {
       .projects__item {
-        height: 30rem; } }
+        width: 30rem; } }
     @media only screen and (max-width: 31.25em) {
       .projects__item {
-        height: 35rem; } }
+        width: 35rem; } }
     @media only screen and (max-width: 25em) {
       .projects__item {
-        height: 34rem; } }
+        width: 34rem; } }
   .projects__text {
     transform: translateY(0%);
     transition: all .5s;
@@ -2019,10 +2073,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-projects {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-projects {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-projects span {
     position: absolute;
     top: 0;
@@ -2035,10 +2089,16 @@ textarea {
         left: 1.35rem; } }
     @media only screen and (max-width: 31.25em) {
       .next-page-projects span {
-        left: 1.50rem; } }
+        left: 2.7rem; } }
     @media only screen and (max-width: 25em) {
       .next-page-projects span {
-        left: 1.80rem; } }
+        left: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .next-page-projects span {
+        animation-name: next-page-hover;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite; } }
   .next-page-projects:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
@@ -2074,7 +2134,7 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .js-4 {
-    margin-bottom: 9rem; } }
+    margin-bottom: 5rem; } }
 
 .footer {
   grid-row: 5 / 6;
@@ -2126,10 +2186,10 @@ textarea {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .next-page-footer {
-      font-size: 4.5rem; } }
+      font-size: 8.5rem; } }
   @media only screen and (max-width: 25em) {
     .next-page-footer {
-      font-size: 5.5rem; } }
+      font-size: 7.5rem; } }
   .next-page-footer span {
     position: absolute;
     top: 0;

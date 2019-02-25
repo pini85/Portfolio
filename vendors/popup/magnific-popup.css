@@ -147,11 +147,16 @@ button::-moz-focus-inner {
   font-size: 3.5rem;
   color: white;
   font-weight: bolder;
-  transition: all .3s; }
+  transition: all .3s;
+}
+
+ @media only screen and (max-width: 31.25em ) {
+    .mfp-close-btn-in .mfp-close { font-size: 5.5rem; }
+  }
+
 
 .mfp-close-btn-in .mfp-close:hover {
-  font-size: 4rem;
-  transform: rotate(180deg);
+  transform: scale(1.2) rotate(180deg);
 }
 
 .mfp-image-holder .mfp-close,
