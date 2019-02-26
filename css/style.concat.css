@@ -1148,10 +1148,10 @@ html {
       font-size: 40%; } }
   @media screen and (orientation: landscape) and (max-width: 50em) {
     html {
-      font-size: 27%; } }
-  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      font-size: 37%; } }
+  @media screen and (orientation: landscape) and (max-width: 56.25em) {
     html {
-      font-size: 22%; } }
+      font-size: 27%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 33%; } }
@@ -1174,6 +1174,12 @@ body {
   @media only screen and (max-width: 50em) {
     .container {
       grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
+  @media screen and (orientation: landscape) and (max-width: 56.25em) {
+    .container {
+      grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .container {
+      grid-template-rows: 100vh 150vh 100vh 80vh 20vh; } }
 
 ::selection {
   background: #143B96;
@@ -1271,6 +1277,12 @@ body {
   @media only screen and (max-width: 50em) {
     .heading-tertiary {
       font-size: 3rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .heading-tertiary {
+      font-size: 2.5rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .heading-tertiary {
+      font-size: 3rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-tertiary {
       font-size: 4rem; } }
@@ -1288,6 +1300,12 @@ body {
   @media only screen and (max-width: 50em) {
     .paragraph {
       font-size: 2.5rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .paragraph {
+      font-size: 1.8rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .paragraph {
+      font-size: 2.3rem; } }
   @media only screen and (max-width: 31.25em) {
     .paragraph {
       font-size: 3rem; } }
@@ -2078,6 +2096,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-fast:before {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-fast:before {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-fast:before {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-fast:before {
         width: 18rem; } }
@@ -2097,6 +2121,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-fast:after {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-fast:after {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-fast:after {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-fast:after {
         width: 18rem; } }
@@ -2109,6 +2139,14 @@ textarea {
       grid-column: 2 / 4;
       width: 15rem;
       height: 15rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .skills__features-fast {
+      width: 11rem;
+      height: 11rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .skills__features-fast {
+      width: 12rem;
+      height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-fast {
       width: 18rem;
@@ -2127,6 +2165,9 @@ textarea {
       .skills__features-fast-text {
         grid-row: 3 / 4;
         grid-column: 2 / 4; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-fast-text {
+        margin-top: 0; } }
     @media only screen and (max-width: 37.5em) {
       .skills__features-fast-text {
         margin-bottom: 3rem; } }
@@ -2160,6 +2201,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-responsive:before {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-responsive:before {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-responsive:before {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-responsive:before {
         width: 18rem; } }
@@ -2179,6 +2226,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-responsive:after {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-responsive:after {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-responsive:after {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-responsive:after {
         width: 18rem; } }
@@ -2191,6 +2244,14 @@ textarea {
       grid-column: 4 / 6;
       width: 15rem;
       height: 15rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .skills__features-responsive {
+      width: 11rem;
+      height: 11rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .skills__features-responsive {
+      width: 12rem;
+      height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-responsive {
       width: 18rem;
@@ -2210,6 +2271,9 @@ textarea {
       .skills__features-responsive-text {
         grid-row: 3 / 4;
         grid-column: 4 / 6; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-responsive-text {
+        margin-top: 0; } }
     @media only screen and (max-width: 37.5em) {
       .skills__features-responsive-text {
         margin-bottom: 3rem; } }
@@ -2240,6 +2304,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic:before {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-dynamic:before {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-dynamic:before {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-dynamic:before {
         width: 18rem; } }
@@ -2259,6 +2329,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic:after {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-dynamic:after {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-dynamic:after {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-dynamic:after {
         width: 18rem; } }
@@ -2271,6 +2347,14 @@ textarea {
       grid-column: 2 / 4;
       width: 15rem;
       height: 15rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .skills__features-dynamic {
+      width: 11rem;
+      height: 11rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .skills__features-dynamic {
+      width: 12rem;
+      height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-dynamic {
       width: 18rem;
@@ -2296,6 +2380,9 @@ textarea {
       .skills__features-dynamic-text {
         grid-row: 5 / 6;
         grid-column: 2 / 4; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-dynamic-text {
+        margin-top: 0; } }
 
 .skills__features-detail {
   grid-row: 2 / 3;
@@ -2320,6 +2407,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-detail:before {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-detail:before {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-detail:before {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-detail:before {
         width: 18rem; } }
@@ -2339,6 +2432,12 @@ textarea {
     @media only screen and (max-width: 50em) {
       .skills__features-detail:after {
         width: 15rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-detail:after {
+        width: 11rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__features-detail:after {
+        width: 12rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__features-detail:after {
         width: 18rem; } }
@@ -2351,6 +2450,17 @@ textarea {
       grid-column: 4 / 6;
       width: 15rem;
       height: 15rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .skills__features-detail {
+      margin-top: 0; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .skills__features-detail {
+      width: 11rem;
+      height: 11rem; } }
+  @media screen and (orientation: landscape) and (max-width: 43.75em) {
+    .skills__features-detail {
+      width: 12rem;
+      height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-detail {
       width: 18rem;
@@ -2366,16 +2476,19 @@ textarea {
     align-self: start;
     margin-top: 1rem;
     opacity: 0; }
+    @media only screen and (max-width: 50em) {
+      .skills__features-detail-text {
+        grid-row: 5 / 6;
+        grid-column: 4 / 6; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__features-detail-text {
+        margin-top: 0; } }
     @media only screen and (max-width: 37.5em) {
       .skills__features-detail-text {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 25em) {
       .skills__features-detail-text {
         margin-bottom: 9rem; } }
-    @media only screen and (max-width: 50em) {
-      .skills__features-detail-text {
-        grid-row: 5 / 6;
-        grid-column: 4 / 6; } }
 
 .skills__langauges {
   display: grid;
@@ -2386,6 +2499,9 @@ textarea {
   width: 100%;
   height: 100%;
   opacity: 0; }
+  @media screen and (orientation: landscape) and (max-width: 56.25em) {
+    .skills__langauges {
+      align-items: end; } }
   @media only screen and (max-width: 50em) {
     .skills__langauges {
       grid-row: 6 / 11; } }
@@ -2630,12 +2746,13 @@ textarea {
 /*SVG'S*/
 .features__icon {
   height: 4.5rem;
-  width: 4.5rem;
   fill: #c3d2f7; }
   @media only screen and (max-width: 56.25em) {
     .features__icon {
-      height: 5.5rem;
-      width: 5.5rem; } }
+      height: 5.5rem; } }
+  @media screen and (orientation: landscape) and (max-width: 50em) {
+    .features__icon {
+      height: 4rem; } }
 
 /*Animations*/
 .animation--features {
@@ -2929,6 +3046,9 @@ textarea {
       grid-template-rows: 15vh min-content 8vh 15vh 8vh repeat(5, 1fr) 10vh;
       grid-template-columns: 2% repeat(4, 1fr) 2%;
       grid-row-gap: 2rem; } }
+  @media screen and (orientation: landscape) and (max-width: 56.25em) {
+    .skills {
+      grid-template-rows: 15vh min-content 10vh min-content 10vh repeat(5, 1fr) 10vh; } }
 
 .projects {
   grid-row: 3 / 4;

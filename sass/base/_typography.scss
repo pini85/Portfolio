@@ -79,9 +79,11 @@ body {
   text-align: center;
 
   @include respond(800) { font-size: 3rem; }
-   @include respond(500) { font-size: 4rem; }
-   @include respond(400) { font-size: 5rem; }
-   @include respond(400) { font-size: 4.5rem; }
+  @include respond(landscape-800) { font-size: 2.5rem; }
+  @include respond(landscape-700) { font-size: 3rem; }
+  @include respond(500) { font-size: 4rem; }
+  @include respond(400) { font-size: 5rem; }
+  @include respond(400) { font-size: 4.5rem; }
 
 }
 
@@ -91,6 +93,8 @@ body {
   font-weight: 300;
 
   @include respond(800) { font-size: 2.5rem; }
+  @include respond(landscape-800) { font-size: 1.8rem; }
+  @include respond(landscape-700) { font-size: 2.3rem; }
   @include respond(500) { font-size: 3rem; }
   @include respond(400) { font-size: 4rem; }
   @include respond(400) { font-size: 3rem; }

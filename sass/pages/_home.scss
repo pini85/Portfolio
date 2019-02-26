@@ -15,6 +15,10 @@
   grid-row-gap: 2rem;
   }
 
+  @include respond(landscape-900) { grid-template-rows: 15vh min-content 10vh min-content 10vh repeat(5, 1fr) 10vh;
+
+  }
+
 }
 
 

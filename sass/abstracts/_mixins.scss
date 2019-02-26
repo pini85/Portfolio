@@ -14,6 +14,10 @@
 
         @include respond(800) { width: 15rem; }
 
+        @include respond(landscape-800) { width: 11rem; }
+
+        @include respond(landscape-700) { width: 12rem; }
+
         @include respond(500) { width: 18rem;}
 
         @include respond(400) { width: 14rem; }
@@ -32,6 +36,10 @@
       border-right: 2.9rem solid $color-layout;
 
       @include respond(800) { width: 15rem; }
+
+      @include respond(landscape-800) { width: 11rem; }
+
+      @include respond(landscape-700) { width: 12rem; }
 
       @include respond(500) { width: 18rem;}
 
@@ -112,9 +120,12 @@
     @media screen and (orientation:landscape) and (max-width: 50em) { @content };
   }
 
-
    @if $breakpoint == 900 {
     @media only screen and (max-width: 56.25em ) { @content };
+  }
+
+  @if $breakpoint == landscape-900 {
+    @media screen and (orientation:landscape) and (max-width: 56.25em) { @content };
   }
 
   @if $breakpoint == 1000 {
