@@ -1810,9 +1810,12 @@ textarea {
     @media only screen and (max-width: 81.25em) {
       .profile-picture__img {
         width: 50%; } }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .profile-picture__img {
+        width: 36%; } }
     @media screen and (orientation: landscape) and (max-width: 50em) {
       .profile-picture__img {
-        width: 40%; } }
+        width: 38%; } }
     @media only screen and (max-width: 37.5em) {
       .profile-picture__img {
         width: 100%;
@@ -2527,6 +2530,15 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .skills__html-text {
+        font-size: 2rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__html-text {
+        font-size: 2.5rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__html-text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .skills__html-text {
         font-size: 1.1rem; } }
@@ -2565,6 +2577,15 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .skills__css-text {
+        font-size: 2rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__css-text {
+        font-size: 2.5rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__css-text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .skills__css-text {
         font-size: 1.1rem; } }
@@ -2603,6 +2624,15 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .skills__javascript-text {
+        font-size: 2rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__javascript-text {
+        font-size: 2.5rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__javascript-text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .skills__javascript-text {
         font-size: 1.1rem; } }
@@ -2641,6 +2671,15 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .skills__ruby-text {
+        font-size: 2rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__ruby-text {
+        font-size: 2.5rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__ruby-text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-text {
         font-size: 1.1rem; } }
@@ -2679,6 +2718,15 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media screen and (orientation: landscape) and (max-width: 56.25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2rem; } }
+    @media screen and (orientation: landscape) and (max-width: 50em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2.5rem; } }
+    @media screen and (orientation: landscape) and (max-width: 43.75em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .skills__ruby-on-rails-text {
         font-size: 1.1rem; } }

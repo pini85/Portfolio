@@ -128,8 +128,10 @@
       width: 50%;
      }
 
+     @include respond(landscape-900) { width: 36%;}
+
      @include respond(landscape-800) {
-      width: 40%;
+      width: 38%;
      }
 
     @include respond(600) {
