@@ -1,4 +1,4 @@
-
+CONTINUE WITH ANIMATIONS OF LANGAUGES
 REFACTORING BABY!!!!
 
 1) Media Queries for mobile landscape

@@ -15,8 +15,10 @@ html {
     font-size: 62.5%;
    }
 
+
+
    @include respond(1300) {
-    font-size: 57%;
+    font-size: 40%;
    }
 
    @include respond(900) {

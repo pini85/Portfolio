@@ -294,10 +294,12 @@
      width: 100%;
      height: 100%;
      opacity: 0;
-
      @include respond(landscape-900) { align-items: end; }
 
      @include respond(800) { grid-row: 6 / 11; }
+     @include respond(600) { grid-row: 6 / 11; }
+     @include respond(500) {opacity: 0;}
+
 
     }
 
@@ -311,6 +313,11 @@
     position: relative;
 
     @include respond(800) { align-self: end; }
+    // @include respond(500) {
+    //   animation-name: from-right;
+    //   animation-duration: .75s;
+    //   animation-fill-mode: forwards;}
+
 
     &-text { @include skill; }
 
@@ -491,6 +498,7 @@
   animation-name: from-right;
   animation-duration: .75s;
   animation-fill-mode: forwards;
+
 }
 
 .animation--fill-70 {

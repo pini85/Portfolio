@@ -18,7 +18,7 @@
   @include respond(600) {
     flex-direction: column;
     max-height: 90vh;
-    width: auto;
+    width: 100vw;
   }
   // @include respond(600) { margin-bottom: 12rem; }
   // @include respond(500) { margin-bottom: 6rem; }
@@ -96,6 +96,7 @@
   opacity: 1;
 
 
+  @include respond(1300) { transform: translateY(120%);  }
 
   @include respond(1400) { transform: translateY(134%);  }
 
@@ -173,6 +174,12 @@
   animation-name: hidden-down-strong;
   animation-duration: .5s;
   animation-fill-mode: forwards;
+
+  @include respond(600) {
+    animation-name: from-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .animate-2 {
@@ -180,6 +187,12 @@
   animation-duration: .5s;
   animation-delay: .2s;
   animation-fill-mode: forwards;
+
+   @include respond(600) {
+    animation-name: from-left;
+    animation-duration: 1s;
+   animation-fill-mode: forwards;
+  }
 }
 
 .animate-3 {
@@ -187,6 +200,12 @@
   animation-duration: .5s;
   animation-delay: .4s;
   animation-fill-mode: forwards;
+
+   @include respond(600) {
+    animation-name: from-right;
+    animation-duration: 1s;
+   animation-fill-mode: forwards;
+  }
 }
 
 .animate-4 {
@@ -194,6 +213,12 @@
   animation-duration: .5s;
   animation-delay: .6s;
   animation-fill-mode: forwards;
+
+   @include respond(600) {
+    animation-name: from-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 }
 
 //Mobile grid//

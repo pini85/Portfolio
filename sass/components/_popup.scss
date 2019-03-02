@@ -26,6 +26,10 @@
   color: #06122d;
   font-weight: 300;
 
+  @include respond(1300) {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
   @include respond(700) {
     font-size: 3rem;
     line-height: 5rem;

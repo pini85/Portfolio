@@ -89,36 +89,50 @@ $(document).ready(function () {
   $('.skills').waypoint(function(direction) {
     $('.heading-secondary-skills').addClass('animations--heading-secondary');
     }, {
-    offset: '50%;'
+    offset: '79%;'
   });
 
   $('.skills').waypoint(function(direction) {
     $('.heading-bar-skills').addClass('animations--heading-bar');
     }, {
-    offset: '47%;'
+    offset: '78%;'
   });
 
   /*Icons*/
 
   $('.skills').waypoint(function(direction) {
   $('.skills__features-fast').addClass('animation--features');
-  $('.skills__features-responsive').addClass('animation--features animation-delay-200ms');
-  $('.skills__features-dynamic').addClass('animation--features animation-delay-400ms');
-  $('.skills__features-detail').addClass('animation--features animation-delay-600ms');
+  $('.skills__features-responsive').addClass('animation--features');
+  // $('.skills__features-responsive').addClass('animation--features animation-delay-200ms');
+  // $('.skills__features-dynamic').addClass('animation--features animation-delay-400ms');
+  // $('.skills__features-detail').addClass('animation--features animation-delay-600ms');
   }, {
-    offset: '37%;'
+    offset: '55%;'
+  });
 
+   $('.skills').waypoint(function(direction) {
+    $('.skills__features-dynamic').addClass('animation--features');
+    $('.skills__features-detail').addClass('animation--features');
+     }, {
+    offset: '31%;'
   });
 
   /*Icons text*/
 
   $('.skills').waypoint(function(direction) {
-  $('.skills__features-fast-text').addClass('animation--features-text');
+  $('.skills__features-fast-text').addClass('animation--features-text animation-delay-200ms');
   $('.skills__features-responsive-text').addClass('animation--features-text animation-delay-200ms');
-  $('.skills__features-dynamic-text').addClass('animation--features-text animation-delay-400ms');
-  $('.skills__features-detail-text').addClass('animation--features-text animation-delay-600ms');
+  // $('.skills__features-dynamic-text').addClass('animation--features-text animation-delay-400ms');
+  // $('.skills__features-detail-text').addClass('animation--features-text animation-delay-600ms');
   }, {
-    offset: '22%;'
+    offset: '55%;'
+  });
+
+  $('.skills').waypoint(function(direction) {
+    $('.skills__features-dynamic-text').addClass('animation--features-text animation-delay-200ms');
+    $('.skills__features-detail-text').addClass('animation--features-text animation-delay-200ms');
+  }, {
+    offset: '31%;'
   });
 
 
@@ -194,7 +208,7 @@ $(document).ready(function () {
     $('.js-3').addClass('animate-3');
     $('.js-4').addClass('animate-4');
     }, {
-    offset: '22%;'
+    offset: '8%;'
   });
 
   /*Nextpage*/

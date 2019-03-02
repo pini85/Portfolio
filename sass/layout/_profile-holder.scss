@@ -125,7 +125,7 @@
     width: 40%;
 
      @include respond(1300) {
-      width: 50%;
+      width: 34%;
      }
 
      @include respond(landscape-900) { width: 36%;}

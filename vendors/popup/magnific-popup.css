@@ -149,7 +149,10 @@ button::-moz-focus-inner {
   font-weight: bolder;
   transition: all .3s;
 }
+@media only screen and (max-width: 81.25em) {
+   .mfp-close-btn-in .mfp-close { font-size: 4.5rem; }
 
+}
  @media only screen and (max-width: 31.25em ) {
     .mfp-close-btn-in .mfp-close { font-size: 5.5rem; }
   }

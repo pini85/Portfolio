@@ -149,7 +149,10 @@ button::-moz-focus-inner {
   font-weight: bolder;
   transition: all .3s;
 }
+@media only screen and (max-width: 81.25em) {
+   .mfp-close-btn-in .mfp-close { font-size: 4.5rem; }
 
+}
  @media only screen and (max-width: 31.25em ) {
     .mfp-close-btn-in .mfp-close { font-size: 5.5rem; }
   }
@@ -1139,7 +1142,7 @@ html {
       font-size: 62.5%; } }
   @media only screen and (max-width: 81.25em) {
     html {
-      font-size: 57%; } }
+      font-size: 40%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -1274,6 +1277,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center; }
+  @media only screen and (max-width: 81.25em) {
+    .heading-tertiary {
+      font-size: 3rem; } }
   @media only screen and (max-width: 50em) {
     .heading-tertiary {
       font-size: 3rem; } }
@@ -1297,6 +1303,9 @@ body {
   font-size: 1.6rem;
   color: #06122d;
   font-weight: 300; }
+  @media only screen and (max-width: 81.25em) {
+    .paragraph {
+      font-size: 2.1rem; } }
   @media only screen and (max-width: 50em) {
     .paragraph {
       font-size: 2.5rem; } }
@@ -1405,6 +1414,10 @@ body {
   line-height: 2rem;
   color: #06122d;
   font-weight: 300; }
+  @media only screen and (max-width: 81.25em) {
+    .popup-text {
+      font-size: 1.7rem;
+      line-height: 2.5rem; } }
   @media only screen and (max-width: 43.75em) {
     .popup-text {
       font-size: 3rem;
@@ -1809,7 +1822,7 @@ textarea {
     width: 40%; }
     @media only screen and (max-width: 81.25em) {
       .profile-picture__img {
-        width: 50%; } }
+        width: 34%; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .profile-picture__img {
         width: 36%; } }
@@ -2508,6 +2521,12 @@ textarea {
   @media only screen and (max-width: 50em) {
     .skills__langauges {
       grid-row: 6 / 11; } }
+  @media only screen and (max-width: 37.5em) {
+    .skills__langauges {
+      grid-row: 6 / 11; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__langauges {
+      opacity: 0; } }
 
 .skills__html {
   grid-row: 1 / 2;
@@ -2530,6 +2549,9 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media only screen and (max-width: 81.25em) {
+      .skills__html-text {
+        font-size: 2rem; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .skills__html-text {
         font-size: 2rem; } }
@@ -2577,6 +2599,9 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media only screen and (max-width: 81.25em) {
+      .skills__css-text {
+        font-size: 2rem; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .skills__css-text {
         font-size: 2rem; } }
@@ -2624,6 +2649,9 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media only screen and (max-width: 81.25em) {
+      .skills__javascript-text {
+        font-size: 2rem; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .skills__javascript-text {
         font-size: 2rem; } }
@@ -2671,6 +2699,9 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media only screen and (max-width: 81.25em) {
+      .skills__ruby-text {
+        font-size: 2rem; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .skills__ruby-text {
         font-size: 2rem; } }
@@ -2718,6 +2749,9 @@ textarea {
     font-weight: 700;
     background-color: #4E6DB4;
     overflow: hidden; }
+    @media only screen and (max-width: 81.25em) {
+      .skills__ruby-on-rails-text {
+        font-size: 2rem; } }
     @media screen and (orientation: landscape) and (max-width: 56.25em) {
       .skills__ruby-on-rails-text {
         font-size: 2rem; } }
@@ -2755,6 +2789,9 @@ textarea {
   color: #0C2D79;
   opacity: 0;
   cursor: pointer; }
+  @media only screen and (max-width: 81.25em) {
+    .next-page-skills {
+      font-size: 4rem; } }
   @media only screen and (max-width: 50em) {
     .next-page-skills {
       font-size: 3.5rem; } }
@@ -2768,7 +2805,7 @@ textarea {
     position: absolute;
     top: 0;
     left: 1.02rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 81.25em) {
       .next-page-skills span {
         left: 1.30rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -2867,7 +2904,7 @@ textarea {
       .projects__items {
         flex-direction: column;
         max-height: 90vh;
-        width: auto; } }
+        width: 100vw; } }
   .projects__item {
     text-align: center;
     width: 40rem;
@@ -2911,6 +2948,9 @@ textarea {
 .projects__item:hover .projects__text {
   transform: translateY(150%);
   opacity: 1; }
+  @media only screen and (max-width: 81.25em) {
+    .projects__item:hover .projects__text {
+      transform: translateY(120%); } }
   @media only screen and (min-width: 87.5em) {
     .projects__item:hover .projects__text {
       transform: translateY(134%); } }
@@ -2948,6 +2988,9 @@ textarea {
   color: #0C2D79;
   opacity: 0;
   cursor: pointer; }
+  @media only screen and (max-width: 81.25em) {
+    .next-page-projects {
+      font-size: 4rem; } }
   @media only screen and (max-width: 50em) {
     .next-page-projects {
       font-size: 3.5rem; } }
@@ -2961,7 +3004,7 @@ textarea {
     position: absolute;
     top: 0;
     left: 1.02rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 81.25em) {
       .next-page-projects span {
         left: 1.30rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -2989,24 +3032,44 @@ textarea {
   animation-name: hidden-down-strong;
   animation-duration: .5s;
   animation-fill-mode: forwards; }
+  @media only screen and (max-width: 37.5em) {
+    .animate-1 {
+      animation-name: from-right;
+      animation-duration: 1s;
+      animation-fill-mode: forwards; } }
 
 .animate-2 {
   animation-name: hidden-down-strong;
   animation-duration: .5s;
   animation-delay: .2s;
   animation-fill-mode: forwards; }
+  @media only screen and (max-width: 37.5em) {
+    .animate-2 {
+      animation-name: from-left;
+      animation-duration: 1s;
+      animation-fill-mode: forwards; } }
 
 .animate-3 {
   animation-name: hidden-down-strong;
   animation-duration: .5s;
   animation-delay: .4s;
   animation-fill-mode: forwards; }
+  @media only screen and (max-width: 37.5em) {
+    .animate-3 {
+      animation-name: from-right;
+      animation-duration: 1s;
+      animation-fill-mode: forwards; } }
 
 .animate-4 {
   animation-name: hidden-down-strong;
   animation-duration: .5s;
   animation-delay: .6s;
   animation-fill-mode: forwards; }
+  @media only screen and (max-width: 37.5em) {
+    .animate-4 {
+      animation-name: from-left;
+      animation-duration: 1s;
+      animation-fill-mode: forwards; } }
 
 .js-1 {
   grid-row: 2 / 3;
@@ -3030,7 +3093,7 @@ textarea {
   .footer__icon {
     font-size: 5rem;
     transition: all .2s; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 81.25em) {
       .footer__icon {
         font-size: 7rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -3061,6 +3124,9 @@ textarea {
   color: #0C2D79;
   display: inline-block;
   cursor: pointer; }
+  @media only screen and (max-width: 81.25em) {
+    .next-page-footer {
+      font-size: 4rem; } }
   @media only screen and (max-width: 50em) {
     .next-page-footer {
       font-size: 3.5rem; } }

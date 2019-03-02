@@ -59,6 +59,7 @@
   background-color: $color-primary-light;
   overflow: hidden;
 
+  @include respond(1300) { font-size: 2rem; }
   @include respond(landscape-900) { font-size: 2rem; }
   @include respond(landscape-800) { font-size: 2.5rem; }
   @include respond(landscape-700) { font-size: 2.2rem; }
@@ -154,13 +155,14 @@
 }
 
 @mixin responsive-next-page {
+  @include respond(1300) { font-size: 4rem; }
   @include respond(800) { font-size: 3.5rem; }
   @include respond(500) { font-size: 8.5rem; }
   @include respond(400) { font-size: 7.5rem; }
 }
 
 @mixin responsive-next-page-span {
-  @include respond(800) { left: 1.30rem; }
+  @include respond(1300) { left: 1.30rem; }
   @include respond(600) { left: 1.35rem; }
   @include respond(500) { left: 2.7rem; }
   @include respond(400) { left: 2.5rem; }
