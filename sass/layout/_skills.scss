@@ -571,7 +571,7 @@
   background: $color-layout;
   max-width: 50vw;
   margin: 20px auto;
-  // @include respond(700) { max-width: 100vw; }
+  @include respond(800) { max-width: 80vw; }
 
 
   &-item {
@@ -581,15 +581,19 @@
   &-img {
     height: 12rem;
 
-    @include respond(900) {
-      height: 10rem;
+    @include respond(700) {
+      height: 17rem;
     }
-    @include respond(400) {
-      height: 9rem;
+
+    @include respond(500) {
+      height: 13rem;
     }
-    @include respond(350) {
-      height: 8.5rem;
-    }
+    // @include respond(400) {
+    //   height: 9rem;
+    // }
+    // @include respond(350) {
+    //   height: 8.5rem;
+    // }
   }
   &-text {
     font-size: 2rem;
@@ -599,7 +603,6 @@
     text-align: center;
   }
 }
-
 
 /*SVG'S*/
 
