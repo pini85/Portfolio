@@ -581,12 +581,28 @@
   &-img {
     height: 12rem;
 
-    @include respond(700) {
+    @include respond(1300) {
       height: 17rem;
+    }
+
+    @include respond(900) {
+      height: 11rem;
+    }
+
+    @include respond(800) {
+      height: 20rem;
+    }
+
+    @include respond(600) {
+      height: 18rem;
     }
 
     @include respond(500) {
       height: 13rem;
+    }
+
+    @include respond(400) {
+      height: 14rem;
     }
     // @include respond(400) {
     //   height: 9rem;
