@@ -1152,7 +1152,7 @@ html {
       font-size: 40%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 40%; } }
   @media only screen and (max-width: 50em) {
     html {
       font-size: 40%; } }
@@ -1183,7 +1183,7 @@ body {
   grid-template-columns: 8rem repeat(4, 1fr) 8rem; }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
+      grid-template-rows: 100vh min-content 100vh 80vh 20vh; } }
   @media screen and (orientation: landscape) and (max-width: 56.25em) {
     .container {
       grid-template-rows: 100vh 115vh 100vh 80vh 20vh; } }
@@ -1287,6 +1287,9 @@ body {
   @media only screen and (max-width: 81.25em) {
     .heading-tertiary {
       font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 2.5rem; } }
   @media only screen and (max-width: 50em) {
     .heading-tertiary {
       font-size: 3rem; } }
@@ -1298,7 +1301,7 @@ body {
       font-size: 3rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-tertiary {
-      font-size: 4rem; } }
+      font-size: 5rem; } }
   @media only screen and (max-width: 25em) {
     .heading-tertiary {
       font-size: 5rem; } }
@@ -1325,13 +1328,7 @@ body {
       font-size: 2.3rem; } }
   @media only screen and (max-width: 31.25em) {
     .paragraph {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 25em) {
-    .paragraph {
       font-size: 4rem; } }
-  @media only screen and (max-width: 25em) {
-    .paragraph {
-      font-size: 3rem; } }
 
 .paragraph-2 {
   font-size: 1.6rem;
@@ -1525,7 +1522,7 @@ body {
 .btn-md {
   display: inline-block;
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: linear-gradient(to right bottom, rgba(78, 109, 180, 0.8), rgba(20, 59, 150, 0.8));
   padding: 1rem 2rem;
   letter-spacing: 0.2rem;
@@ -1534,6 +1531,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .btn-md {
       font-size: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn-md {
+      font-size: 5rem; } }
   .btn-md:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -2208,6 +2208,8 @@ textarea {
       height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-fast {
+      grid-row: 2/3;
+      grid-column: 1/-1;
       width: 18rem;
       height: 18rem; } }
   @media only screen and (max-width: 25em) {
@@ -2230,6 +2232,9 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .skills__features-fast-text {
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-fast-text {
+        grid-column: 1/-1; } }
     @media only screen and (max-width: 25em) {
       .skills__features-fast-text {
         margin-bottom: 9rem; } }
@@ -2313,6 +2318,8 @@ textarea {
       height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-responsive {
+      grid-row: 4/5;
+      grid-column: 1/-1;
       width: 18rem;
       height: 18rem; } }
   @media only screen and (max-width: 25em) {
@@ -2336,6 +2343,10 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .skills__features-responsive-text {
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-responsive-text {
+        grid-row: 5/6;
+        grid-column: 1/-1; } }
     @media only screen and (max-width: 25em) {
       .skills__features-responsive-text {
         margin-bottom: 9rem; } }
@@ -2416,6 +2427,8 @@ textarea {
       height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-dynamic {
+      grid-row: 6/7;
+      grid-column: 1/-1;
       width: 18rem;
       height: 18rem; } }
   @media only screen and (max-width: 25em) {
@@ -2429,16 +2442,20 @@ textarea {
     align-self: start;
     margin-top: 1rem;
     opacity: 0; }
-    @media only screen and (max-width: 37.5em) {
-      .skills__features-dynamic-text {
-        margin-bottom: 3rem; } }
-    @media only screen and (max-width: 25em) {
-      .skills__features-dynamic-text {
-        margin-bottom: 9rem; } }
     @media only screen and (max-width: 50em) {
       .skills__features-dynamic-text {
         grid-row: 5 / 6;
         grid-column: 2 / 4; } }
+    @media only screen and (max-width: 37.5em) {
+      .skills__features-dynamic-text {
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-dynamic-text {
+        grid-row: 7 / 8;
+        grid-column: 1/-1; } }
+    @media only screen and (max-width: 25em) {
+      .skills__features-dynamic-text {
+        margin-bottom: 9rem; } }
     @media screen and (orientation: landscape) and (max-width: 50em) {
       .skills__features-dynamic-text {
         margin-top: 0; } }
@@ -2522,6 +2539,8 @@ textarea {
       height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-detail {
+      grid-row: 8/9;
+      grid-column: 1/-1;
       width: 18rem;
       height: 18rem; } }
   @media only screen and (max-width: 25em) {
@@ -2545,6 +2564,10 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .skills__features-detail-text {
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-detail-text {
+        grid-row: 9/10;
+        grid-column: 1/-1; } }
     @media only screen and (max-width: 25em) {
       .skills__features-detail-text {
         margin-bottom: 9rem; } }
@@ -2612,8 +2635,9 @@ textarea {
         width: 14rem; } }
   @media only screen and (max-width: 50em) {
     .skills__features-communication {
-      grid-row: 2 / 3;
-      grid-column: 2 / 4;
+      justify-self: center;
+      grid-row: 7 / 8;
+      grid-column: 1 / -1;
       width: 15rem;
       height: 15rem; } }
   @media screen and (orientation: landscape) and (max-width: 50em) {
@@ -2626,6 +2650,8 @@ textarea {
       height: 12rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__features-communication {
+      grid-row: 10/11;
+      grid-column: 1/-1;
       width: 18rem;
       height: 18rem; } }
   @media only screen and (max-width: 25em) {
@@ -2640,14 +2666,19 @@ textarea {
     opacity: 1; }
     @media only screen and (max-width: 50em) {
       .skills__features-communication-text {
-        grid-row: 3 / 4;
-        grid-column: 2 / 4; } }
+        justify-self: center;
+        grid-row: 8 / 9;
+        grid-column: 1 / -1; } }
     @media screen and (orientation: landscape) and (max-width: 50em) {
       .skills__features-communication-text {
         margin-top: 0; } }
     @media only screen and (max-width: 37.5em) {
       .skills__features-communication-text {
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .skills__features-communication-text {
+        grid-row: 11/12;
+        grid-column: 1/-1; } }
     @media only screen and (max-width: 25em) {
       .skills__features-communication-text {
         margin-bottom: 9rem; } }
@@ -2659,7 +2690,7 @@ textarea {
   display: grid;
   grid-row: 4/ 11;
   grid-column: 2 / 7;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-template-columns: 1fr;
   width: 100%;
   height: 100%;
@@ -2670,13 +2701,13 @@ textarea {
       align-items: end; } }
   @media only screen and (max-width: 50em) {
     .skills__langauges {
-      grid-row: 6 / 11; } }
-  @media only screen and (max-width: 37.5em) {
-    .skills__langauges {
-      grid-row: 6 / 11; } }
+      grid-row: 9 / 15; } }
   @media only screen and (max-width: 31.25em) {
     .skills__langauges {
       opacity: 0; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills__langauges {
+      grid-row: 12/19; } }
 
 .skills__html {
   grid-row: 1 / 2;
@@ -2979,13 +3010,17 @@ textarea {
     left: 15%; }
 
 .skills__btn {
+  align-self: end;
   justify-self: center;
   cursor: pointer;
   color: #c3d2f7; }
+  @media only screen and (max-width: 50em) {
+    .skills__btn {
+      margin-right: 4rem; } }
 
 .next-page-skills {
   grid-row: 11 / 12;
-  grid-column: 2 / 6;
+  grid-column: 3 / 5;
   align-self: center;
   justify-self: center;
   position: relative;
@@ -3006,6 +3041,12 @@ textarea {
   @media only screen and (max-width: 25em) {
     .next-page-skills {
       font-size: 7.5rem; } }
+  @media only screen and (max-width: 50em) {
+    .next-page-skills {
+      grid-row: 15/16; } }
+  @media only screen and (max-width: 31.25em) {
+    .next-page-skills {
+      grid-row: 19/20; } }
   .next-page-skills span {
     position: absolute;
     top: 0;
@@ -3059,13 +3100,13 @@ textarea {
         height: 11rem; } }
     @media only screen and (max-width: 50em) {
       .skills__popup-img {
-        height: 20rem; } }
+        height: 19rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills__popup-img {
         height: 17rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__popup-img {
-        height: 13rem; } }
+        height: 15rem; } }
     @media only screen and (max-width: 25em) {
       .skills__popup-img {
         height: 14rem; } }
@@ -3090,6 +3131,9 @@ textarea {
   @media only screen and (max-width: 56.25em) {
     .features__icon {
       height: 5.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .features__icon {
+      height: 6rem; } }
   @media screen and (orientation: landscape) and (max-width: 50em) {
     .features__icon {
       height: 4rem; } }
@@ -3419,12 +3463,15 @@ textarea {
   grid-column-gap: 2rem; }
   @media only screen and (max-width: 50em) {
     .skills {
-      grid-template-rows: 15vh min-content 8vh 15vh 8vh repeat(5, 1fr) 10vh;
+      grid-template-rows: 15vh min-content 8vh min-content 8vh min-content 8vh repeat(6, 5vh) 15vh 10vh;
       grid-template-columns: 2% repeat(4, 1fr) 2%;
       grid-row-gap: 2rem; } }
   @media screen and (orientation: landscape) and (max-width: 56.25em) {
     .skills {
       grid-template-rows: 15vh min-content 10vh min-content 10vh repeat(5, 1fr) 10vh; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills {
+      grid-template-rows: 15vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh repeat(6, 8vh) 15vh 10vh; } }
 
 .projects {
   grid-row: 3 / 4;

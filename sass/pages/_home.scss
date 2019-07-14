@@ -10,12 +10,17 @@
   grid-column-gap: 2rem;
 
   @include respond(800) {
-  grid-template-rows: 15vh min-content 8vh 15vh 8vh repeat(5, 1fr) 10vh;
+  grid-template-rows: 15vh min-content 8vh min-content 8vh min-content 8vh repeat(6, 5vh) 15vh 10vh;
   grid-template-columns: 2% repeat(4, 1fr) 2%;
   grid-row-gap: 2rem;
   }
 
   @include respond(landscape-900) { grid-template-rows: 15vh min-content 10vh min-content 10vh repeat(5, 1fr) 10vh;
+
+  }
+
+  @include respond(500) {
+    grid-template-rows: 15vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh repeat(6, 8vh) 15vh 10vh;
 
   }
 

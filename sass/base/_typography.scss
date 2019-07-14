@@ -78,10 +78,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   @include respond(1300) { font-size: 3rem; }
+  @include respond(900) { font-size: 2.5rem; }
   @include respond(800) { font-size: 3rem; }
   @include respond(landscape-800) { font-size: 2.5rem; }
   @include respond(landscape-700) { font-size: 3rem; }
-  @include respond(500) { font-size: 4rem; }
+  @include respond(500) { font-size: 5rem; }
   @include respond(400) { font-size: 5rem; }
   @include respond(400) { font-size: 4.5rem; }
 
@@ -96,9 +97,8 @@ body {
   @include respond(800) { font-size: 2.5rem; }
   @include respond(landscape-800) { font-size: 1.8rem; }
   @include respond(landscape-700) { font-size: 2.3rem; }
-  @include respond(500) { font-size: 3rem; }
-  @include respond(400) { font-size: 4rem; }
-  @include respond(400) { font-size: 3rem; }
+  @include respond(500) { font-size: 4rem; }
+ 
 }
 
 .paragraph-2 {

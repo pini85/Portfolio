@@ -22,7 +22,7 @@ html {
    }
 
    @include respond(900) {
-    font-size: 50%;
+    font-size: 40%;
    }
 
    @include respond(800) {
@@ -64,7 +64,7 @@ body {
   grid-template-rows: 100vh 100vh 100vh 80vh 20vh;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
 
-  @include respond(800) { grid-template-rows: 100vh 115vh 100vh 80vh 20vh; }
+  @include respond(800) { grid-template-rows: 100vh min-content 100vh 80vh 20vh; }
 
   @include respond(landscape-900) { grid-template-rows: 100vh 115vh 100vh 80vh 20vh; }
 

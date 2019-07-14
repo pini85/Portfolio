@@ -3,8 +3,7 @@
 
 
 .skills {
-
-
+  
   &__heading {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -54,6 +53,8 @@
       }
 
       @include respond(500) {
+        grid-row: 2/3;
+        grid-column: 1/-1;
         width: 18rem;
         height: 18rem;
       }
@@ -81,6 +82,7 @@
        @include respond(landscape-800) { margin-top: 0; }
 
        @include respond(600) { margin-bottom: 3rem; }
+       @include respond(500) { grid-column: 1/-1; }
        @include respond(400) { margin-bottom: 9rem; }
 
        @include respond(350) {
@@ -122,6 +124,8 @@
       }
 
       @include respond(500) {
+        grid-row: 4/5;
+        grid-column: 1/-1;
         width: 18rem;
         height: 18rem;
       }
@@ -151,6 +155,10 @@
        }
 
        @include respond(600) { margin-bottom: 3rem; }
+       @include respond(500) {
+         grid-row: 5/6;
+         grid-column: 1/-1;
+        }
        @include respond(400) { margin-bottom: 9rem; }
       }
     }
@@ -188,6 +196,8 @@
       }
 
       @include respond(500) {
+        grid-row: 6/7;
+        grid-column: 1/-1;
         width: 18rem;
         height: 18rem;
       }
@@ -205,14 +215,16 @@
         margin-top: 1rem;
         opacity: 0;
 
-         @include respond(600) { margin-bottom: 3rem; }
-         @include respond(400) { margin-bottom: 9rem; }
-
-
         @include respond(800) {
-        grid-row: 5 / 6;
-        grid-column: 2 / 4;
-        }
+          grid-row: 5 / 6;
+          grid-column: 2 / 4;
+          }
+         @include respond(600) { margin-bottom: 3rem; }
+         @include respond(500) {
+            grid-row: 7 / 8;
+            grid-column: 1/-1;
+           }
+         @include respond(400) { margin-bottom: 9rem; }
 
         @include respond(landscape-800) {
         margin-top: 0;
@@ -255,6 +267,8 @@
       }
 
       @include respond(500) {
+        grid-row: 8/9;
+        grid-column: 1/-1;
         width: 18rem;
         height: 18rem;
       }
@@ -280,6 +294,10 @@
       @include respond(landscape-800) { margin-top: 0; }
 
       @include respond(600) { margin-bottom: 3rem; }
+      @include respond(500) { 
+        grid-row: 9/10;
+        grid-column: 1/-1;
+      }
       @include respond(400) { margin-bottom: 9rem; }
       }
     }
@@ -303,8 +321,9 @@
       &:after { @include octogon-after; }
 
       @include respond(800) {
-        grid-row: 2 / 3;
-        grid-column: 2 / 4;
+        justify-self: center;
+        grid-row: 7 / 8;
+        grid-column: 1 / -1;
         width: 15rem;
         height:  15rem;
       }
@@ -320,6 +339,8 @@
       }
 
       @include respond(500) {
+        grid-row: 10/11;
+        grid-column: 1/-1;
         width: 18rem;
         height: 18rem;
       }
@@ -339,14 +360,19 @@
         opacity: 1;
 
         @include respond(800) {
-        grid-row: 3 / 4;
-        grid-column: 2 / 4;
+        justify-self: center;
+        grid-row: 8 / 9;
+        grid-column: 1 / -1;
 
        }
 
        @include respond(landscape-800) { margin-top: 0; }
 
        @include respond(600) { margin-bottom: 3rem; }
+       @include respond(500) { 
+         grid-row: 11/12;
+         grid-column: 1/-1;
+         }
        @include respond(400) { margin-bottom: 9rem; }
 
        @include respond(350) {
@@ -360,7 +386,7 @@
      display: grid;
      grid-row: 4/ 11;
      grid-column: 2 / 7;
-     grid-template-rows: repeat(6, 1fr);
+     grid-template-rows: repeat(7, 1fr);
      grid-template-columns: 1fr;
      width: 100%;
      height: 100%;
@@ -368,9 +394,9 @@
      text-align: center;
      @include respond(landscape-900) { align-items: end; }
 
-     @include respond(800) { grid-row: 6 / 11; }
-     @include respond(600) { grid-row: 6 / 11; }
+     @include respond(800) { grid-row: 9 / 15; }
      @include respond(500) {opacity: 0;}
+     @include respond(500) {grid-row: 12/19;}
 
 
     }
@@ -517,15 +543,20 @@
     }
   }
   &__btn {
+    align-self: end;
     justify-self: center;
     cursor: pointer;
     color: $color-display-light;
+
+    @include respond(800) {
+      margin-right: 4rem;
+    }
   }
 }
 
 .next-page-skills {
     grid-row: 11 / 12;
-    grid-column: 2 / 6;
+    grid-column: 3 / 5;
     align-self: center;
     justify-self: center;
     position: relative;
@@ -536,12 +567,20 @@
     cursor: pointer;
     @include responsive-next-page;
 
+    @include respond(800) {
+      grid-row: 15/16;
+    }
+    @include respond(500) {
+      grid-row: 19/20;
+    }
+
 
     span {
       position: absolute;
       top: 0;
       left: 1.02rem;
       @include responsive-next-page-span;
+
 
       @include respond(600) {
         animation-name: next-page-hover;
@@ -594,7 +633,7 @@
     }
 
     @include respond(800) {
-      height: 20rem;
+      height: 19rem;
     }
 
     @include respond(600) {
@@ -602,7 +641,7 @@
     }
 
     @include respond(500) {
-      height: 13rem;
+      height: 15rem;
     }
 
     @include respond(400) {
@@ -643,8 +682,11 @@
    height: 5.5rem;
   }
 
-  @include respond(landscape-800) { height: 4rem; }
+  @include respond(500) {
+   height: 6rem;
+  }
 
+  @include respond(landscape-800) { height: 4rem; }
 }
 
 /*Animations*/
