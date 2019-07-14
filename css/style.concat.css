@@ -3047,10 +3047,13 @@ textarea {
   .skills__popup-item {
     padding: 2.5rem; }
   .skills__popup-img {
-    height: 12rem; }
+    height: 11rem; }
     @media only screen and (max-width: 81.25em) {
       .skills__popup-img {
-        height: 17rem; } }
+        height: 20rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .skills__popup-img {
+        height: 16rem; } }
     @media only screen and (max-width: 56.25em) {
       .skills__popup-img {
         height: 11rem; } }
@@ -3059,7 +3062,7 @@ textarea {
         height: 20rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills__popup-img {
-        height: 18rem; } }
+        height: 17rem; } }
     @media only screen and (max-width: 31.25em) {
       .skills__popup-img {
         height: 13rem; } }
@@ -3071,7 +3074,14 @@ textarea {
     color: #06122d;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
+    @media only screen and (min-width: 87.5em) {
+      .skills__popup-text {
+        font-size: 1,5rem; } }
+    @media only screen and (max-width: 81.25em) {
+      .skills__popup-text {
+        font-size: 2rem; } }
 
 /*SVG'S*/
 .features__icon {

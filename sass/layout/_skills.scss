@@ -579,10 +579,14 @@
   }
 
   &-img {
-    height: 12rem;
+    height: 11rem;
 
     @include respond(1300) {
-      height: 17rem;
+      height: 20rem;
+    }
+
+    @include respond (1000) {
+      height: 16rem;
     }
 
     @include respond(900) {
@@ -594,7 +598,7 @@
     }
 
     @include respond(600) {
-      height: 18rem;
+      height: 17rem;
     }
 
     @include respond(500) {
@@ -617,6 +621,15 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 1rem;
+
+    @include respond(1400) {
+      font-size: 1,5rem;
+    }
+    @include respond(1300) {
+      font-size: 2rem;
+    }
+
   }
 }
 
