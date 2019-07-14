@@ -925,7 +925,7 @@ textarea {
         font-size: 3rem; } }
     @media only screen and (max-width: 31.25em) {
       .nav__ul {
-        font-size: 4rem; } }
+        font-size: 2.6rem; } }
   .nav__a {
     padding: 0.5rem;
     text-decoration: none;
@@ -978,6 +978,9 @@ textarea {
     @media only screen and (max-width: 25em) {
       .sticky__ul {
         font-size: 3.5rem; } }
+    @media only screen and (max-width: 20em) {
+      .sticky__ul {
+        font-size: 2.1rem; } }
   .sticky__li-1 {
     animation-name: none;
     animation-duration: none;
@@ -1025,7 +1028,10 @@ textarea {
         font-size: 3rem; } }
     @media only screen and (max-width: 31.25em) {
       .return-nav__ul {
-        font-size: 4rem; } }
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 20em) {
+      .return-nav__ul {
+        font-size: 2.1rem; } }
   .return-nav__li-1 {
     animation-name: none;
     animation-duration: none;
@@ -2206,7 +2212,8 @@ textarea {
     transform: translateY(0%);
     transition: all .5s;
     letter-spacing: .2rem;
-    opacity: 0; }
+    opacity: 0;
+    z-index: 1; }
   .projects__btn {
     transform: translateY(100%);
     visibility: hidden;

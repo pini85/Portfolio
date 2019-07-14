@@ -23,7 +23,7 @@
     padding: 1rem;
 
     @include respond(700) { font-size: 3rem; }
-    @include respond(500) { font-size: 4rem; }
+    @include respond(500) { font-size: 2.6rem; }
 
     }
 
@@ -104,6 +104,10 @@
       font-size: 3.5rem;
     }
 
+    @include respond(320) {
+      font-size: 2.1rem;
+    }
+
     }
 
 
@@ -176,7 +180,11 @@
     }
 
     @include respond(500) {
-      font-size: 4rem;
+      font-size: 2.5rem;
+    }
+
+    @include respond(320) {
+      font-size: 2.1rem;
     }
 
      }
