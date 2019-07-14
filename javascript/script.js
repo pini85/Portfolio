@@ -171,7 +171,7 @@ $(document).ready(function () {
     $('.skills__javascript-fill').addClass('animation--fill-65');
     $('.skills__react-fill').addClass('animation--fill-55');
     $('.skills__ruby-fill').addClass('animation--fill-50');
-    $('.skills__ruby-on-rails-fill').addClass('animation--fill-55');
+    $('.skills__ruby-on-rails-fill').addClass('animation--fill-40');
     }, {
     offset: '5%;'
   });

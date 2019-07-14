@@ -63,6 +63,50 @@
    }
   }
 
+  .btn-md {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 2rem;
+    background:linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary, 0.8));
+    padding: 1rem 2rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    border-radius: 8px;
+    @include respond(700) {
+      font-size: 3rem;
+    }
+
+
+    &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+    }
+
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-display-light;
+    }
+
+   &:active,
+   &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(#000, .2);
+    }
+
+  i {
+   color: $color-display-light;
+   margin-left: 1rem;
+   transition: all .5s;
+ }
+
+   &:hover i {
+    transform: rotate(90deg) translateX(.4rem);
+   }
+  }
+
   .btn-sm {
     display: inline-block;
     font-family: inherit;
