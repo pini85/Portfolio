@@ -321,6 +321,13 @@
   }
   to { width: 70%;}
 }
+@keyframes fill-65 {
+  from { width: 0;
+        animation-timing-function: ease-in-out;
+  }
+  to { width: 65%;}
+}
+
 
 @keyframes fill-40 {
   from { width: 0;

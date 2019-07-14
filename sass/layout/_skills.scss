@@ -5,13 +5,12 @@
 .skills {
 
 
-
-
   &__heading {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
+   
 
 
   }
@@ -285,15 +284,88 @@
       }
     }
 
+
+
+    &__features-communication {
+      position: relative;
+      grid-row: 2 / 3;
+      grid-column: 6 / 7;
+      background-color: $color-primary-light;
+      width: 12rem;
+      height: 12rem;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      &:before { @include octogon-before; }
+      &:after { @include octogon-after; }
+
+      @include respond(800) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        width: 15rem;
+        height:  15rem;
+      }
+
+      @include respond(landscape-800) {
+        width: 11rem;
+        height:  11rem;
+      }
+
+      @include respond(landscape-700) {
+        width: 12rem;
+        height:  12rem;
+      }
+
+      @include respond(500) {
+        width: 18rem;
+        height: 18rem;
+      }
+
+      @include respond(400) {
+        width: 14rem;
+        height: 14rem;
+      }
+
+
+      &-text {
+        // grid-row: 2 / 4; dont need to all of them.Refactor.
+        grid-column: 6 / 7;
+        text-align: center;
+        align-self: start;
+        margin-top: 1rem;
+        opacity: 1;
+
+        @include respond(800) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 4;
+
+       }
+
+       @include respond(landscape-800) { margin-top: 0; }
+
+       @include respond(600) { margin-bottom: 3rem; }
+       @include respond(400) { margin-bottom: 9rem; }
+
+       @include respond(350) {
+        width: 120%;
+       }
+
+      }
+    }
+
     &__langauges {
      display: grid;
      grid-row: 4/ 11;
-     grid-column: 2 / 6;
-     grid-template-rows: repeat(5, 1fr);
+     grid-column: 2 / 7;
+     grid-template-rows: repeat(6, 1fr);
      grid-template-columns: 1fr;
      width: 100%;
      height: 100%;
      opacity: 0;
+     text-align: center;
      @include respond(landscape-900) { align-items: end; }
 
      @include respond(800) { grid-row: 6 / 11; }
@@ -378,8 +450,30 @@
     }
   }
 
-  &__ruby {
+  &__react {
     grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    background-color: $color-skill;
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+    @include respond(800) { align-self: end; }
+
+     &-text { @include skill; }
+
+      &-fill {
+      height: 100%;
+      width: 0;
+      position: absolute;
+      background-color: $color-primary;
+      top: 0;
+      left: 15%;
+    }
+  }
+
+  &__ruby {
+    grid-row: 5 / 6;
     grid-column: 1 / -1;
     background-color: $color-skill;
     width: 100%;
@@ -402,7 +496,7 @@
   }
 
   &__ruby-on-rails {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 1 / -1;
     background-color: $color-skill;
     width: 100%;
@@ -503,6 +597,13 @@
 
 .animation--fill-70 {
   animation-name: fill-70;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+}
+
+.animation--fill-65 {
+  animation-name: fill-65;
   animation-duration: .5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
