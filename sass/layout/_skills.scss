@@ -55,15 +55,9 @@
       @include respond(500) {
         grid-row: 2/3;
         grid-column: 1/-1;
-        width: 18rem;
-        height: 18rem;
+        width: 19rem;
+        height: 19rem;
       }
-
-      @include respond(400) {
-        width: 14rem;
-        height: 14rem;
-      }
-
 
       &-text {
         // grid-row: 2 / 4; dont need to all of them.Refactor.
@@ -82,7 +76,10 @@
        @include respond(landscape-800) { margin-top: 0; }
 
        @include respond(600) { margin-bottom: 3rem; }
-       @include respond(500) { grid-column: 1/-1; }
+       @include respond(500) { 
+         grid-column: 1/-1;
+         margin-top: 0;
+         }
        @include respond(400) { margin-bottom: 9rem; }
 
        @include respond(350) {
@@ -126,15 +123,9 @@
       @include respond(500) {
         grid-row: 4/5;
         grid-column: 1/-1;
-        width: 18rem;
-        height: 18rem;
+        width: 19rem;
+        height: 19rem;
       }
-
-      @include respond(400) {
-        width: 14rem;
-        height: 14rem;
-      }
-
 
       &-text {
         grid-row: 3 / 4;
@@ -158,6 +149,7 @@
        @include respond(500) {
          grid-row: 5/6;
          grid-column: 1/-1;
+         margin-top: 0;
         }
        @include respond(400) { margin-bottom: 9rem; }
       }
@@ -198,13 +190,8 @@
       @include respond(500) {
         grid-row: 6/7;
         grid-column: 1/-1;
-        width: 18rem;
-        height: 18rem;
-      }
-
-      @include respond(400) {
-        width: 14rem;
-        height: 14rem;
+        width: 19rem;
+        height: 19rem;
       }
 
       &-text {
@@ -223,6 +210,7 @@
          @include respond(500) {
             grid-row: 7 / 8;
             grid-column: 1/-1;
+            margin-top: 0;
            }
          @include respond(400) { margin-bottom: 9rem; }
 
@@ -269,13 +257,8 @@
       @include respond(500) {
         grid-row: 8/9;
         grid-column: 1/-1;
-        width: 18rem;
-        height: 18rem;
-      }
-
-      @include respond(400) {
-        width: 14rem;
-        height: 14rem;
+        width: 19rem;
+        height: 19rem;
       }
 
       &-text {
@@ -297,6 +280,7 @@
       @include respond(500) { 
         grid-row: 9/10;
         grid-column: 1/-1;
+        margin-top: 0;
       }
       @include respond(400) { margin-bottom: 9rem; }
       }
@@ -341,13 +325,8 @@
       @include respond(500) {
         grid-row: 10/11;
         grid-column: 1/-1;
-        width: 18rem;
-        height: 18rem;
-      }
-
-      @include respond(400) {
-        width: 14rem;
-        height: 14rem;
+        width: 19rem;
+        height: 19rem;
       }
 
 
@@ -372,6 +351,7 @@
        @include respond(500) { 
          grid-row: 11/12;
          grid-column: 1/-1;
+         margin-top: 0;
          }
        @include respond(400) { margin-bottom: 9rem; }
 
@@ -556,7 +536,7 @@
 
 .next-page-skills {
     grid-row: 11 / 12;
-    grid-column: 1/-1;
+        grid-column: 1/-1;
     align-self: center;
     justify-self: center;
     position: relative;
@@ -683,7 +663,7 @@
   }
 
   @include respond(500) {
-   height: 6rem;
+   height: 7rem;
   }
 
   @include respond(landscape-800) { height: 4rem; }

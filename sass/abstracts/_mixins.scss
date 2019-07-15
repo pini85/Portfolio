@@ -18,9 +18,9 @@
 
         @include respond(landscape-700) { width: 12rem; }
 
-        @include respond(500) { width: 18rem;}
+        @include respond(500) { width: 19rem;}
 
-        @include respond(400) { width: 14rem; }
+        // @include respond(400) { width: 14rem; }
 }
 
 @mixin octogon-after {
@@ -41,9 +41,9 @@
 
       @include respond(landscape-700) { width: 12rem; }
 
-      @include respond(500) { width: 18rem;}
+      @include respond(500) { width: 19rem;}
 
-      @include respond(400) { width: 14rem; }
+      // @include respond(400) { width: 14rem; }
 }
 
 
