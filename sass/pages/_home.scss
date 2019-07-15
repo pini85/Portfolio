@@ -21,7 +21,7 @@
 
   @include respond(500) {
     grid-template-rows: 15vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh 10vh 12vh repeat(6, 8vh) 15vh 10vh;
-    grid-column-gap: 6rem;
+    grid-row-gap: 6rem;
     align-items: baseline;
 
   }
