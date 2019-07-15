@@ -311,7 +311,7 @@
       background-color: $color-primary-light;
       width: 12rem;
       height: 12rem;
-      opacity: 1;
+      opacity: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -357,7 +357,7 @@
         text-align: center;
         align-self: start;
         margin-top: 1rem;
-        opacity: 1;
+        opacity: 0;
 
         @include respond(800) {
         justify-self: center;
@@ -556,7 +556,7 @@
 
 .next-page-skills {
     grid-row: 11 / 12;
-    grid-column: 3 / 5;
+    grid-column: 1/-1;
     align-self: center;
     justify-self: center;
     position: relative;
@@ -728,7 +728,6 @@
 .animation--fill-40 {
   animation-name: fill-40;
   animation-duration: .5s;
-  animation-delay: 1.4s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
 }
@@ -736,7 +735,6 @@
 .animation--fill-50 {
   animation-name: fill-50;
   animation-duration: .5s;
-  animation-delay: 1.7s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
 }
@@ -744,7 +742,6 @@
 .animation--fill-55 {
   animation-name: fill-55;
   animation-duration: .5s;
-  animation-delay: 2s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
 }

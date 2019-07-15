@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+  var smallScreen = window.matchMedia("(max-width: 500px)");
+  var bigScreen = window.matchMedia("(min-width: 501px)");
+
+
 /*Sticky navigation*/
 
   $('.skills').waypoint(function(direction) {
@@ -99,10 +103,13 @@ $(document).ready(function () {
   });
 
   /*Icons*/
-
+if (bigScreen.matches) {
   $('.skills').waypoint(function(direction) {
   $('.skills__features-fast').addClass('animation--features');
   $('.skills__features-responsive').addClass('animation--features');
+  $('.skills__features-dynamic').addClass('animation--features');
+  $('.skills__features-detail').addClass('animation--features');
+  $('.skills__features-communication').addClass('animation--features');
   // $('.skills__features-responsive').addClass('animation--features animation-delay-200ms');
   // $('.skills__features-dynamic').addClass('animation--features animation-delay-400ms');
   // $('.skills__features-detail').addClass('animation--features animation-delay-600ms');
@@ -110,18 +117,11 @@ $(document).ready(function () {
     offset: '55%;'
   });
 
-   $('.skills').waypoint(function(direction) {
-    $('.skills__features-dynamic').addClass('animation--features');
-    $('.skills__features-detail').addClass('animation--features');
-     }, {
-    offset: '31%;'
-  });
 
   /*Icons text*/
 
   $('.skills').waypoint(function(direction) {
-  $('.skills__features-fast-text').addClass('animation--features-text animation-delay-200ms');
-  $('.skills__features-responsive-text').addClass('animation--features-text animation-delay-200ms');
+  
   // $('.skills__features-dynamic-text').addClass('animation--features-text animation-delay-400ms');
   // $('.skills__features-detail-text').addClass('animation--features-text animation-delay-600ms');
   }, {
@@ -129,11 +129,68 @@ $(document).ready(function () {
   });
 
   $('.skills').waypoint(function(direction) {
+    $('.skills__features-fast-text').addClass('animation--features-text animation-delay-200ms');
+    $('.skills__features-communication-text').addClass('animation--features-text animation-delay-200ms');
+  $('.skills__features-responsive-text').addClass('animation--features-text animation-delay-200ms');
     $('.skills__features-dynamic-text').addClass('animation--features-text animation-delay-200ms');
     $('.skills__features-detail-text').addClass('animation--features-text animation-delay-200ms');
   }, {
     offset: '31%;'
   });
+}
+  if (smallScreen.matches){
+    $('.skills').waypoint(function(direction) {
+      $('.skills__features-fast').addClass('animation--features');
+      }, {
+        offset: '69%;'
+      });
+      $('.skills').waypoint(function(direction) {
+        $('.skills__features-fast-text').addClass('animation--features');
+        }, {
+          offset: '64%;'
+        });
+
+        $('.skills').waypoint(function(direction) {
+          $('.skills__features-responsive').addClass('animation--features');
+          }, {
+            offset: '43%;'
+          });
+          $('.skills').waypoint(function(direction) {
+            $('.skills__features-responsive-text').addClass('animation--features');
+            }, {
+              offset: '38%;'
+            });
+            $('.skills').waypoint(function(direction) {
+              $('.skills__features-dynamic').addClass('animation--features');
+              }, {
+                offset: '18%;'
+              });
+              $('.skills').waypoint(function(direction) {
+                $('.skills__features-dynamic-text').addClass('animation--features');
+                }, {
+                  offset: '13%;'
+                });
+                $('.skills').waypoint(function(direction) {
+                  $('.skills__features-detail').addClass('animation--features');
+                  }, {
+                    offset: '-6%;'
+                  });
+                  $('.skills').waypoint(function(direction) {
+                    $('.skills__features-detail-text').addClass('animation--features');
+                    }, {
+                      offset: '-10%;'
+                    });
+                    $('.skills').waypoint(function(direction) {
+                      $('.skills__features-communication').addClass('animation--features');
+                      }, {
+                        offset: '-30%;'
+                      });
+                      $('.skills').waypoint(function(direction) {
+                        $('.skills__features-communication-text').addClass('animation--features');
+                        }, {
+                          offset: '-34%;'
+                        });
+}
 
 
   /*Langauges*/
@@ -166,15 +223,17 @@ $(document).ready(function () {
 
    $('.skills').waypoint(function(direction) {
     $('.skills__langauges').addClass('animation--langauges');
-    $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
-    $('.skills__css-fill').addClass('animation--fill-70 animation-delay-1500ms');
-    $('.skills__javascript-fill').addClass('animation--fill-65');
-    $('.skills__react-fill').addClass('animation--fill-55');
-    $('.skills__ruby-fill').addClass('animation--fill-50');
-    $('.skills__ruby-on-rails-fill').addClass('animation--fill-40');
+    $('.skills__html-fill').addClass('animation--fill-70 animation-delay-200ms');
+    $('.skills__css-fill').addClass('animation--fill-70 animation-delay-400ms');
+    $('.skills__javascript-fill').addClass('animation--fill-65 animation-delay-600ms');
+    $('.skills__react-fill').addClass('animation--fill-55 animation-delay-800ms');
+    $('.skills__ruby-fill').addClass('animation--fill-50 animation-delay-1000ms');
+    $('.skills__ruby-on-rails-fill').addClass('animation--fill-40 animation-delay-1200ms');
     }, {
     offset: '5%;'
   });
+
+
 
 
   /*Next-page*/
