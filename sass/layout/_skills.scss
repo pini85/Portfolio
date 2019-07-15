@@ -375,7 +375,10 @@
      @include respond(landscape-900) { align-items: end; }
 
      @include respond(800) { grid-row: 9 / 15; }
-     @include respond(500) {opacity: 0;}
+     @include respond(500) {
+      grid-column: 1 / 7;
+      padding: 6rem;
+    }
      @include respond(500) {grid-row: 12/19;}
 
 

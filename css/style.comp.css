@@ -1947,7 +1947,8 @@ textarea {
       grid-row: 9 / 15; } }
   @media only screen and (max-width: 31.25em) {
     .skills__langauges {
-      opacity: 0; } }
+      grid-column: 1 / 7;
+      padding: 6rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__langauges {
       grid-row: 12/19; } }
