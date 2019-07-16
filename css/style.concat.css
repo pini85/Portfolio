@@ -2669,7 +2669,8 @@ textarea {
       padding: 6rem; } }
   @media only screen and (max-width: 31.25em) {
     .skills__langauges {
-      grid-row: 12/19; } }
+      grid-row: 11/19;
+      margin-top: 5rem; } }
 
 .skills__html {
   grid-row: 1 / 2;

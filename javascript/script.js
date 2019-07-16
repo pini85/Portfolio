@@ -137,7 +137,23 @@ if (bigScreen.matches) {
   }, {
     offset: '31%;'
   });
+
+  //Langauges//
+  $('.skills').waypoint(function(direction) {
+    $('.skills__langauges').addClass('animation--langauges');
+    $('.skills__html-fill').addClass('animation--fill-70 animation-delay-200ms');
+    $('.skills__css-fill').addClass('animation--fill-70 animation-delay-400ms');
+    $('.skills__javascript-fill').addClass('animation--fill-65 animation-delay-600ms');
+    $('.skills__react-fill').addClass('animation--fill-55 animation-delay-800ms');
+    $('.skills__ruby-fill').addClass('animation--fill-50 animation-delay-1000ms');
+    $('.skills__ruby-on-rails-fill').addClass('animation--fill-40 animation-delay-1200ms');
+    }, {
+    offset: '5%;'
+  });
 }
+
+//MOBILE//
+
   if (smallScreen.matches){
     $('.skills').waypoint(function(direction) {
       $('.skills__features-fast').addClass('animation--features');
@@ -158,7 +174,7 @@ if (bigScreen.matches) {
           $('.skills').waypoint(function(direction) {
             $('.skills__features-responsive-text').addClass('animation--features');
             }, {
-              offset: '38%;'
+              offset: '31%;'
             });
             $('.skills').waypoint(function(direction) {
               $('.skills__features-dynamic').addClass('animation--features');
@@ -168,7 +184,7 @@ if (bigScreen.matches) {
               $('.skills').waypoint(function(direction) {
                 $('.skills__features-dynamic-text').addClass('animation--features');
                 }, {
-                  offset: '13%;'
+                  offset: '8%;'
                 });
                 $('.skills').waypoint(function(direction) {
                   $('.skills__features-detail').addClass('animation--features');
@@ -178,50 +194,22 @@ if (bigScreen.matches) {
                   $('.skills').waypoint(function(direction) {
                     $('.skills__features-detail-text').addClass('animation--features');
                     }, {
-                      offset: '-10%;'
+                      offset: '-21%;'
                     });
                     $('.skills').waypoint(function(direction) {
                       $('.skills__features-communication').addClass('animation--features');
                       }, {
-                        offset: '-30%;'
+                        offset: '-39%;'
                       });
                       $('.skills').waypoint(function(direction) {
                         $('.skills__features-communication-text').addClass('animation--features');
                         }, {
-                          offset: '-34%;'
+                          offset: '-51%;'
                         });
-}
 
+                         /*Langauges*/
 
-  /*Langauges*/
-
-//   function checkPosition() {
-//     if (window.matchMedia('(max-width: 37.5em)').matches) {
-//       $('.skills').waypoint(function(direction) {
-//     $('.skills__langauges').addClass('animation--langauges');
-//     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
-//     $('.skills__css-fill').addClass('animation--fill-70 animation-delay-1500ms');
-//     $('.skills__javascript-fill').addClass('animation--fill-40');
-//     $('.skills__ruby-fill').addClass('animation--fill-50');
-//     $('.skills__ruby-on-rails-fill').addClass('animation--fill-55');
-//     }, {
-//     offset: '5%;'
-//   });
-//     } else {
-//         $('.skills').waypoint(function(direction) {
-//     $('.skills__langauges').addClass('animation--langauges');
-//     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-1000ms');
-//     $('.skills__css-fill').addClass('animation--fill-70 animation-delay-1500ms');
-//     $('.skills__javascript-fill').addClass('animation--fill-40');
-//     $('.skills__ruby-fill').addClass('animation--fill-50');
-//     $('.skills__ruby-on-rails-fill').addClass('animation--fill-55');
-//     }, {
-//     offset: '5%;'
-//   });
-//     }
-// }
-
-   $('.skills').waypoint(function(direction) {
+  $('.skills').waypoint(function(direction) {
     $('.skills__langauges').addClass('animation--langauges');
     $('.skills__html-fill').addClass('animation--fill-70 animation-delay-200ms');
     $('.skills__css-fill').addClass('animation--fill-70 animation-delay-400ms');
@@ -230,8 +218,14 @@ if (bigScreen.matches) {
     $('.skills__ruby-fill').addClass('animation--fill-50 animation-delay-1000ms');
     $('.skills__ruby-on-rails-fill').addClass('animation--fill-40 animation-delay-1200ms');
     }, {
-    offset: '5%;'
+    offset: '-74%;'
   });
+}
+
+
+ 
+
+  
 
 
 

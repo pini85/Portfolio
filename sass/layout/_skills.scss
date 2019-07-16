@@ -379,7 +379,10 @@
       grid-column: 1 / 7;
       padding: 6rem;
     }
-     @include respond(500) {grid-row: 12/19;}
+     @include respond(500) {
+       grid-row: 11/19;
+       margin-top: 5rem;
+      }
 
 
     }
