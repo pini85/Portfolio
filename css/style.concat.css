@@ -145,7 +145,7 @@ button::-moz-focus-inner {
 
 .mfp-close-btn-in .mfp-close {
   font-size: 3.5rem;
-  color: white;
+  color: gray;
   font-weight: bolder;
   transition: all .3s;
 }
