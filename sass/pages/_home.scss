@@ -3,7 +3,7 @@
   grid-column: 1 / -1;
   @include layout;
   display: grid;
-  grid-template-rows: 25vh min-content 15vh repeat(7, 1fr) 10vh;
+  grid-template-rows: 25vh min-content 15vh repeat(8, 1fr) 10vh;
   grid-template-columns: 1% repeat(5, 1fr) 1%;
   justify-items: center;
   align-items: end;

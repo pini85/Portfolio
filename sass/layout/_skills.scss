@@ -364,7 +364,7 @@
 
     &__langauges {
      display: grid;
-     grid-row: 4/ 11;
+     grid-row: 5/ 12;
      grid-column: 2 / 7;
      grid-template-rows: repeat(7, 1fr);
      grid-template-columns: 1fr;
@@ -529,6 +529,7 @@
     }
   }
   &__btn {
+    margin-top: 1rem;
     align-self: end;
     justify-self: center;
     cursor: pointer;
@@ -541,7 +542,7 @@
 }
 
 .next-page-skills {
-    grid-row: 11 / 12;
+    grid-row: 12 / 13;
         grid-column: 1/-1;
     align-self: center;
     justify-self: center;

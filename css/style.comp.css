@@ -1931,7 +1931,7 @@ textarea {
 
 .skills__langauges {
   display: grid;
-  grid-row: 4/ 11;
+  grid-row: 5/ 12;
   grid-column: 2 / 7;
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: 1fr;
@@ -2255,6 +2255,7 @@ textarea {
     left: 15%; }
 
 .skills__btn {
+  margin-top: 1rem;
   align-self: end;
   justify-self: center;
   cursor: pointer;
@@ -2264,7 +2265,7 @@ textarea {
       margin-right: 4rem; } }
 
 .next-page-skills {
-  grid-row: 11 / 12;
+  grid-row: 12 / 13;
   grid-column: 1/-1;
   align-self: center;
   justify-self: center;
@@ -2698,7 +2699,7 @@ textarea {
   grid-column: 1 / -1;
   background: linear-gradient(180deg, #f0f4fd 75%, #d7e4ff 100%, #f0f4fd 100%);
   display: grid;
-  grid-template-rows: 25vh min-content 15vh repeat(7, 1fr) 10vh;
+  grid-template-rows: 25vh min-content 15vh repeat(8, 1fr) 10vh;
   grid-template-columns: 1% repeat(5, 1fr) 1%;
   justify-items: center;
   align-items: end;
