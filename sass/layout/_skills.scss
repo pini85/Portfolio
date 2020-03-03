@@ -1,17 +1,12 @@
 //is it possibl to nest all the features into one features element so i can style all of them without having problems to indiviually
 //place them in the grid.
 
-
 .skills {
-  
   &__heading {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
-   
-
-
   }
 
   &__features {
@@ -19,249 +14,274 @@
     grid-column: 2 / 6;
   }
 
+  &__features-fast {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: $color-primary-light;
+    width: 12rem;
+    height: 12rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &__features-fast {
+    &:before {
+      @include octogon-before;
+    }
+    &:after {
+      @include octogon-after;
+    }
+
+    @include respond(800) {
       grid-row: 2 / 3;
-      grid-column: 2 / 3;
-      background-color: $color-primary-light;
+      grid-column: 2 / 4;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(landscape-800) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include respond(landscape-700) {
       width: 12rem;
       height: 12rem;
+    }
+
+    @include respond(500) {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      width: 19rem;
+      height: 19rem;
+    }
+
+    &-text {
+      // grid-row: 2 / 4; dont need to all of them.Refactor.
+      grid-column: 2 / 3;
+      text-align: center;
+      align-self: start;
+      margin-top: 1rem;
       opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-      &:before { @include octogon-before; }
-      &:after { @include octogon-after; }
 
       @include respond(800) {
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 2 / 4;
-        width: 15rem;
-        height:  15rem;
       }
 
       @include respond(landscape-800) {
-        width: 11rem;
-        height:  11rem;
+        margin-top: 0;
       }
 
-      @include respond(landscape-700) {
-        width: 12rem;
-        height:  12rem;
+      @include respond(600) {
+        margin-bottom: 3rem;
       }
-
       @include respond(500) {
-        grid-row: 2/3;
         grid-column: 1/-1;
-        width: 19rem;
-        height: 19rem;
+        margin-top: 0;
+      }
+      @include respond(400) {
+        margin-bottom: 9rem;
       }
 
-      &-text {
-        // grid-row: 2 / 4; dont need to all of them.Refactor.
-        grid-column: 2 / 3;
-        text-align: center;
-        align-self: start;
-        margin-top: 1rem;
-        opacity: 0;
-
-        @include respond(800) {
-        grid-row: 3 / 4;
-        grid-column: 2 / 4;
-
-       }
-
-       @include respond(landscape-800) { margin-top: 0; }
-
-       @include respond(600) { margin-bottom: 3rem; }
-       @include respond(500) { 
-         grid-column: 1/-1;
-         margin-top: 0;
-         }
-       @include respond(400) { margin-bottom: 9rem; }
-
-       @include respond(350) {
+      @include respond(350) {
         width: 120%;
-       }
-
       }
-    }
-
-    &__features-responsive  {
-      grid-row: 2 / 3;
-      grid-column: 3 / 4;
-      background-color: $color-primary-light;
-      width: 12rem;
-      height: 12rem;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:before { @include octogon-before; }
-      &:after { @include octogon-after; }
-
-      @include respond(800) {
-        grid-row: 2 / 3;
-        grid-column: 4 / 6;
-        width: 15rem;
-        height:  15rem;
-      }
-
-       @include respond(landscape-800) {
-        width: 11rem;
-        height:  11rem;
-      }
-
-      @include respond(landscape-700) {
-        width: 12rem;
-        height:  12rem;
-      }
-
-      @include respond(500) {
-        grid-row: 4/5;
-        grid-column: 1/-1;
-        width: 19rem;
-        height: 19rem;
-      }
-
-      &-text {
-        grid-row: 3 / 4;
-        grid-column: 3 / 4;
-        text-align: center;
-        align-self: start;
-        margin-top: 1rem;
-        opacity: 0;
-
-        @include respond(800) {
-        grid-row: 3 / 4;
-        grid-column: 4 / 6;
-
-       }
-
-       @include respond(landscape-800) {
-        margin-top: 0;
-       }
-
-       @include respond(600) { margin-bottom: 3rem; }
-       @include respond(500) {
-         grid-row: 5/6;
-         grid-column: 1/-1;
-         margin-top: 0;
-        }
-       @include respond(400) { margin-bottom: 9rem; }
-      }
-    }
-
-   &__features-dynamic  {
-      grid-row: 2 / 3;
-      grid-column: 4 / 5;
-      background-color: $color-primary-light;
-      width: 12rem;
-      height: 12rem;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-      &:before { @include octogon-before; }
-      &:after { @include octogon-after; }
-
-       @include respond(800) {
-        grid-row: 4 / 5;
-        grid-column: 2 / 4;
-        width: 15rem;
-        height:  15rem;
-      }
-
-       @include respond(landscape-800) {
-        width: 11rem;
-        height:  11rem;
-      }
-
-      @include respond(landscape-700) {
-        width: 12rem;
-        height:  12rem;
-      }
-
-      @include respond(500) {
-        grid-row: 6/7;
-        grid-column: 1/-1;
-        width: 19rem;
-        height: 19rem;
-      }
-
-      &-text {
-        grid-row: 3 / 4;
-        grid-column: 4 / 5;
-        text-align: center;
-        align-self: start;
-        margin-top: 1rem;
-        opacity: 0;
-
-        @include respond(800) {
-          grid-row: 5 / 6;
-          grid-column: 2 / 4;
-          }
-         @include respond(600) { margin-bottom: 3rem; }
-         @include respond(500) {
-            grid-row: 7 / 8;
-            grid-column: 1/-1;
-            margin-top: 0;
-           }
-         @include respond(400) { margin-bottom: 9rem; }
-
-        @include respond(landscape-800) {
-        margin-top: 0;
-       }
-
     }
   }
 
-    &__features-detail {
+  &__features-responsive {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-color: $color-primary-light;
+    width: 12rem;
+    height: 12rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      @include octogon-before;
+    }
+    &:after {
+      @include octogon-after;
+    }
+
+    @include respond(800) {
       grid-row: 2 / 3;
-      grid-column: 5 / 6;
-      background-color: $color-primary-light;
+      grid-column: 4 / 6;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(landscape-800) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include respond(landscape-700) {
       width: 12rem;
       height: 12rem;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
 
-      &:before { @include octogon-before; }
-      &:after { @include octogon-after; }
+    @include respond(500) {
+      grid-row: 4/5;
+      grid-column: 1/-1;
+      width: 19rem;
+      height: 19rem;
+    }
+
+    &-text {
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      text-align: center;
+      align-self: start;
+      margin-top: 1rem;
+      opacity: 0;
 
       @include respond(800) {
-        grid-row: 4 / 5;
+        grid-row: 3 / 4;
         grid-column: 4 / 6;
-        width: 15rem;
-        height:  15rem;
       }
 
-      @include respond(landscape-800) { margin-top: 0;}
-
-       @include respond(landscape-800) {
-        width: 11rem;
-        height:  11rem;
+      @include respond(landscape-800) {
+        margin-top: 0;
       }
 
-      @include respond(landscape-700) {
-        width: 12rem;
-        height:  12rem;
+      @include respond(600) {
+        margin-bottom: 3rem;
       }
-
       @include respond(500) {
-        grid-row: 8/9;
+        grid-row: 5/6;
         grid-column: 1/-1;
-        width: 19rem;
-        height: 19rem;
+        margin-top: 0;
+      }
+      @include respond(400) {
+        margin-bottom: 9rem;
+      }
+    }
+  }
+
+  &__features-dynamic {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    background-color: $color-primary-light;
+    width: 12rem;
+    height: 12rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      @include octogon-before;
+    }
+    &:after {
+      @include octogon-after;
+    }
+
+    @include respond(800) {
+      grid-row: 4 / 5;
+      grid-column: 2 / 4;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(landscape-800) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include respond(landscape-700) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(500) {
+      grid-row: 6/7;
+      grid-column: 1/-1;
+      width: 19rem;
+      height: 19rem;
+    }
+
+    &-text {
+      grid-row: 3 / 4;
+      grid-column: 4 / 5;
+      text-align: center;
+      align-self: start;
+      margin-top: 1rem;
+      opacity: 0;
+
+      @include respond(800) {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+      }
+      @include respond(600) {
+        margin-bottom: 3rem;
+      }
+      @include respond(500) {
+        grid-row: 7 / 8;
+        grid-column: 1/-1;
+        margin-top: 0;
+      }
+      @include respond(400) {
+        margin-bottom: 9rem;
       }
 
-      &-text {
+      @include respond(landscape-800) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__features-detail {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    background-color: $color-primary-light;
+    width: 12rem;
+    height: 12rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      @include octogon-before;
+    }
+    &:after {
+      @include octogon-after;
+    }
+
+    @include respond(800) {
+      grid-row: 4 / 5;
+      grid-column: 4 / 6;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(landscape-800) {
+      margin-top: 0;
+    }
+
+    @include respond(landscape-800) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include respond(landscape-700) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(500) {
+      grid-row: 8/9;
+      grid-column: 1/-1;
+      width: 19rem;
+      height: 19rem;
+    }
+
+    &-text {
       grid-row: 3 / 4;
       grid-column: 5 / 6;
       text-align: center;
@@ -270,123 +290,134 @@
       opacity: 0;
 
       @include respond(800) {
-      grid-row: 5 / 6;
-      grid-column: 4 / 6;
+        grid-row: 5 / 6;
+        grid-column: 4 / 6;
       }
 
-      @include respond(landscape-800) { margin-top: 0; }
+      @include respond(landscape-800) {
+        margin-top: 0;
+      }
 
-      @include respond(600) { margin-bottom: 3rem; }
-      @include respond(500) { 
+      @include respond(600) {
+        margin-bottom: 3rem;
+      }
+      @include respond(500) {
         grid-row: 9/10;
         grid-column: 1/-1;
         margin-top: 0;
       }
-      @include respond(400) { margin-bottom: 9rem; }
+      @include respond(400) {
+        margin-bottom: 9rem;
       }
     }
+  }
 
+  &__features-communication {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
+    background-color: $color-primary-light;
+    width: 12rem;
+    height: 12rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    &:before {
+      @include octogon-before;
+    }
+    &:after {
+      @include octogon-after;
+    }
 
-    &__features-communication {
-      position: relative;
-      grid-row: 2 / 3;
-      grid-column: 6 / 7;
-      background-color: $color-primary-light;
+    @include respond(800) {
+      justify-self: center;
+      grid-row: 7 / 8;
+      grid-column: 1 / -1;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(landscape-800) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include respond(landscape-700) {
       width: 12rem;
       height: 12rem;
+    }
+
+    @include respond(500) {
+      grid-row: 10/11;
+      grid-column: 1/-1;
+      width: 19rem;
+      height: 19rem;
+    }
+
+    &-text {
+      // grid-row: 2 / 4; dont need to all of them.Refactor.
+      grid-column: 6 / 7;
+      text-align: center;
+      align-self: start;
+      margin-top: 1rem;
       opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-      &:before { @include octogon-before; }
-      &:after { @include octogon-after; }
 
       @include respond(800) {
         justify-self: center;
-        grid-row: 7 / 8;
+        grid-row: 8 / 9;
         grid-column: 1 / -1;
-        width: 15rem;
-        height:  15rem;
       }
 
       @include respond(landscape-800) {
-        width: 11rem;
-        height:  11rem;
+        margin-top: 0;
       }
 
-      @include respond(landscape-700) {
-        width: 12rem;
-        height:  12rem;
+      @include respond(600) {
+        margin-bottom: 3rem;
       }
-
       @include respond(500) {
-        grid-row: 10/11;
+        grid-row: 11/12;
         grid-column: 1/-1;
-        width: 19rem;
-        height: 19rem;
+        margin-top: 0;
+      }
+      @include respond(400) {
+        margin-bottom: 9rem;
       }
 
-
-      &-text {
-        // grid-row: 2 / 4; dont need to all of them.Refactor.
-        grid-column: 6 / 7;
-        text-align: center;
-        align-self: start;
-        margin-top: 1rem;
-        opacity: 0;
-
-        @include respond(800) {
-        justify-self: center;
-        grid-row: 8 / 9;
-        grid-column: 1 / -1;
-
-       }
-
-       @include respond(landscape-800) { margin-top: 0; }
-
-       @include respond(600) { margin-bottom: 3rem; }
-       @include respond(500) { 
-         grid-row: 11/12;
-         grid-column: 1/-1;
-         margin-top: 0;
-         }
-       @include respond(400) { margin-bottom: 9rem; }
-
-       @include respond(350) {
+      @include respond(350) {
         width: 120%;
-       }
-
       }
     }
+  }
 
-    &__langauges {
-     display: grid;
-     grid-row: 5/ 12;
-     grid-column: 2 / 7;
-     grid-template-rows: repeat(7, 1fr);
-     grid-template-columns: 1fr;
-     width: 100%;
-     height: 100%;
-     opacity: 0;
-     text-align: center;
-     @include respond(landscape-900) { align-items: end; }
+  &__langauges {
+    display: grid;
+    grid-row: 5/ 12;
+    grid-column: 2 / 7;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    @include respond(landscape-900) {
+      align-items: end;
+    }
 
-     @include respond(800) { grid-row: 9 / 15; }
-     @include respond(500) {
+    @include respond(800) {
+      grid-row: 9 / 15;
+    }
+    @include respond(500) {
       grid-column: 1 / 7;
       padding: 6rem;
     }
-     @include respond(500) {
-       grid-row: 11/19;
-       margin-top: 5rem;
-      }
-
-
+    @include respond(500) {
+      grid-row: 11/19;
+      margin-top: 5rem;
     }
-
+  }
 
   &__html {
     grid-row: 1 / 2;
@@ -396,14 +427,17 @@
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
     // @include respond(500) {
     //   animation-name: from-right;
     //   animation-duration: .75s;
     //   animation-fill-mode: forwards;}
 
-
-    &-text { @include skill; }
+    &-text {
+      @include skill;
+    }
 
     &-fill {
       height: 100%;
@@ -413,9 +447,6 @@
       top: 0;
       left: 15%;
     }
-
-
-
   }
 
   &__css {
@@ -426,11 +457,15 @@
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
 
-     &-text { @include skill; }
+    &-text {
+      @include skill;
+    }
 
-     &-fill {
+    &-fill {
       height: 100%;
       width: 0;
       position: absolute;
@@ -443,16 +478,20 @@
   &__javascript {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
-     background-color: $color-skill;
+    background-color: $color-skill;
     width: 100%;
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
 
-     &-text { @include skill; }
+    &-text {
+      @include skill;
+    }
 
-     &-fill {
+    &-fill {
       height: 100%;
       width: 0;
       position: absolute;
@@ -470,11 +509,15 @@
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
 
-     &-text { @include skill; }
+    &-text {
+      @include skill;
+    }
 
-      &-fill {
+    &-fill {
       height: 100%;
       width: 0;
       position: absolute;
@@ -492,12 +535,15 @@
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
 
+    &-text {
+      @include skill;
+    }
 
-     &-text { @include skill; }
-
-     &-fill {
+    &-fill {
       height: 100%;
       width: 0;
       position: absolute;
@@ -515,11 +561,15 @@
     height: 50%;
     position: relative;
 
-    @include respond(800) { align-self: end; }
+    @include respond(800) {
+      align-self: end;
+    }
 
-     &-text { @include skill; }
+    &-text {
+      @include skill;
+    }
 
-      &-fill {
+    &-fill {
       height: 100%;
       width: 0;
       position: absolute;
@@ -542,63 +592,61 @@
 }
 
 .next-page-skills {
-    grid-row: 12 / 13;
-        grid-column: 1/-1;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    transform: rotate(90deg);
-    font-size: 3rem;
-    color: $color-primary-dark;
-    opacity: 0;
-    cursor: pointer;
-    @include responsive-next-page;
+  grid-row: 12 / 13;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  transform: rotate(90deg);
+  font-size: 3rem;
+  color: $color-primary-dark;
+  opacity: 0;
+  cursor: pointer;
+  @include responsive-next-page;
 
-    @include respond(800) {
-      grid-row: 15/16;
+  @include respond(800) {
+    grid-row: 15/16;
+  }
+  @include respond(500) {
+    grid-row: 19/20;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 1.02rem;
+    @include responsive-next-page-span;
+
+    @include respond(600) {
+      animation-name: next-page-hover;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
     }
-    @include respond(500) {
-      grid-row: 19/20;
-    }
+  }
 
-
-    span {
-      position: absolute;
-      top: 0;
-      left: 1.02rem;
-      @include responsive-next-page-span;
-
-
-      @include respond(600) {
-        animation-name: next-page-hover;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-      }
-    }
-
-    &:hover > span {
+  &:hover > span {
     animation-name: next-page-hover;
     animation-duration: 1s;
     animation-delay: 1.5s;
     animation-iteration-count: infinite;
 
     @include respond(600) {
-
     }
-
   }
 }
 
 .skills__popup {
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
   background: $color-layout;
   max-width: 50vw;
   margin: 20px auto;
-  @include respond(800) { max-width: 80vw; }
-
+  @include respond(800) {
+    max-width: 80vw;
+  }
 
   &-item {
     padding: 2.5rem;
@@ -611,7 +659,7 @@
       height: 20rem;
     }
 
-    @include respond (1000) {
+    @include respond(1000) {
       height: 16rem;
     }
 
@@ -650,12 +698,11 @@
     margin-top: 1rem;
 
     @include respond(1400) {
-      font-size: 1,5rem;
+      font-size: 1, 5rem;
     }
     @include respond(1300) {
       font-size: 2rem;
     }
-
   }
 }
 
@@ -665,15 +712,17 @@
   height: 4.5rem;
   fill: $color-display-light;
 
-  @include respond(900){
-   height: 5.5rem;
+  @include respond(900) {
+    height: 5.5rem;
   }
 
   @include respond(500) {
-   height: 7rem;
+    height: 7rem;
   }
 
-  @include respond(landscape-800) { height: 4rem; }
+  @include respond(landscape-800) {
+    height: 4rem;
+  }
 }
 
 /*Animations*/
@@ -692,45 +741,43 @@
 
 .animation--langauges {
   animation-name: from-right;
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-fill-mode: forwards;
-
 }
 
 .animation--fill-70 {
   animation-name: fill-70;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
-  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
 }
 
 .animation--fill-65 {
   animation-name: fill-65;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
-  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
 }
-
 
 .animation--fill-40 {
   animation-name: fill-40;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
-  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
 }
 
 .animation--fill-50 {
   animation-name: fill-50;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
-  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
 }
 
 .animation--fill-55 {
   animation-name: fill-55;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
-  transition-timing-function: cubic-bezier(0.500, 0.250, 0.000, 1.650);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
 }
 
 .animation--next-page {

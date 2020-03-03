@@ -3040,6 +3040,7 @@ textarea {
 
 .skills__popup {
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
@@ -3083,7 +3084,7 @@ textarea {
     margin-top: 1rem; }
     @media only screen and (min-width: 87.5em) {
       .skills__popup-text {
-        font-size: 1,5rem; } }
+        font-size: 1, 5rem; } }
     @media only screen and (max-width: 81.25em) {
       .skills__popup-text {
         font-size: 2rem; } }
@@ -3115,36 +3116,36 @@ textarea {
 
 .animation--langauges {
   animation-name: from-right;
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-fill-mode: forwards; }
 
 .animation--fill-70 {
   animation-name: fill-70;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65); }
 
 .animation--fill-65 {
   animation-name: fill-65;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65); }
 
 .animation--fill-40 {
   animation-name: fill-40;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65); }
 
 .animation--fill-50 {
   animation-name: fill-50;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65); }
 
 .animation--fill-55 {
   animation-name: fill-55;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65); }
 
