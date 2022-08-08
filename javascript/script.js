@@ -162,22 +162,22 @@ $(document).ready(function () {
       function (direction) {
         $(".skills__langauges").addClass("animation--langauges");
         $(".skills__html-fill").addClass(
-          "animation--fill-70 animation-delay-200ms"
+          "animation--fill-90 animation-delay-200ms"
         );
         $(".skills__css-fill").addClass(
-          "animation--fill-70 animation-delay-400ms"
+          "animation--fill-90 animation-delay-400ms"
         );
         $(".skills__javascript-fill").addClass(
-          "animation--fill-65 animation-delay-600ms"
+          "animation--fill-70 animation-delay-600ms"
         );
         $(".skills__react-fill").addClass(
-          "animation--fill-55 animation-delay-800ms"
+          "animation--fill-70 animation-delay-800ms"
         );
         $(".skills__ruby-fill").addClass(
-          "animation--fill-50 animation-delay-1000ms"
+          "animation--fill-60 animation-delay-1000ms"
         );
         $(".skills__ruby-on-rails-fill").addClass(
-          "animation--fill-40 animation-delay-1200ms"
+          "animation--fill-50 animation-delay-1200ms"
         );
       },
       {

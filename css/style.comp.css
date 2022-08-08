@@ -283,6 +283,13 @@
     transform: rotate(0deg) translateY(0);
     opacity: 1; } }
 
+@keyframes fill-90 {
+  from {
+    width: 0;
+    animation-timing-function: ease-in-out; }
+  to {
+    width: 90%; } }
+
 @keyframes fill-70 {
   from {
     width: 0;
