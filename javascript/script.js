@@ -174,7 +174,7 @@ $(document).ready(function () {
           "animation--fill-70 animation-delay-800ms"
         );
         $(".skills__ruby-fill").addClass(
-          "animation--fill-60 animation-delay-1000ms"
+          "animation--fill-50 animation-delay-1000ms"
         );
         $(".skills__ruby-on-rails-fill").addClass(
           "animation--fill-50 animation-delay-1200ms"

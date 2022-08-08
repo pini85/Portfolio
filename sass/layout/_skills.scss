@@ -745,6 +745,13 @@
   animation-fill-mode: forwards;
 }
 
+.animation--fill-90 {
+  animation-name: fill-90;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0, 1.65);
+}
+
 .animation--fill-70 {
   animation-name: fill-70;
   animation-duration: 0.5s;
