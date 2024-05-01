@@ -2000,7 +2000,7 @@ textarea {
     width: 53%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none; }
     @media only screen and (max-width: 25em) {
       .name-and-button__name {
